@@ -26,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00096CC87E86B3A09C19232BB069BEDB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		00096CC87E86B3A09C19232BB069BEDB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		10FA027B91BEED00CD55782F05F32C48 /* Pods-HCDebugTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCDebugTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1830848B92D79C05A6C7C38E03C7EAF8 /* Pods-HCDebugTool_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCDebugTool_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		1CE034FAE214DE186255E39A8AA161C0 /* Pods-HCDebugTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCDebugTool_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -34,21 +34,21 @@
 		45D9F6A13F855C409C8343F30EAD9D36 /* Pods-HCDebugTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HCDebugTool_Example-umbrella.h"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B25F9EA8002D6B3BF6D0B486A4A0844 /* Pods-HCDebugTool_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCDebugTool_Example-resources.sh"; sourceTree = "<group>"; };
-		66FE809F5AC4CC93CCC5B5B948238283 /* HCDebugTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = HCDebugTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		66FE809F5AC4CC93CCC5B5B948238283 /* HCDebugTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HCDebugTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6B0F80DD062D5AD63681C2956A10BCC0 /* Pods-HCDebugTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HCDebugTool_Tests-umbrella.h"; sourceTree = "<group>"; };
 		74E55AA8AD68331FE40AD8CB7541CE3B /* Pods-HCDebugTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HCDebugTool_Tests-dummy.m"; sourceTree = "<group>"; };
 		76A8D997C55E12D8D0072916EE6B6014 /* Pods-HCDebugTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCDebugTool_Example.release.xcconfig"; sourceTree = "<group>"; };
-		7BF2D8FDA859D130B9B1423A4960BC61 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7BF2D8FDA859D130B9B1423A4960BC61 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82AC479FC6F16881DB7948E6B5D09354 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		866EF981EF002E16698EB9BD51857802 /* Pods-HCDebugTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HCDebugTool_Example.modulemap"; sourceTree = "<group>"; };
 		8763D1C00F76ABA95A6A023925DFA771 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FE19127786B960AE99F3081760BE07A /* Pods-HCDebugTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCDebugTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C91A1F1399DD1445EFC95051AF8C035 /* Pods_HCDebugTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HCDebugTool_Tests.framework; path = "Pods-HCDebugTool_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C91A1F1399DD1445EFC95051AF8C035 /* Pods_HCDebugTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCDebugTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37830D422FEDFBE72423888BE16138B /* Pods-HCDebugTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HCDebugTool_Example-dummy.m"; sourceTree = "<group>"; };
 		B4B00F14C942ACBCA8E7CD86C84E4709 /* Pods-HCDebugTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCDebugTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B58D7F8855F502A2C25B8A60BBA46661 /* Pods-HCDebugTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCDebugTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C3663F314E18BBBBCEF5690336A096E0 /* Pods_HCDebugTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HCDebugTool_Example.framework; path = "Pods-HCDebugTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3663F314E18BBBBCEF5690336A096E0 /* Pods_HCDebugTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HCDebugTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7797F857690DEEBCB3CE194A2D8A1F4 /* Pods-HCDebugTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HCDebugTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CE2873E92BFC5E4E8B8CED412047AF54 /* Pods-HCDebugTool_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCDebugTool_Tests-resources.sh"; sourceTree = "<group>"; };
 		D9D1CAEDC97200B301D9D3B8721D7342 /* Pods-HCDebugTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCDebugTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -75,6 +75,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0029A76C21BA344800C856C9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0029A76D21BA344800C856C9 /* Manager */,
+				0029A76E21BA344800C856C9 /* Module */,
+				0029A77021BA344800C856C9 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0029A76D21BA344800C856C9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0029A76E21BA344800C856C9 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				0029A76F21BA344800C856C9 /* Vision */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		0029A76F21BA344800C856C9 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		0029A77021BA344800C856C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0029A77121BA344800C856C9 /* EntranceView */,
+				0029A77221BA344800C856C9 /* MenuView */,
+				0029A77321BA344800C856C9 /* OptionView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0029A77121BA344800C856C9 /* EntranceView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EntranceView;
+			sourceTree = "<group>";
+		};
+		0029A77221BA344800C856C9 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		0029A77321BA344800C856C9 /* OptionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OptionView;
+			sourceTree = "<group>";
+		};
 		0FB8A58797E7C0B2924C2F82AC888C97 /* Pods-HCDebugTool_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +186,7 @@
 		58706CBFB719ACEC440AC9C4AA736775 /* HCDebugTool */ = {
 			isa = PBXGroup;
 			children = (
+				0029A76C21BA344800C856C9 /* Classes */,
 				BA0BB27916D27334DA6F3675E0629955 /* Pod */,
 			);
 			name = HCDebugTool;
