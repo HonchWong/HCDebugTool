@@ -9,9 +9,6 @@
 #import "HCDebugToolMenuViewController.h"
 #import "HCDebugToolManager.h"
 
-//#import "HCDebugToolModuleProtocol.h"
-//#import "HCDebugToolVisionModule.h"
-
 @interface HCDebugToolMenuViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -53,17 +50,33 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [[self.modules objectAtIndex:section] numberOfRows];
+    return [[self moduleAtIndex:section] numberOfRows];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [[self.modules objectAtIndex:indexPath.section]
-            cellForRow:indexPath.row tableView:tableView];
+    NSObject<HCDebugToolModuleProtocol> *module = [self moduleAtIndex:indexPath.section];
+    return [module cellForRow:indexPath.row tableView:tableView];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [[self.modules objectAtIndex:indexPath.section]
-            heightForRow:indexPath.row];
+    NSObject<HCDebugToolModuleProtocol> *module = [self moduleAtIndex:indexPath.section];
+    return [module heightForRow:indexPath.row];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSObject<HCDebugToolModuleProtocol> *module = [self moduleAtIndex:section];
+    return module.moduleTitle;
+}
+
+- (NSObject<HCDebugToolModuleProtocol> *)moduleAtIndex:(NSInteger)index {
+    if (self.modules.count < index)  {
+        return nil;
+    }
+    return [self.modules objectAtIndex:index];
 }
 
 #pragma mark - getter setter

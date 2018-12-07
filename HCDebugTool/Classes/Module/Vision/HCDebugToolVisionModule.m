@@ -24,6 +24,12 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
     [[HCDebugToolManager sharedManager] registerModule:[[self alloc] init]];
 }
 
+#pragma mark - Super Class
+
+- (NSString *)moduleTitle {
+    return @"视觉工具";
+}
+
 #pragma mark - HCDebugToolCommonOptionViewProtocol
 
 - (void)optionDidSelected:(HCDebugToolCommonOptionItemViewModel *)option

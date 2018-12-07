@@ -15,4 +15,6 @@
 - (UITableViewCell *)cellForRow:(NSInteger)row
                       tableView:(UITableView *)tableView;
 
+- (NSString *)moduleTitle;
+
 @end

@@ -19,6 +19,7 @@
 @property (nonatomic, assign) CGFloat touchActionCount;
 @property (nonatomic, assign) CGFloat touchInvaidCount;
 @property (nonatomic, assign) BOOL needAnima;
+@property (nonatomic, strong) HCDebugToolMenuViewController *menuVC;
 
 @end
 
@@ -72,13 +73,29 @@
     self.touchCount = 0;
     
     NSTimeInterval duration = CFAbsoluteTimeGetCurrent() - self.firstTouchTime;
-    if (duration > 2.0f) { return; }
+    if (duration > 2.0f || self.menuVC != nil) { return; }
     
     HCDebugToolMenuViewController *menuVC =
     [[HCDebugToolMenuViewController alloc] init];
+    menuVC.navigationItem.rightBarButtonItem =
+    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                  target:self
+                                                  action:@selector(menuViewControllerDoneTapped)];
+    menuVC.title = @"DebugTool Menu";
+    self.menuVC = menuVC;
+    UINavigationController *wrapperNavigationController =
+    [[UINavigationController alloc] initWithRootViewController:menuVC];
+
     UIViewController *hostVC =
     [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-    [hostVC presentViewController:menuVC animated:YES completion:nil];
+    [hostVC presentViewController:wrapperNavigationController
+                         animated:YES
+                       completion:nil];
+}
+
+- (void)menuViewControllerDoneTapped {
+    [self.menuVC dismissViewControllerAnimated:YES completion:nil];
+    self.menuVC = nil;
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
