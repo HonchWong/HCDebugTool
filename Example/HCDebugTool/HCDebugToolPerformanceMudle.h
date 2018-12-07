@@ -10,7 +10,7 @@
 
 #import <HCDebugTool/HCDebugTool.h>
 
-@interface HCDebugToolPerformanceMudle : NSObject
+@interface HCDebugToolPerformanceMudle : HCDebugToolCommonModule
 
 @end
 
