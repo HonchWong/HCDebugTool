@@ -16,41 +16,7 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
     HCDebugToolVisionOptionViewTag_ColorCheck = 2,
 };
 
-//@interface HCDebugToolVisionModule () <HCDebugToolCommonOptionViewProtocol>
-
-//@property (nonatomic, strong) HCDebugToolCommonOptionView *optionView;
-
-//@end
-
 @implementation HCDebugToolVisionModule
-
-#pragma mark - HCDebugToolModuleProtocol
-
-//- (NSInteger)numberOfRows {
-//    return 1;
-//}
-//
-//- (CGFloat)heightForRow:(NSInteger)row {
-//    return CGRectGetHeight(self.optionView.frame);
-//}
-//
-//- (UITableViewCell *)cellForRow:(NSInteger)row
-//                      tableView:(UITableView *)tableView {
-//    NSString *cellIdentifier = @"tableViewCellIdentifier";
-//
-//    UITableViewCell *cell =
-//    [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-//
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-//                                      reuseIdentifier:cellIdentifier];
-//    }
-//
-//    [self.optionView removeFromSuperview];
-//    [cell.contentView addSubview:self.optionView];
-//
-//    return cell;
-//}
 
 #pragma mark - Private
 
@@ -71,22 +37,6 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
             break;
     }
 }
-
-#pragma mark - getter
-
-//- (HCDebugToolCommonOptionView *)optionView {
-//    if (!_optionView) {
-//        _optionView = [[HCDebugToolCommonOptionView alloc] init];
-//        HCDebugToolCommonOptionViewModel *viewModel =
-//        [self.class optionViewModel];
-//        [_optionView setViewModel:viewModel];
-//        CGFloat viewHeight =
-//        [HCDebugToolCommonOptionView viewHeightWithModel:[self optionViewModel]];
-//        _optionView.frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), viewHeight);
-//        _optionView.delegate = self;
-//    }
-//    return _optionView;
-//}
 
 - (HCDebugToolCommonOptionViewModel *)optionViewModel {
     NSArray <NSDictionary *>* optionDicts = [self optionDicts];

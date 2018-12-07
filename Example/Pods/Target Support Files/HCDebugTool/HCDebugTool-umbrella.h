@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "HCDebugTool.h"
 #import "HCDebugToolManager.h"
 #import "HCDebugToolCommonModule.h"
 #import "HCDebugToolModuleProtocol.h"

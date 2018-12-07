@@ -1,5 +1,5 @@
 PODS:
-  - HCDebugTool (0.1.5)
+  - HCDebugTool (0.1.5.1)
 
 DEPENDENCIES:
   - HCDebugTool (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HCDebugTool: e4db0d2a305896605827b8ac2e98e14baa3bc7db
+  HCDebugTool: a334bc18904e15f893343c9c4bb42735c2929523
 
 PODFILE CHECKSUM: b27167a98e0ddba659a57731f2cfb461c0d00473
 
