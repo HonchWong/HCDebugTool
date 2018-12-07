@@ -86,7 +86,7 @@
     if (!_tableView) {
         
         CGFloat viewHeight = CGRectGetHeight(self.view.bounds) - kNavBarHeight;
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), viewHeight)
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kNavBarHeight, CGRectGetWidth(self.view.bounds), viewHeight)
                                                   style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
