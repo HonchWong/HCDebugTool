@@ -9,6 +9,6 @@
 #ifndef HCDebugToolUIDefine_h
 #define HCDebugToolUIDefine_h
 
-#define kIs_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
-
+#define kIs_iPhoneX         ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kNavBarHeight       (kIs_iPhoneX ? 88 : 64)
 #endif /* HCDebugToolUIDefine_h */

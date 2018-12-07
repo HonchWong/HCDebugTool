@@ -67,7 +67,7 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
 }
 
 - (NSArray <NSDictionary *>*)optionDicts {
-    return @[@{@"title": @"CPU",
+    return @[@{@"title": @"CPUCPUCPUCPUCPUCPUCPU",
                @"icon": @"",
                @"viewTag": @(HCDebugToolPerformanceOptionViewTag_CPU)},
              @{@"title": @"FPS",

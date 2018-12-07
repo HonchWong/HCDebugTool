@@ -8,6 +8,7 @@
 
 #import "HCDebugToolMenuViewController.h"
 #import "HCDebugToolManager.h"
+#import "HCDebugToolUIDefine.h"
 
 @interface HCDebugToolMenuViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -83,7 +84,9 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds
+        
+        CGFloat viewHeight = CGRectGetHeight(self.view.bounds) - kNavBarHeight;
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), viewHeight)
                                                   style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;

@@ -36,6 +36,7 @@
     self.label.font = [UIFont systemFontOfSize:14];
     self.label.textColor = [UIColor blackColor];
     self.label.textAlignment = NSTextAlignmentCenter;
+    self.label.numberOfLines = 0;
     [self addSubview:self.label];
 }
 

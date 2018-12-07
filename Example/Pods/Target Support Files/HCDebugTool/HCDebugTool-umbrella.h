@@ -16,7 +16,7 @@
 #import "HCDebugToolModuleProtocol.h"
 #import "HCDebugToolVisionModule.h"
 #import "HCDebugToolEntranceView.h"
-#import "HCDebugToolUIDefine.h"
+//#import "HCDebugToolUIDefine.h"
 #import "HCDebugToolMenuViewController.h"
 #import "HCDebugToolCommonOptionItemView.h"
 #import "HCDebugToolCommonOptionView.h"
