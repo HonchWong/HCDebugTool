@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0029A7E121BA442300C856C9 /* HCDebugToolPerformanceMudle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0029A7E021BA442300C856C9 /* HCDebugToolPerformanceMudle.m */; };
+		006F4D3E21BAA889003B0B3F /* QRAuthorizationDebugModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 006F4D3A21BAA7E8003B0B3F /* QRAuthorizationDebugModule.m */; };
+		006F4D3F21BAA889003B0B3F /* QRBookDebugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 006F4D3421BAA7E8003B0B3F /* QRBookDebugModel.m */; };
+		006F4D4021BAA889003B0B3F /* QRCommonBusinessDebugModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 006F4D3721BAA7E8003B0B3F /* QRCommonBusinessDebugModule.m */; };
+		006F4D4121BAA889003B0B3F /* QRCommonToolsDebugModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 006F4D3D21BAA7E9003B0B3F /* QRCommonToolsDebugModule.m */; };
 		0CC291DA78BEACFF91342B54 /* Pods_HCDebugTool_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5226FF179E4DD7F57C794A3 /* Pods_HCDebugTool_Example.framework */; };
 		3AE79C8157C20CF43834872E /* Pods_HCDebugTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD426F9C4DAEBB86B7B63AE5 /* Pods_HCDebugTool_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -40,6 +44,14 @@
 /* Begin PBXFileReference section */
 		0029A7DF21BA442300C856C9 /* HCDebugToolPerformanceMudle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolPerformanceMudle.h; sourceTree = "<group>"; };
 		0029A7E021BA442300C856C9 /* HCDebugToolPerformanceMudle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolPerformanceMudle.m; sourceTree = "<group>"; };
+		006F4D3321BAA7E8003B0B3F /* QRBookDebugModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRBookDebugModel.h; sourceTree = "<group>"; };
+		006F4D3421BAA7E8003B0B3F /* QRBookDebugModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRBookDebugModel.m; sourceTree = "<group>"; };
+		006F4D3621BAA7E8003B0B3F /* QRCommonBusinessDebugModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCommonBusinessDebugModule.h; sourceTree = "<group>"; };
+		006F4D3721BAA7E8003B0B3F /* QRCommonBusinessDebugModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCommonBusinessDebugModule.m; sourceTree = "<group>"; };
+		006F4D3921BAA7E8003B0B3F /* QRAuthorizationDebugModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRAuthorizationDebugModule.h; sourceTree = "<group>"; };
+		006F4D3A21BAA7E8003B0B3F /* QRAuthorizationDebugModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRAuthorizationDebugModule.m; sourceTree = "<group>"; };
+		006F4D3C21BAA7E9003B0B3F /* QRCommonToolsDebugModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCommonToolsDebugModule.h; sourceTree = "<group>"; };
+		006F4D3D21BAA7E9003B0B3F /* QRCommonToolsDebugModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCommonToolsDebugModule.m; sourceTree = "<group>"; };
 		13A72804B88504215179987B /* Pods-HCDebugTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCDebugTool_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		30C473A1C4B3928021090C16 /* Pods-HCDebugTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCDebugTool_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HCDebugTool_Tests/Pods-HCDebugTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3402F6569C4C5B6F9448471D /* Pods-HCDebugTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCDebugTool_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +113,10 @@
 		0029A75121BA311500C856C9 /* HCDebugToolModule */ = {
 			isa = PBXGroup;
 			children = (
+				006F4D3821BAA7E8003B0B3F /* Authorization */,
+				006F4D3221BAA7E8003B0B3F /* Book */,
+				006F4D3521BAA7E8003B0B3F /* CommonBusiness */,
+				006F4D3B21BAA7E9003B0B3F /* CommonTools */,
 				0029A7DE21BA43EB00C856C9 /* Performance */,
 			);
 			name = HCDebugToolModule;
@@ -113,6 +129,42 @@
 				0029A7E021BA442300C856C9 /* HCDebugToolPerformanceMudle.m */,
 			);
 			name = Performance;
+			sourceTree = "<group>";
+		};
+		006F4D3221BAA7E8003B0B3F /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				006F4D3321BAA7E8003B0B3F /* QRBookDebugModel.h */,
+				006F4D3421BAA7E8003B0B3F /* QRBookDebugModel.m */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		006F4D3521BAA7E8003B0B3F /* CommonBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				006F4D3621BAA7E8003B0B3F /* QRCommonBusinessDebugModule.h */,
+				006F4D3721BAA7E8003B0B3F /* QRCommonBusinessDebugModule.m */,
+			);
+			path = CommonBusiness;
+			sourceTree = "<group>";
+		};
+		006F4D3821BAA7E8003B0B3F /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				006F4D3921BAA7E8003B0B3F /* QRAuthorizationDebugModule.h */,
+				006F4D3A21BAA7E8003B0B3F /* QRAuthorizationDebugModule.m */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		006F4D3B21BAA7E9003B0B3F /* CommonTools */ = {
+			isa = PBXGroup;
+			children = (
+				006F4D3C21BAA7E9003B0B3F /* QRCommonToolsDebugModule.h */,
+				006F4D3D21BAA7E9003B0B3F /* QRCommonToolsDebugModule.m */,
+			);
+			path = CommonTools;
 			sourceTree = "<group>";
 		};
 		0F33CFBDB99FE8E968369B41 /* Pods */ = {
@@ -376,10 +428,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006F4D3E21BAA889003B0B3F /* QRAuthorizationDebugModule.m in Sources */,
 				6003F59E195388D20070C39A /* HCAppDelegate.m in Sources */,
 				0029A7E121BA442300C856C9 /* HCDebugToolPerformanceMudle.m in Sources */,
 				6003F5A7195388D20070C39A /* HCViewController.m in Sources */,
+				006F4D4021BAA889003B0B3F /* QRCommonBusinessDebugModule.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				006F4D3F21BAA889003B0B3F /* QRBookDebugModel.m in Sources */,
+				006F4D4121BAA889003B0B3F /* QRCommonToolsDebugModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

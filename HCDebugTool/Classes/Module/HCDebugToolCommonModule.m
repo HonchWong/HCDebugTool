@@ -12,10 +12,23 @@
 @interface HCDebugToolCommonModule ()
 
 @property (nonatomic, strong) HCDebugToolCommonOptionView *optionView;
-
+@property (nonatomic, strong) NSString *cellIdentifier;
 @end
 
 @implementation HCDebugToolCommonModule
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        [self configProperty];
+    }
+    return self;
+}
+
+- (void)configProperty {
+    self.cellIdentifier =
+    [NSString stringWithFormat:@"tableViewCellIdentifier_%x", arc4random()];
+}
 
 #pragma mark - HCDebugToolModuleProtocol
 
@@ -29,18 +42,14 @@
 
 - (UITableViewCell *)cellForRow:(NSInteger)row
                       tableView:(UITableView *)tableView {
-    NSString *cellIdentifier = @"tableViewCellIdentifier";
-    
     UITableViewCell *cell =
-    [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                      reuseIdentifier:cellIdentifier];
+                                      reuseIdentifier:self.cellIdentifier];
+        [cell.contentView addSubview:self.optionView];
     }
-    
-    [self.optionView removeFromSuperview];
-    [cell.contentView addSubview:self.optionView];
     
     return cell;
 }

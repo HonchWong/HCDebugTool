@@ -48,6 +48,8 @@
 
 - (void)setViewModel:(HCDebugToolCommonOptionViewModel *)viewModel {
     _viewModel = viewModel;
+    self.optionViews = nil;
+    [self.collectionView reloadData];
 }
 
 + (CGFloat)viewHeightWithModel:(HCDebugToolCommonOptionViewModel *)viewModel {

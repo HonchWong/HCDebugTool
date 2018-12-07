@@ -38,6 +38,7 @@
 
 - (void)configProperty {
     self.modules = [[HCDebugToolManager sharedManager] registeredModules];
+    self.view.frame = [UIScreen mainScreen].bounds;
 }
 
 - (void)setupSubviews {
