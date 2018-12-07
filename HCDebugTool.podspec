@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HCDebugTool'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'My iOS DebugTool HCDebugTool'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ My iOS DebugTool HCDebugTool.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Classes/**/*.{h,m}'
+  s.source_files = 'HCDebugTool/Classes/**/*.{h,m}'
 
   # s.resource_bundles = {
   #   'HCDebugTool' => ['HCDebugTool/Assets/*.png']
