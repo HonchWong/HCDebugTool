@@ -27,26 +27,24 @@
 
 /* Begin PBXFileReference section */
 		00096CC87E86B3A09C19232BB069BEDB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		0029A78F21BA408800C856C9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		0029A79121BA408800C856C9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		0029A79421BA408800C856C9 /* HCDebugToolManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolManager.h; sourceTree = "<group>"; };
-		0029A79521BA408800C856C9 /* HCDebugToolManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolManager.m; sourceTree = "<group>"; };
-		0029A79721BA408800C856C9 /* HCDebugToolCommonModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolCommonModule.h; sourceTree = "<group>"; };
-		0029A79821BA408800C856C9 /* HCDebugToolCommonModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolCommonModule.m; sourceTree = "<group>"; };
-		0029A79921BA408800C856C9 /* HCDebugToolModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolModuleProtocol.h; sourceTree = "<group>"; };
-		0029A79B21BA408800C856C9 /* HCDebugToolVisionModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolVisionModule.h; sourceTree = "<group>"; };
-		0029A79C21BA408800C856C9 /* HCDebugToolVisionModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolVisionModule.m; sourceTree = "<group>"; };
-		0029A79F21BA408800C856C9 /* HCDebugToolEntranceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolEntranceView.h; sourceTree = "<group>"; };
-		0029A7A021BA408800C856C9 /* HCDebugToolEntranceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolEntranceView.m; sourceTree = "<group>"; };
-		0029A7A121BA408800C856C9 /* HCDebugToolUIDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolUIDefine.h; sourceTree = "<group>"; };
-		0029A7A321BA408800C856C9 /* HCDebugToolMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolMenuViewController.h; sourceTree = "<group>"; };
-		0029A7A421BA408800C856C9 /* HCDebugToolMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolMenuViewController.m; sourceTree = "<group>"; };
-		0029A7A621BA408800C856C9 /* HCDebugToolCommonOptionItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolCommonOptionItemView.h; sourceTree = "<group>"; };
-		0029A7A721BA408800C856C9 /* HCDebugToolCommonOptionItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolCommonOptionItemView.m; sourceTree = "<group>"; };
-		0029A7A821BA408800C856C9 /* HCDebugToolCommonOptionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolCommonOptionView.h; sourceTree = "<group>"; };
-		0029A7A921BA408800C856C9 /* HCDebugToolCommonOptionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolCommonOptionView.m; sourceTree = "<group>"; };
-		0029A7AA21BA408800C856C9 /* HCDebugToolCommonOptionViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolCommonOptionViewModel.h; sourceTree = "<group>"; };
-		0029A7AB21BA408800C856C9 /* HCDebugToolCommonOptionViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolCommonOptionViewModel.m; sourceTree = "<group>"; };
+		0029A7C621BA430200C856C9 /* HCDebugToolCommonModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolCommonModule.h; sourceTree = "<group>"; };
+		0029A7C721BA430200C856C9 /* HCDebugToolCommonModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolCommonModule.m; sourceTree = "<group>"; };
+		0029A7C821BA430200C856C9 /* HCDebugToolModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolModuleProtocol.h; sourceTree = "<group>"; };
+		0029A7CA21BA430200C856C9 /* HCDebugToolVisionModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolVisionModule.h; sourceTree = "<group>"; };
+		0029A7CB21BA430200C856C9 /* HCDebugToolVisionModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolVisionModule.m; sourceTree = "<group>"; };
+		0029A7CD21BA430200C856C9 /* HCDebugToolManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolManager.h; sourceTree = "<group>"; };
+		0029A7CE21BA430200C856C9 /* HCDebugToolManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolManager.m; sourceTree = "<group>"; };
+		0029A7D121BA430200C856C9 /* HCDebugToolEntranceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolEntranceView.h; sourceTree = "<group>"; };
+		0029A7D221BA430200C856C9 /* HCDebugToolEntranceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolEntranceView.m; sourceTree = "<group>"; };
+		0029A7D321BA430200C856C9 /* HCDebugToolUIDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolUIDefine.h; sourceTree = "<group>"; };
+		0029A7D521BA430200C856C9 /* HCDebugToolMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolMenuViewController.h; sourceTree = "<group>"; };
+		0029A7D621BA430200C856C9 /* HCDebugToolMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolMenuViewController.m; sourceTree = "<group>"; };
+		0029A7D821BA430200C856C9 /* HCDebugToolCommonOptionItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolCommonOptionItemView.h; sourceTree = "<group>"; };
+		0029A7D921BA430200C856C9 /* HCDebugToolCommonOptionItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolCommonOptionItemView.m; sourceTree = "<group>"; };
+		0029A7DA21BA430200C856C9 /* HCDebugToolCommonOptionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolCommonOptionView.h; sourceTree = "<group>"; };
+		0029A7DB21BA430200C856C9 /* HCDebugToolCommonOptionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolCommonOptionView.m; sourceTree = "<group>"; };
+		0029A7DC21BA430200C856C9 /* HCDebugToolCommonOptionViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolCommonOptionViewModel.h; sourceTree = "<group>"; };
+		0029A7DD21BA430200C856C9 /* HCDebugToolCommonOptionViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolCommonOptionViewModel.m; sourceTree = "<group>"; };
 		10FA027B91BEED00CD55782F05F32C48 /* Pods-HCDebugTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCDebugTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1830848B92D79C05A6C7C38E03C7EAF8 /* Pods-HCDebugTool_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCDebugTool_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		1CE034FAE214DE186255E39A8AA161C0 /* Pods-HCDebugTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCDebugTool_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -95,109 +93,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0029A78D21BA408800C856C9 /* HCDebugTool */ = {
+		0029A7C521BA430200C856C9 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				0029A78E21BA408800C856C9 /* Assets */,
-				0029A79021BA408800C856C9 /* Classes */,
+				0029A7C621BA430200C856C9 /* HCDebugToolCommonModule.h */,
+				0029A7C721BA430200C856C9 /* HCDebugToolCommonModule.m */,
+				0029A7C821BA430200C856C9 /* HCDebugToolModuleProtocol.h */,
+				0029A7C921BA430200C856C9 /* Vision */,
 			);
-			path = HCDebugTool;
+			name = Module;
+			path = HCDebugTool/Classes/Module;
 			sourceTree = "<group>";
 		};
-		0029A78E21BA408800C856C9 /* Assets */ = {
+		0029A7C921BA430200C856C9 /* Vision */ = {
 			isa = PBXGroup;
 			children = (
-				0029A78F21BA408800C856C9 /* .gitkeep */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		0029A79021BA408800C856C9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				0029A79121BA408800C856C9 /* .gitkeep */,
-				0029A79221BA408800C856C9 /* HCDebugTool */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		0029A79221BA408800C856C9 /* HCDebugTool */ = {
-			isa = PBXGroup;
-			children = (
-				0029A79321BA408800C856C9 /* Manager */,
-				0029A79621BA408800C856C9 /* Module */,
-				0029A79D21BA408800C856C9 /* View */,
-			);
-			path = HCDebugTool;
-			sourceTree = "<group>";
-		};
-		0029A79321BA408800C856C9 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				0029A79421BA408800C856C9 /* HCDebugToolManager.h */,
-				0029A79521BA408800C856C9 /* HCDebugToolManager.m */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		0029A79621BA408800C856C9 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				0029A79721BA408800C856C9 /* HCDebugToolCommonModule.h */,
-				0029A79821BA408800C856C9 /* HCDebugToolCommonModule.m */,
-				0029A79921BA408800C856C9 /* HCDebugToolModuleProtocol.h */,
-				0029A79A21BA408800C856C9 /* Vision */,
-			);
-			path = Module;
-			sourceTree = "<group>";
-		};
-		0029A79A21BA408800C856C9 /* Vision */ = {
-			isa = PBXGroup;
-			children = (
-				0029A79B21BA408800C856C9 /* HCDebugToolVisionModule.h */,
-				0029A79C21BA408800C856C9 /* HCDebugToolVisionModule.m */,
+				0029A7CA21BA430200C856C9 /* HCDebugToolVisionModule.h */,
+				0029A7CB21BA430200C856C9 /* HCDebugToolVisionModule.m */,
 			);
 			path = Vision;
 			sourceTree = "<group>";
 		};
-		0029A79D21BA408800C856C9 /* View */ = {
+		0029A7CC21BA430200C856C9 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				0029A79E21BA408800C856C9 /* EntranceView */,
-				0029A7A121BA408800C856C9 /* HCDebugToolUIDefine.h */,
-				0029A7A221BA408800C856C9 /* MenuView */,
-				0029A7A521BA408800C856C9 /* OptionView */,
+				0029A7CD21BA430200C856C9 /* HCDebugToolManager.h */,
+				0029A7CE21BA430200C856C9 /* HCDebugToolManager.m */,
 			);
-			path = View;
+			name = Manager;
+			path = HCDebugTool/Classes/Manager;
 			sourceTree = "<group>";
 		};
-		0029A79E21BA408800C856C9 /* EntranceView */ = {
+		0029A7CF21BA430200C856C9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0029A79F21BA408800C856C9 /* HCDebugToolEntranceView.h */,
-				0029A7A021BA408800C856C9 /* HCDebugToolEntranceView.m */,
+				0029A7D021BA430200C856C9 /* EntranceView */,
+				0029A7D321BA430200C856C9 /* HCDebugToolUIDefine.h */,
+				0029A7D421BA430200C856C9 /* MenuView */,
+				0029A7D721BA430200C856C9 /* OptionView */,
+			);
+			name = View;
+			path = HCDebugTool/Classes/View;
+			sourceTree = "<group>";
+		};
+		0029A7D021BA430200C856C9 /* EntranceView */ = {
+			isa = PBXGroup;
+			children = (
+				0029A7D121BA430200C856C9 /* HCDebugToolEntranceView.h */,
+				0029A7D221BA430200C856C9 /* HCDebugToolEntranceView.m */,
 			);
 			path = EntranceView;
 			sourceTree = "<group>";
 		};
-		0029A7A221BA408800C856C9 /* MenuView */ = {
+		0029A7D421BA430200C856C9 /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
-				0029A7A321BA408800C856C9 /* HCDebugToolMenuViewController.h */,
-				0029A7A421BA408800C856C9 /* HCDebugToolMenuViewController.m */,
+				0029A7D521BA430200C856C9 /* HCDebugToolMenuViewController.h */,
+				0029A7D621BA430200C856C9 /* HCDebugToolMenuViewController.m */,
 			);
 			path = MenuView;
 			sourceTree = "<group>";
 		};
-		0029A7A521BA408800C856C9 /* OptionView */ = {
+		0029A7D721BA430200C856C9 /* OptionView */ = {
 			isa = PBXGroup;
 			children = (
-				0029A7A621BA408800C856C9 /* HCDebugToolCommonOptionItemView.h */,
-				0029A7A721BA408800C856C9 /* HCDebugToolCommonOptionItemView.m */,
-				0029A7A821BA408800C856C9 /* HCDebugToolCommonOptionView.h */,
-				0029A7A921BA408800C856C9 /* HCDebugToolCommonOptionView.m */,
-				0029A7AA21BA408800C856C9 /* HCDebugToolCommonOptionViewModel.h */,
-				0029A7AB21BA408800C856C9 /* HCDebugToolCommonOptionViewModel.m */,
+				0029A7D821BA430200C856C9 /* HCDebugToolCommonOptionItemView.h */,
+				0029A7D921BA430200C856C9 /* HCDebugToolCommonOptionItemView.m */,
+				0029A7DA21BA430200C856C9 /* HCDebugToolCommonOptionView.h */,
+				0029A7DB21BA430200C856C9 /* HCDebugToolCommonOptionView.m */,
+				0029A7DC21BA430200C856C9 /* HCDebugToolCommonOptionViewModel.h */,
+				0029A7DD21BA430200C856C9 /* HCDebugToolCommonOptionViewModel.m */,
 			);
 			path = OptionView;
 			sourceTree = "<group>";
@@ -250,7 +215,9 @@
 		58706CBFB719ACEC440AC9C4AA736775 /* HCDebugTool */ = {
 			isa = PBXGroup;
 			children = (
-				0029A78D21BA408800C856C9 /* HCDebugTool */,
+				0029A7CC21BA430200C856C9 /* Manager */,
+				0029A7C521BA430200C856C9 /* Module */,
+				0029A7CF21BA430200C856C9 /* View */,
 				BA0BB27916D27334DA6F3675E0629955 /* Pod */,
 			);
 			name = HCDebugTool;

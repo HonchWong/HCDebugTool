@@ -1,6 +1,6 @@
 {
   "name": "HCDebugTool",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "summary": "My iOS DebugTool HCDebugTool",
   "description": "My iOS DebugTool HCDebugTool.",
   "homepage": "https://github.com/HonchWong/HCDebugTool",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/HonchWong/HCDebugTool.git",
-    "tag": "0.1.3"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Classes/**/*.{h,m}"
+  "source_files": "HCDebugTool/Classes/**/*.{h,m}"
 }

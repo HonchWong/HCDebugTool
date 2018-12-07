@@ -4,6 +4,7 @@ platform :ios, '8.0'
 
 target 'HCDebugTool_Example' do
   pod 'HCDebugTool', :path => '../'
+#  pod 'HCDebugTool'
 
   target 'HCDebugTool_Tests' do
     inherit! :search_paths
