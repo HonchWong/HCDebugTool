@@ -1,0 +1,16 @@
+PODS:
+  - HCDebugTool (0.1.0)
+
+DEPENDENCIES:
+  - HCDebugTool (from `../`)
+
+EXTERNAL SOURCES:
+  HCDebugTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HCDebugTool: 0a861e9fec925320d2dfbe11b40f9f7c2f17c0b1
+
+PODFILE CHECKSUM: 8ce32bc49acbfaf130907ae9de2a1a528f2d05a5
+
+COCOAPODS: 1.5.3

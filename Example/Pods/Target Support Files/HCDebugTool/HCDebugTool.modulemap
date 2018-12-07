@@ -1,0 +1,6 @@
+framework module HCDebugTool {
+  umbrella header "HCDebugTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

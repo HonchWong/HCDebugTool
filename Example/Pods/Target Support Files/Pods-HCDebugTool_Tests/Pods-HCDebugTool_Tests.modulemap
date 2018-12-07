@@ -1,0 +1,6 @@
+framework module Pods_HCDebugTool_Tests {
+  umbrella header "Pods-HCDebugTool_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

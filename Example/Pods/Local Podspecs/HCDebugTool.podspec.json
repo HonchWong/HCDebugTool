@@ -1,0 +1,22 @@
+{
+  "name": "HCDebugTool",
+  "version": "0.1.0",
+  "summary": "A short description of HCDebugTool.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/honchwong404@gmail.com/HCDebugTool",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "honchwong404@gmail.com": "honchwong404@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/honchwong404@gmail.com/HCDebugTool.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HCDebugTool/Classes/**/*"
+}
