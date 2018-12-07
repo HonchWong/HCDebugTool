@@ -30,8 +30,8 @@ My iOS DebugTool HCDebugTool.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'HCDebugTool/Classes/**/*'
-  
+  s.source_files = 'Classes/**/*.{h,m}'
+
   # s.resource_bundles = {
   #   'HCDebugTool' => ['HCDebugTool/Assets/*.png']
   # }

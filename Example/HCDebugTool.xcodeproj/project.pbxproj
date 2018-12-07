@@ -95,6 +95,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0029A75121BA311500C856C9 /* HCDebugToolModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HCDebugToolModule;
+			sourceTree = "<group>";
+		};
 		0F33CFBDB99FE8E968369B41 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +150,7 @@
 		6003F593195388D20070C39A /* Example for HCDebugTool */ = {
 			isa = PBXGroup;
 			children = (
+				0029A75121BA311500C856C9 /* HCDebugToolModule */,
 				6003F59C195388D20070C39A /* HCAppDelegate.h */,
 				6003F59D195388D20070C39A /* HCAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -207,7 +215,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				CB2F5475877C42C31D926960 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,24 +335,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB2F5475877C42C31D926960 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HCDebugTool/HCDebugTool.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCDebugTool.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
