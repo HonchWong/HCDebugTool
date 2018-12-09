@@ -10,7 +10,7 @@
 #import "HCDebugToolModuleProtocol.h"
 #import "HCDebugToolCommonOptionView.h"
 
-@interface HCDebugToolCommonModule : NSObject <HCDebugToolModuleProtocol, HCDebugToolCommonOptionViewProtocol>
+@interface HCDebugToolCommonModule : NSObject <HCDebugToolModuleProtocol, HCDebugToolCommonOptionViewDelegate>
 
 - (HCDebugToolCommonOptionViewModel *)optionViewModel;
 

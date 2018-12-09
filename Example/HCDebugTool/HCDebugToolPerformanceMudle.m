@@ -22,13 +22,7 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
     [[HCDebugToolManager sharedManager] registerModule:[[self alloc] init]];
 }
 
-#pragma mark - Super Class
-
-- (NSString *)moduleTitle {
-    return @"性能检测";
-}
-
-#pragma mark - HCDebugToolCommonOptionViewProtocol
+#pragma mark - HCDebugToolCommonOptionViewDelegate
 
 - (void)optionDidSelected:(HCDebugToolCommonOptionItemViewModel *)option
                   atIndex:(NSInteger)index {
@@ -43,6 +37,27 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
             NSLog(@"HCDebugToolPerformanceOptionViewTag_Memory");
             break;
     }
+}
+
+- (void)optionSwitchDidChage:(HCDebugToolCommonOptionItemViewModel *)option
+                      status:(BOOL)isOn {
+    switch (option.viewTag) {
+        case HCDebugToolPerformanceOptionViewTag_CPU:
+            NSLog(@"HCDebugToolPerformanceOptionViewTag_CPU switch");
+            break;
+        case HCDebugToolPerformanceOptionViewTag_FPS:
+            NSLog(@"HCDebugToolPerformanceOptionViewTag_FPS switch");
+            break;
+        case HCDebugToolPerformanceOptionViewTag_Memory:
+            NSLog(@"HCDebugToolPerformanceOptionViewTag_Memory switch");
+            break;
+    }
+}
+
+#pragma mark - HCDebugToolModuleProtocol
+
+- (NSString *)moduleTitle {
+    return @"性能检测";
 }
 
 - (HCDebugToolCommonOptionViewModel *)optionViewModel {
@@ -61,7 +76,6 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
         [tempArray addObject:optionItemViewModel];
     }
     HCDebugToolCommonOptionViewModel *optionViewModel = [[HCDebugToolCommonOptionViewModel alloc] init];
-    optionViewModel.title = @"性能检测";
     optionViewModel.items = tempArray;
     return optionViewModel;
 }

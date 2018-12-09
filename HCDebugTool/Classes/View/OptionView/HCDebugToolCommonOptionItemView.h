@@ -9,7 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "HCDebugToolCommonOptionViewModel.h"
 
+@protocol HCDebugToolCommonOptionItemViewDelegate <NSObject>
+
+@optional
+
+- (void)optionItem:(HCDebugToolCommonOptionItemViewModel *)viewModel
+       didChangeSwitch:(BOOL)isOn;
+
+@end
+
 @interface HCDebugToolCommonOptionItemView : UIView
+
+@property (nonatomic, weak) NSObject<HCDebugToolCommonOptionItemViewDelegate> *delegate;
 
 - (void)setViewModel:(HCDebugToolCommonOptionItemViewModel *)viewModel;
 

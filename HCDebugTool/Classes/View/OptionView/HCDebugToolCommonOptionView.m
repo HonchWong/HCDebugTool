@@ -14,7 +14,7 @@
 #define CellMargin          10
 #define ColViewLRMargin     16
 
-@interface HCDebugToolCommonOptionView () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface HCDebugToolCommonOptionView () <UICollectionViewDelegate, UICollectionViewDataSource, HCDebugToolCommonOptionItemViewDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, assign) CGSize optionViewSize;
@@ -125,6 +125,7 @@
         NSMutableArray *tempArray = [NSMutableArray arrayWithCapacity:self.viewModel.items.count];
         for (HCDebugToolCommonOptionItemViewModel *item in self.viewModel.items) {
             HCDebugToolCommonOptionItemView *view = [[HCDebugToolCommonOptionItemView alloc] initWithFrame:CGRectMake(0, 0, height, height)];
+            view.delegate = self;
             [view setViewModel:item];
             [tempArray addObject:view];
         }
@@ -138,7 +139,18 @@
     CGFloat cellWH =
     (screenSize.width - ColViewLRMargin * 2 - CellMargin * (CellCountEachline - 1))
     / CellCountEachline;
+    cellWH = cellWH > 60 ? cellWH : 60;
     return cellWH;
 }
+
+#pragma mark - HCDebugToolCommonOptionItemViewDelegate
+
+- (void)optionItem:(HCDebugToolCommonOptionItemViewModel *)viewModel
+   didChangeSwitch:(BOOL)isOn {
+    if ([self.delegate respondsToSelector:@selector(optionSwitchDidChage:status:)]) {
+        [self.delegate optionSwitchDidChage:viewModel status:isOn];
+    }
+}
+
 
 @end

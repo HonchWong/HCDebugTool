@@ -13,7 +13,6 @@
 @interface HCDebugToolCommonOptionViewModel : NSObject
 
 @property (nonatomic, strong) NSArray <HCDebugToolCommonOptionItemViewModel *> *items;
-@property (nonatomic, strong) NSString *title;
 
 @end
 
@@ -22,5 +21,8 @@
 @property (nonatomic, strong) NSString *icon;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, assign) NSInteger viewTag;
+
+@property (nonatomic, assign) BOOL hasSwich;
+@property (nonatomic, assign) BOOL isSwichOn;
 
 @end

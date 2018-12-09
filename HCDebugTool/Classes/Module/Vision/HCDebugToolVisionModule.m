@@ -24,13 +24,7 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
     [[HCDebugToolManager sharedManager] registerModule:[[self alloc] init]];
 }
 
-#pragma mark - Super Class
-
-- (NSString *)moduleTitle {
-    return @"视觉工具";
-}
-
-#pragma mark - HCDebugToolCommonOptionViewProtocol
+#pragma mark - HCDebugToolCommonOptionViewDelegate
 
 - (void)optionDidSelected:(HCDebugToolCommonOptionItemViewModel *)option
                   atIndex:(NSInteger)index {
@@ -42,6 +36,24 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
             NSLog(@"HCDebugToolVisionOptionViewTag_ColorCheck");
             break;
     }
+}
+
+- (void)optionSwitchDidChage:(HCDebugToolCommonOptionItemViewModel *)option
+                      status:(BOOL)isOn {
+    switch (option.viewTag) {
+        case HCDebugToolVisionOptionViewTag_PointCheck:
+            NSLog(@"HCDebugToolVisionOptionViewTag_PointCheck switch");
+            break;
+        case HCDebugToolVisionOptionViewTag_ColorCheck:
+            NSLog(@"HCDebugToolVisionOptionViewTag_ColorCheck switch");
+            break;
+    }
+}
+
+#pragma mark - HCDebugToolModuleProtocol
+
+- (NSString *)moduleTitle {
+    return @"视觉工具";
 }
 
 - (HCDebugToolCommonOptionViewModel *)optionViewModel {
@@ -57,16 +69,17 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
         optionItemViewModel.title = [optionItem objectForKey:@"title"];
         optionItemViewModel.icon = [optionItem objectForKey:@"icon"];
         optionItemViewModel.viewTag = [[optionItem objectForKey:@"viewTag"] integerValue];
+        optionItemViewModel.hasSwich = YES;
+        optionItemViewModel.isSwichOn = YES;
         [tempArray addObject:optionItemViewModel];
     }
     HCDebugToolCommonOptionViewModel *optionViewModel = [[HCDebugToolCommonOptionViewModel alloc] init];
-    optionViewModel.title = @"视觉工具";
     optionViewModel.items = tempArray;
     return optionViewModel;
 }
 
 - (NSArray <NSDictionary *>*)optionDicts {
-    return @[@{@"title": @"颜色检查",
+    return @[@{@"title": @"颜色检查颜色检查颜色检查",
                @"icon": @"",
                @"viewTag": @(HCDebugToolVisionOptionViewTag_ColorCheck)},
              @{@"title": @"对齐检查",
