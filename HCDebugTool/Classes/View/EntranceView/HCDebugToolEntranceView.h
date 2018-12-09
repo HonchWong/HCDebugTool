@@ -10,4 +10,8 @@
 
 @interface HCDebugToolEntranceView : UIView
 
+- (void)hideMenuView;
+
+//- (void)setupEntranceView;
+
 @end

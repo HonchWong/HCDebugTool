@@ -7,6 +7,7 @@
 //
 
 #import "HCViewController.h"
+#import <HCDebugTool/HCDebugTool.h>
 
 @interface HCViewController ()
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+//     [HCDebugToolEntranceView setupEntranceView];
+//    [[HCDebugToolManager sharedManager] startDebugTool];
 }
 
 - (void)didReceiveMemoryWarning

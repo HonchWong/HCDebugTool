@@ -7,10 +7,12 @@
 //
 
 #import "HCDebugToolManager.h"
+#import "HCDebugToolEntranceView.h"
 
 @interface HCDebugToolManager ()
 
 @property (nonatomic, strong) NSMutableArray <NSObject <HCDebugToolModuleProtocol>*> *modules;
+@property (nonatomic, strong) HCDebugToolEntranceView *entranceView;
 
 @end
 
@@ -25,9 +27,24 @@
     return manager;
 }
 
-- (NSArray <NSObject <HCDebugToolModuleProtocol> *> *)registeredModules {
-    return [self.modules copy];
+- (instancetype)init {
+    if (self = [super init]) {
+        [self performSelector:@selector(setupEntranceView) withObject:nil afterDelay:2];
+    }
+    return self;
 }
+
+- (void)setupEntranceView {
+    self.entranceView = [[HCDebugToolEntranceView alloc] init];
+}
+
+- (void)hideDebugTool {
+    [self.entranceView hideMenuView];
+}
+
+//- (NSArray <NSObject <HCDebugToolModuleProtocol> *> *)registeredModules {
+//    return [self.modules copy];
+//}
 
 - (void)registerModule:(NSObject <HCDebugToolModuleProtocol>*)module {
     [self registerModule:module

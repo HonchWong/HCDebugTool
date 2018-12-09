@@ -25,32 +25,24 @@
 
 @implementation HCDebugToolEntranceView
 
-+ (void)load {
-    [self performSelector:@selector(setupEntranceView) withObject:nil afterDelay:2];
+- (instancetype)initWithFrame:(CGRect)frame {
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = kIs_iPhoneX ? 44 : 20;
+    if (self = [super initWithFrame:CGRectMake(width - 70, 0, 70, height)]) {
+        [self setupObserver];
+        [self configProperty];
+        [self setupSubviews];
+        [[UIApplication sharedApplication].delegate.window addSubview:self];
+        [self startAnim:5.0];
+    }
+    return self;
 }
 
-+ (void)setupEntranceView {
-    HCDebugToolEntranceView *view = [[self alloc] init];
-    [view startAnim:5.0];
-    [[UIApplication sharedApplication].delegate.window addSubview:view];
-    [[UIApplication sharedApplication].delegate.window addObserver:view
+- (void)setupObserver {
+    [[UIApplication sharedApplication].delegate.window addObserver:self
                                                         forKeyPath:@"rootViewController"
                                                            options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew
                                                            context:nil];
-}
-
-- (instancetype)init {
-    CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    CGFloat height = kIs_iPhoneX ? 44 : 20;
-    return [self initWithFrame:CGRectMake(width - 70, 0, 70, height)];
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        [self configProperty];
-        [self setupSubviews];
-    }
-    return self;
 }
 
 - (void)configProperty {
@@ -80,7 +72,7 @@
     menuVC.navigationItem.rightBarButtonItem =
     [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                   target:self
-                                                  action:@selector(menuViewControllerDoneTapped)];
+                                                  action:@selector(hideMenuView)];
     menuVC.title = @"DebugTool Menu";
     self.menuVC = menuVC;
     UINavigationController *wrapperNavigationController =
@@ -93,7 +85,7 @@
                        completion:nil];
 }
 
-- (void)menuViewControllerDoneTapped {
+- (void)hideMenuView {
     [self.menuVC dismissViewControllerAnimated:YES completion:nil];
     self.menuVC = nil;
 }
