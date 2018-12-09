@@ -37,7 +37,6 @@
 #pragma mark - Private Function
 
 - (void)configProperty {
-    self.modules = [[HCDebugToolManager sharedManager] registeredModules];
     self.view.frame = [UIScreen mainScreen].bounds;
 }
 
@@ -95,6 +94,10 @@
     }
     
     return _tableView;
+}
+
+- (NSArray<NSObject<HCDebugToolModuleProtocol> *> *)modules {
+    return [[HCDebugToolManager sharedManager] afterSortModules];
 }
 
 @end

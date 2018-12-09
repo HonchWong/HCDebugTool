@@ -17,9 +17,12 @@
 
 - (void)registerModule:(NSObject <HCDebugToolModuleProtocol>*)module;
 
+/**
+ @param sortLevel defule is 0
+ */
 - (void)registerModule:(NSObject <HCDebugToolModuleProtocol>*)module
              sortLevel:(NSInteger)sortLevel;
 
-//- (NSArray <NSObject <HCDebugToolModuleProtocol> *> *)registeredModules;
+- (NSArray <NSObject <HCDebugToolModuleProtocol> *> *)afterSortModules;
 
 @end

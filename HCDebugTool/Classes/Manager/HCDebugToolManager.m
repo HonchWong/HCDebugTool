@@ -11,7 +11,8 @@
 
 @interface HCDebugToolManager ()
 
-@property (nonatomic, strong) NSMutableArray <NSObject <HCDebugToolModuleProtocol>*> *modules;
+@property (nonatomic, strong) NSMutableDictionary *modulesDict;
+@property (nonatomic, strong) NSMutableArray <NSObject <HCDebugToolModuleProtocol>*> *afterSortModules;
 @property (nonatomic, strong) HCDebugToolEntranceView *entranceView;
 
 @end
@@ -42,42 +43,50 @@
     [self.entranceView hideMenuView];
 }
 
-//- (NSArray <NSObject <HCDebugToolModuleProtocol> *> *)registeredModules {
-//    return [self.modules copy];
-//}
-
 - (void)registerModule:(NSObject <HCDebugToolModuleProtocol>*)module {
     [self registerModule:module
-              sortLevel:HCDebugToolModuleSortLevel_Height];
+              sortLevel:[self legalKey:0]];
 }
 
 - (void)registerModule:(NSObject <HCDebugToolModuleProtocol>*)module
-             sortLevel:(HCDebugToolModuleSortLevel)sortLevel {
-    NSInteger moduleCount = self.modules.count - 1;
-    NSInteger insertIndex = 0;
-    
-    switch (sortLevel) {
-        case HCDebugToolModuleSortLevel_Height:
-            insertIndex = 0;
-            break;
-        case HCDebugToolModuleSortLevel_Middle:
-            insertIndex = moduleCount * 0.5;
-            break;
-        case HCDebugToolModuleSortLevel_Low:
-            insertIndex = moduleCount;
-            break;
-            
-        default:
-            break;
-    }
-    [self.modules insertObject:module
-                       atIndex:insertIndex];
+             sortLevel:(NSInteger)sortLevel {
+
+    [self.modulesDict setObject:module forKey:@(sortLevel)];
+    _afterSortModules = nil;
 }
 
-- (NSMutableArray<NSObject<HCDebugToolModuleProtocol> *> *)modules {
-    if (!_modules) {
-        _modules = [NSMutableArray array];
+- (NSMutableArray<NSObject<HCDebugToolModuleProtocol> *> *)afterSortModules {
+    if (!self.modulesDict.count) {
+        return nil;
     }
-    return _modules;
+    
+    if (!_afterSortModules) {
+        NSArray *keys = self.modulesDict.allKeys;
+        NSArray *afterSortKeys = [keys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+            return [obj1 integerValue] > [obj2 integerValue] ? NSOrderedAscending : NSOrderedDescending;
+        }];
+        
+        _afterSortModules = [NSMutableArray array];
+        for (NSNumber *key in afterSortKeys) {
+            [_afterSortModules addObject:[self.modulesDict objectForKey:key]];
+        }
+    }
+    return _afterSortModules;
 }
+
+- (NSMutableDictionary *)modulesDict {
+    if (!_modulesDict) {
+        _modulesDict = [NSMutableDictionary dictionary];
+    }
+    return _modulesDict;
+}
+
+- (NSInteger )legalKey:(NSInteger)key {
+    if ([self.modulesDict.allKeys containsObject:@(key)]) {
+        return [self legalKey:key + 1];
+    } else {
+        return key;
+    }
+}
+
 @end
