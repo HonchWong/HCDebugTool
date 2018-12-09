@@ -60,6 +60,8 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
     return @"性能检测";
 }
 
+#pragma mark - SuperClass
+
 - (HCDebugToolCommonOptionViewModel *)optionViewModel {
     NSArray <NSDictionary *>* optionDicts = [self optionDicts];
     if (!optionDicts.count) {
