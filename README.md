@@ -7,6 +7,7 @@
 
 ## Example
 
+![demo](http://m.qpic.cn/psb?/V10JaO4w40EHz4/LsexZv6Mw.iXuq*JbQYLfwpO*z8s5be8fNsMCXLfoNU!/b/dFIBAAAAAAAA&bo=dwHZAgAAAAADB48!&rf=viewer_4)
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
