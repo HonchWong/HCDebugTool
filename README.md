@@ -44,6 +44,34 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 }
 ```
 
+4. 响应item的交互事件 
+
+```
+- (void)optionDidSelected:(HCDebugToolCommonOptionItemViewModel *)option
+                  atIndex:(NSInteger)index {
+    switch (option.viewTag) {
+        case HCDebugToolVisionOptionViewTag_PointCheck:
+            NSLog(@"HCDebugToolVisionOptionViewTag_PointCheck");
+            break;
+        case HCDebugToolVisionOptionViewTag_ColorCheck:
+            NSLog(@"HCDebugToolVisionOptionViewTag_ColorCheck");
+            break;
+    }
+}
+
+- (void)optionSwitchDidChage:(HCDebugToolCommonOptionItemViewModel *)option
+                      status:(BOOL)isOn {
+    switch (option.viewTag) {
+        case HCDebugToolVisionOptionViewTag_PointCheck:
+            NSLog(@"HCDebugToolVisionOptionViewTag_PointCheck switch");
+            break;
+        case HCDebugToolVisionOptionViewTag_ColorCheck:
+            NSLog(@"HCDebugToolVisionOptionViewTag_ColorCheck switch");
+            break;
+    }
+}
+```
+
 ## Requirements
 
 ## Installation
