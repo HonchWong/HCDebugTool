@@ -77,7 +77,37 @@
 }
 
 - (HCDebugToolCommonOptionViewModel *)optionViewModel {
+    NSArray <NSDictionary *>* optionDicts = [self optionDicts];
+    if (!optionDicts.count) {
+        return nil;
+    }
+    
+    NSMutableArray <HCDebugToolCommonOptionItemViewModel *>* tempArray = [NSMutableArray array];
+    for (NSDictionary *optionItem in optionDicts) {
+        HCDebugToolCommonOptionItemViewModel *
+        optionItemViewModel = [[HCDebugToolCommonOptionItemViewModel alloc] init];
+        optionItemViewModel.title = [optionItem objectForKey:HCDebugCommonModuleOptionKeys.title];
+        optionItemViewModel.viewTag = [[optionItem objectForKey:HCDebugCommonModuleOptionKeys.viewTag] integerValue];
+        optionItemViewModel.hasSwich = [[optionItem objectForKey:HCDebugCommonModuleOptionKeys.hasSwich] boolValue];
+        optionItemViewModel.isSwichOn = [[optionItem objectForKey:HCDebugCommonModuleOptionKeys.isSwichOn] boolValue];
+        [tempArray addObject:optionItemViewModel];
+    }
+    HCDebugToolCommonOptionViewModel *optionViewModel = [[HCDebugToolCommonOptionViewModel alloc] init];
+    optionViewModel.items = tempArray;
+    return optionViewModel;
+}
+
+- (NSArray <NSDictionary *>*)optionDicts {
     return nil;
 }
 
 @end
+
+
+const struct HCDebugCommonModuleOptionKeys
+HCDebugCommonModuleOptionKeys = {
+    .title = @"title",
+    .viewTag = @"viewTag",
+    .hasSwich = @"hasSwich",
+    .isSwichOn = @"isSwichOn",
+};

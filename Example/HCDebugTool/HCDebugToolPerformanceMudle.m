@@ -62,35 +62,12 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
 
 #pragma mark - SuperClass
 
-- (HCDebugToolCommonOptionViewModel *)optionViewModel {
-    NSArray <NSDictionary *>* optionDicts = [self optionDicts];
-    if (!optionDicts.count) {
-        return nil;
-    }
-    
-    NSMutableArray <HCDebugToolCommonOptionItemViewModel *>* tempArray = [NSMutableArray array];
-    for (NSDictionary *optionItem in optionDicts) {
-        HCDebugToolCommonOptionItemViewModel *
-        optionItemViewModel = [[HCDebugToolCommonOptionItemViewModel alloc] init];
-        optionItemViewModel.title = [optionItem objectForKey:@"title"];
-        optionItemViewModel.icon = [optionItem objectForKey:@"icon"];
-        optionItemViewModel.viewTag = [[optionItem objectForKey:@"viewTag"] integerValue];
-        [tempArray addObject:optionItemViewModel];
-    }
-    HCDebugToolCommonOptionViewModel *optionViewModel = [[HCDebugToolCommonOptionViewModel alloc] init];
-    optionViewModel.items = tempArray;
-    return optionViewModel;
-}
-
 - (NSArray <NSDictionary *>*)optionDicts {
-    return @[@{@"title": @"CPUCPUCPUCPUCPUCPUCPU",
-               @"icon": @"",
-               @"viewTag": @(HCDebugToolPerformanceOptionViewTag_CPU)},
-             @{@"title": @"FPS",
-               @"icon": @"",
-               @"viewTag": @(HCDebugToolPerformanceOptionViewTag_FPS)},
-             @{@"title": @"Memory",
-               @"icon": @"",
-               @"viewTag": @(HCDebugToolPerformanceOptionViewTag_Memory)}];
+    return @[@{HCDebugCommonModuleOptionKeys.title: @"CPU",
+               HCDebugCommonModuleOptionKeys.viewTag: @(HCDebugToolPerformanceOptionViewTag_CPU)},
+             @{HCDebugCommonModuleOptionKeys.title: @"FPS",
+               HCDebugCommonModuleOptionKeys.viewTag: @(HCDebugToolPerformanceOptionViewTag_FPS)},
+             @{HCDebugCommonModuleOptionKeys.title: @"Memory",
+               HCDebugCommonModuleOptionKeys.viewTag: @(HCDebugToolPerformanceOptionViewTag_Memory)}];
 }
 @end

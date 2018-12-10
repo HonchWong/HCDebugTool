@@ -58,35 +58,14 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
 
 #pragma mark - SuperClass
 
-- (HCDebugToolCommonOptionViewModel *)optionViewModel {
-    NSArray <NSDictionary *>* optionDicts = [self optionDicts];
-    if (!optionDicts.count) {
-        return nil;
-    }
-    
-    NSMutableArray <HCDebugToolCommonOptionItemViewModel *>* tempArray = [NSMutableArray array];
-    for (NSDictionary *optionItem in optionDicts) {
-        HCDebugToolCommonOptionItemViewModel *
-        optionItemViewModel = [[HCDebugToolCommonOptionItemViewModel alloc] init];
-        optionItemViewModel.title = [optionItem objectForKey:@"title"];
-        optionItemViewModel.icon = [optionItem objectForKey:@"icon"];
-        optionItemViewModel.viewTag = [[optionItem objectForKey:@"viewTag"] integerValue];
-        optionItemViewModel.hasSwich = YES;
-        optionItemViewModel.isSwichOn = YES;
-        [tempArray addObject:optionItemViewModel];
-    }
-    HCDebugToolCommonOptionViewModel *optionViewModel = [[HCDebugToolCommonOptionViewModel alloc] init];
-    optionViewModel.items = tempArray;
-    return optionViewModel;
-}
-
 - (NSArray <NSDictionary *>*)optionDicts {
-    return @[@{@"title": @"颜色检查颜色检查颜色检查",
-               @"icon": @"",
-               @"viewTag": @(HCDebugToolVisionOptionViewTag_ColorCheck)},
-             @{@"title": @"对齐检查",
-               @"icon": @"",
-               @"viewTag": @(HCDebugToolVisionOptionViewTag_PointCheck)}];
+    return @[@{HCDebugCommonModuleOptionKeys.title: @"颜色检查颜色检查颜色检查",
+               HCDebugCommonModuleOptionKeys.viewTag: @(HCDebugToolVisionOptionViewTag_ColorCheck)},
+             @{HCDebugCommonModuleOptionKeys.title: @"对齐检查",
+               HCDebugCommonModuleOptionKeys.viewTag: @(HCDebugToolVisionOptionViewTag_PointCheck),
+               HCDebugCommonModuleOptionKeys.hasSwich: @(YES),
+               HCDebugCommonModuleOptionKeys.isSwichOn: @(YES),
+               }];
 }
 
 @end

@@ -12,6 +12,13 @@
 
 @interface HCDebugToolCommonModule : NSObject <HCDebugToolModuleProtocol, HCDebugToolCommonOptionViewDelegate>
 
-- (HCDebugToolCommonOptionViewModel *)optionViewModel;
+- (NSArray <NSDictionary *>*)optionDicts;
 
 @end
+
+extern const struct HCDebugCommonModuleOptionKeys {
+    __unsafe_unretained NSString *title;
+    __unsafe_unretained NSString *viewTag;
+    __unsafe_unretained NSString *hasSwich;
+    __unsafe_unretained NSString *isSwichOn;
+} HCDebugCommonModuleOptionKeys;
