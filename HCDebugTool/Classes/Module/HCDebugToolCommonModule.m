@@ -30,6 +30,10 @@
     [NSString stringWithFormat:@"tableViewCellIdentifier_%x", arc4random()];
 }
 
+- (void)dismissMenu {
+    [[HCDebugToolManager sharedManager] hideDebugTool];
+}
+
 #pragma mark - HCDebugToolModuleProtocol
 
 - (NSInteger)numberOfRows {

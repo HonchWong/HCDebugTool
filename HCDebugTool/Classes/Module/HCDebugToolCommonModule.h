@@ -13,6 +13,7 @@
 @interface HCDebugToolCommonModule : NSObject <HCDebugToolModuleProtocol, HCDebugToolCommonOptionViewDelegate>
 
 - (NSArray <NSDictionary *>*)optionDicts;
+- (void)dismissMenu;
 
 @end
 
