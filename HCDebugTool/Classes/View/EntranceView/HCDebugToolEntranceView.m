@@ -72,7 +72,7 @@
     menuVC.navigationItem.rightBarButtonItem =
     [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                   target:self
-                                                  action:@selector(hideMenuView:)];
+                                                  action:@selector(hideMenuView)];
     menuVC.title = @"DebugTool Menu";
     self.menuVC = menuVC;
     UINavigationController *wrapperNavigationController =
@@ -85,7 +85,11 @@
                        completion:nil];
 }
 
-- (void)hideMenuView:(void (^)())completion {
+- (void)hideMenuView {
+    [self hideMenuView:nil];
+}
+
+- (void)hideMenuView:(void (^)(void))completion {
     [self.menuVC dismissViewControllerAnimated:YES completion:completion];
     self.menuVC = nil;
 }
