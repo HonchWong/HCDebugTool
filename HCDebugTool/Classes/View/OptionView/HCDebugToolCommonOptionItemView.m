@@ -83,7 +83,7 @@
 
 - (void)switchViewDidTap:(UISwitch *)sender {
     if ([self.delegate respondsToSelector:@selector(optionItem:didChangeSwitch:)]) {
-        [self.delegate optionItem:self.viewModel didChangeSwitch:sender.state];
+        [self.delegate optionItem:self.viewModel didChangeSwitch:!sender.isOn];
     }
 }
 
