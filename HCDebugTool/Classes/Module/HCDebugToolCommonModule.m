@@ -31,7 +31,11 @@
 }
 
 - (void)dismissMenu {
-    [[HCDebugToolManager sharedManager] hideDebugTool];
+    [self dismissMenu];
+}
+
+- (void)dismissMenu:(void (^)())completion {
+    [[HCDebugToolManager sharedManager] hideDebugTool:completion];
 }
 
 #pragma mark - HCDebugToolModuleProtocol

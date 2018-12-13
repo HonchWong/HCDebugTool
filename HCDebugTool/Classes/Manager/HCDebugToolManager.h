@@ -13,7 +13,7 @@
 
 + (instancetype)sharedManager;
 
-- (void)hideDebugTool;
+- (void)hideDebugTool:(void (^)(void))completion;
 
 - (void)registerModule:(NSObject <HCDebugToolModuleProtocol>*)module;
 
