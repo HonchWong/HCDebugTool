@@ -8,7 +8,7 @@
 
 #import "HCDebugToolVisionModule.h"
 #import <UIKit/UIKit.h>
-#import "HCDebugToolManager.h"
+#import "HCDebugToolManager+Module.h"
 #import "HCDebugToolCommonOptionView.h"
 
 typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {

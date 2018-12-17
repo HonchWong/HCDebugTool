@@ -9,6 +9,8 @@
 #import "HCDebugToolMenuViewController.h"
 #import "HCDebugToolManager.h"
 #import "HCDebugToolUIDefine.h"
+#import "HCDebugToolModuleProtocol.h"
+#import "HCDebugToolManager+Module.h"
 
 @interface HCDebugToolMenuViewController () <UITableViewDelegate, UITableViewDataSource>
 

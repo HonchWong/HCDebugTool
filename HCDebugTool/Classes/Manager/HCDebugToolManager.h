@@ -7,22 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HCDebugToolModuleProtocol.h"
 
 @interface HCDebugToolManager : NSObject
 
 + (instancetype)sharedManager;
-
-- (void)hideDebugTool:(void (^)(void))completion;
-
-- (void)registerModule:(NSObject <HCDebugToolModuleProtocol>*)module;
-
-/**
- @param sortLevel defule is 0
- */
-- (void)registerModule:(NSObject <HCDebugToolModuleProtocol>*)module
-             sortLevel:(NSInteger)sortLevel;
-
-- (NSArray <NSObject <HCDebugToolModuleProtocol> *> *)afterSortModules;
 
 @end

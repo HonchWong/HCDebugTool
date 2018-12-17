@@ -11,11 +11,14 @@
 #endif
 
 #import "HCDebugTool.h"
+#import "HCDebugToolManager+EntraceView.h"
+#import "HCDebugToolManager+Module.h"
 #import "HCDebugToolManager.h"
 #import "HCDebugToolCommonModule.h"
 #import "HCDebugToolModuleProtocol.h"
 #import "HCDebugToolVisionModule.h"
 #import "HCDebugToolEntranceView.h"
+#import "HCDebugToolEntranceViewController.h"
 #import "HCDebugToolUIDefine.h"
 #import "HCDebugToolMenuViewController.h"
 #import "HCDebugToolCommonOptionItemView.h"

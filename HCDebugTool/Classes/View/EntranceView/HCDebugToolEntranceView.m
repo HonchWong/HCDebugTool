@@ -8,7 +8,6 @@
 
 #import "HCDebugToolEntranceView.h"
 #import "HCDebugToolUIDefine.h"
-#import "HCDebugToolMenuViewController.h"
 
 @interface HCDebugToolEntranceView ()
 
@@ -19,7 +18,6 @@
 @property (nonatomic, assign) CGFloat touchActionCount;
 @property (nonatomic, assign) CGFloat touchInvaidCount;
 @property (nonatomic, assign) BOOL needAnima;
-@property (nonatomic, strong) HCDebugToolMenuViewController *menuVC;
 
 @end
 
@@ -29,20 +27,10 @@
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = kIs_iPhoneX ? 44 : 20;
     if (self = [super initWithFrame:CGRectMake(width - 70, 0, 70, height)]) {
-        [self setupObserver];
         [self configProperty];
         [self setupSubviews];
-        [[UIApplication sharedApplication].delegate.window addSubview:self];
-        [self startAnim:5.0];
     }
     return self;
-}
-
-- (void)setupObserver {
-    [[UIApplication sharedApplication].delegate.window addObserver:self
-                                                        forKeyPath:@"rootViewController"
-                                                           options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew
-                                                           context:nil];
 }
 
 - (void)configProperty {
@@ -61,37 +49,15 @@
     [self addSubview:self.tipLabel];
 }
 
-- (void)showDebugTool {
+- (void)doEntraceAction {
     self.touchCount = 0;
     
     NSTimeInterval duration = CFAbsoluteTimeGetCurrent() - self.firstTouchTime;
-    if (duration > 2.0f || self.menuVC != nil) { return; }
+    if (duration > 2.0f) { return; }
     
-    HCDebugToolMenuViewController *menuVC =
-    [[HCDebugToolMenuViewController alloc] init];
-    menuVC.navigationItem.rightBarButtonItem =
-    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                  target:self
-                                                  action:@selector(hideMenuView)];
-    menuVC.title = @"DebugTool Menu";
-    self.menuVC = menuVC;
-    UINavigationController *wrapperNavigationController =
-    [[UINavigationController alloc] initWithRootViewController:menuVC];
-
-    UIViewController *hostVC =
-    [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-    [hostVC presentViewController:wrapperNavigationController
-                         animated:YES
-                       completion:nil];
-}
-
-- (void)hideMenuView {
-    [self hideMenuView:nil];
-}
-
-- (void)hideMenuView:(void (^)(void))completion {
-    [self.menuVC dismissViewControllerAnimated:YES completion:completion];
-    self.menuVC = nil;
+    if ([self.delegate respondsToSelector:@selector(doEntraceAction)]) {
+        [self.delegate doEntraceAction];
+    }
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
@@ -123,7 +89,7 @@
             self.firstTouchTime = CFAbsoluteTimeGetCurrent();
         }
         if (self.touchCount == self.touchActionCount) {
-            [self showDebugTool];
+            [self doEntraceAction];
         }
     }
     
@@ -139,11 +105,6 @@
     opAnim.fillMode = kCAFillModeForwards;
     opAnim.removedOnCompletion = NO;
     [self.layer addAnimation:opAnim forKey:@"animateOpacity"];
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
-    [self removeFromSuperview];
-    [[UIApplication sharedApplication].delegate.window addSubview:self];
 }
 
 @end

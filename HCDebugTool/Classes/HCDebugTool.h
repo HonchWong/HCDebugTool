@@ -7,3 +7,4 @@
 
 #import <HCDebugTool/HCDebugToolCommonModule.h>
 #import <HCDebugTool/HCDebugToolManager.h>
+#import <HCDebugTool/HCDebugToolManager+Module.h>

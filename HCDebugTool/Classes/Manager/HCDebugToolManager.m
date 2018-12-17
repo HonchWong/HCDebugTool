@@ -8,12 +8,19 @@
 
 #import "HCDebugToolManager.h"
 #import "HCDebugToolEntranceView.h"
+#import "HCDebugToolEntranceViewController.h"
+#import "HCDebugToolModuleProtocol.h"
+
+#define AutoShowEntranceViewDisable     @"AutoShowEntranceViewDisable"
 
 @interface HCDebugToolManager ()
 
 @property (nonatomic, strong) NSMutableDictionary *modulesDict;
-@property (nonatomic, strong) NSMutableArray <NSObject <HCDebugToolModuleProtocol>*> *afterSortModules;
+@property (nonatomic, strong) NSMutableArray <NSObject <HCDebugToolModuleProtocol>*> *modules;
+
 @property (nonatomic, strong) HCDebugToolEntranceView *entranceView;
+
+@property (nonatomic, strong) HCDebugToolEntranceViewController *entranceVC;
 
 @end
 
@@ -30,63 +37,23 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        [self performSelector:@selector(setupEntranceView) withObject:nil afterDelay:2];
+        [self checkAutoShowEntranceView];
+        [self configProperty];
     }
     return self;
 }
 
-- (void)setupEntranceView {
-    self.entranceView = [[HCDebugToolEntranceView alloc] init];
+- (void)configProperty {
+    self.entranceVC = [[HCDebugToolEntranceViewController alloc] init];
 }
 
-- (void)hideDebugTool {
-    [self.entranceView hideMenuView];
-}
-
-- (void)registerModule:(NSObject <HCDebugToolModuleProtocol>*)module {
-    [self registerModule:module
-              sortLevel:[self legalKey:0]];
-}
-
-- (void)registerModule:(NSObject <HCDebugToolModuleProtocol>*)module
-             sortLevel:(NSInteger)sortLevel {
-
-    [self.modulesDict setObject:module forKey:@(sortLevel)];
-    _afterSortModules = nil;
-}
-
-- (NSMutableArray<NSObject<HCDebugToolModuleProtocol> *> *)afterSortModules {
-    if (!self.modulesDict.count) {
-        return nil;
-    }
-    
-    if (!_afterSortModules) {
-        NSArray *keys = self.modulesDict.allKeys;
-        NSArray *afterSortKeys = [keys sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
-            return [obj1 integerValue] > [obj2 integerValue] ? NSOrderedAscending : NSOrderedDescending;
-        }];
-        
-        _afterSortModules = [NSMutableArray array];
-        for (NSNumber *key in afterSortKeys) {
-            [_afterSortModules addObject:[self.modulesDict objectForKey:key]];
-        }
-    }
-    return _afterSortModules;
-}
-
-- (NSMutableDictionary *)modulesDict {
-    if (!_modulesDict) {
-        _modulesDict = [NSMutableDictionary dictionary];
-    }
-    return _modulesDict;
-}
-
-- (NSInteger )legalKey:(NSInteger)key {
-    if ([self.modulesDict.allKeys containsObject:@(key)]) {
-        return [self legalKey:key + 1];
-    } else {
-        return key;
+- (void)checkAutoShowEntranceView {
+    BOOL isAutoShowEntranceViewDisable =
+    [[NSUserDefaults standardUserDefaults] objectForKey:AutoShowEntranceViewDisable];
+    if (!isAutoShowEntranceViewDisable) {
+        [self performSelector:@selector(showEntranceView) withObject:nil afterDelay:3];
     }
 }
+
 
 @end

@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol HCDebugToolEntranceViewActionDelegate <NSObject>
+
+- (void)doEntraceAction;
+
+@end
+
 @interface HCDebugToolEntranceView : UIView
 
-- (void)hideMenuView:(void (^)())completion;
+@property (nonatomic, weak) id<HCDebugToolEntranceViewActionDelegate> delegate;
 
-//- (void)setupEntranceView;
+
+- (void)startAnim:(CGFloat)duration;
 
 @end

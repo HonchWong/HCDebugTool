@@ -18,9 +18,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-//     [HCDebugToolEntranceView setupEntranceView];
-//    [[HCDebugToolManager sharedManager] startDebugTool];
 }
 
 - (void)didReceiveMemoryWarning
