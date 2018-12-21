@@ -1,16 +1,23 @@
 PODS:
+  - FlexBoxLayout (1.0.0)
   - HCDebugTool (0.1.7)
 
 DEPENDENCIES:
+  - FlexBoxLayout
   - HCDebugTool (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FlexBoxLayout
 
 EXTERNAL SOURCES:
   HCDebugTool:
     :path: "../"
 
 SPEC CHECKSUMS:
+  FlexBoxLayout: 83d4acd144ebd360b31e9bead8667151e22fad83
   HCDebugTool: 6d10bdca251fffc8792a7d4191603d94cdb94d33
 
-PODFILE CHECKSUM: b27167a98e0ddba659a57731f2cfb461c0d00473
+PODFILE CHECKSUM: f05518aec21273f0a4112f266957845976d46e9a
 
 COCOAPODS: 1.5.3

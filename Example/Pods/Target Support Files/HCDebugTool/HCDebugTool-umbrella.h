@@ -13,6 +13,7 @@
 #import "HCDebugTool.h"
 #import "HCDebugToolManager+EntraceView.h"
 #import "HCDebugToolManager+Module.h"
+#import "HCDebugToolManager+PageRoute.h"
 #import "HCDebugToolManager.h"
 #import "HCDebugToolCommonModule.h"
 #import "HCDebugToolModuleProtocol.h"

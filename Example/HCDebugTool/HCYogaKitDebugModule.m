@@ -8,11 +8,14 @@
 
 #import "HCYogaKitDebugModule.h"
 #import "HCDebugModuleSortLevel.h"
+//#import <HCDebugTool/HCDebugTool.h>
+#import "HCFlexBoxLayoutDemoViewController.h"
 
 typedef NS_OPTIONS(NSInteger, HCYogaKitOptionViewTag) {
     HCYogaKitOptionViewTag_Frame,
-    HCYogaKitOptionViewTag_AutoLayout,
+    HCYogaKitOptionViewTag_Masonry,
     HCYogaKitOptionViewTag_YogaKit,
+    HCYogaKitOptionViewTag_FlexBoxLayout,
 };
 
 @implementation HCYogaKitDebugModule
@@ -31,11 +34,19 @@ typedef NS_OPTIONS(NSInteger, HCYogaKitOptionViewTag) {
         case HCYogaKitOptionViewTag_Frame:
             NSLog(@"HCYogaKitOptionViewTag_Frame");
             break;
-        case HCYogaKitOptionViewTag_AutoLayout:
+        case HCYogaKitOptionViewTag_Masonry:
             NSLog(@"HCYogaKitOptionViewTag_AutoLayout");
             break;
         case HCYogaKitOptionViewTag_YogaKit:
             NSLog(@"HCYogaKitOptionViewTag_YogaKit");
+            break;
+        case HCYogaKitOptionViewTag_FlexBoxLayout:
+        {
+            HCFlexBoxLayoutDemoViewController *demogVC =
+            [[HCFlexBoxLayoutDemoViewController alloc] init];
+            [[HCDebugToolManager sharedManager] pushViewController:demogVC];
+        }
+            NSLog(@"HCYogaKitOptionViewTag_FLexBoxLayout");
             break;
     }
 }
@@ -52,9 +63,11 @@ typedef NS_OPTIONS(NSInteger, HCYogaKitOptionViewTag) {
     return @[@{HCDebugCommonModuleOptionKeys.title: @"Frame",
                HCDebugCommonModuleOptionKeys.viewTag: @(HCYogaKitOptionViewTag_Frame)},
              @{HCDebugCommonModuleOptionKeys.title: @"AutoLayout",
-               HCDebugCommonModuleOptionKeys.viewTag: @(HCYogaKitOptionViewTag_AutoLayout)},
+               HCDebugCommonModuleOptionKeys.viewTag: @(HCYogaKitOptionViewTag_Masonry)},
              @{HCDebugCommonModuleOptionKeys.title: @"YogaKit",
-               HCDebugCommonModuleOptionKeys.viewTag: @(HCYogaKitOptionViewTag_YogaKit)}];
+               HCDebugCommonModuleOptionKeys.viewTag: @(HCYogaKitOptionViewTag_YogaKit)},
+             @{HCDebugCommonModuleOptionKeys.title: @"FlexBoxLayout",
+               HCDebugCommonModuleOptionKeys.viewTag: @(HCYogaKitOptionViewTag_FlexBoxLayout)}];
 }
 
 @end

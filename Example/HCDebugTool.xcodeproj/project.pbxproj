@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0029A7E121BA442300C856C9 /* HCDebugToolPerformanceMudle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0029A7E021BA442300C856C9 /* HCDebugToolPerformanceMudle.m */; };
 		006F4D7221BD25E1003B0B3F /* HCNetDebugModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 006F4D7121BD25E1003B0B3F /* HCNetDebugModule.m */; };
+		00804B7521CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00804B7421CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.m */; };
+		00804B7921CCFD4D00D05821 /* HCALTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00804B7821CCFD4D00D05821 /* HCALTableViewCell.m */; };
+		00804B7C21CCFD8800D05821 /* HCLeftPicRightTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00804B7B21CCFD8800D05821 /* HCLeftPicRightTextView.m */; };
 		00C31A1F21CB908B006CCA3D /* HCYogaKitDebugModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C31A1E21CB908B006CCA3D /* HCYogaKitDebugModule.m */; };
 		0CC291DA78BEACFF91342B54 /* Pods_HCDebugTool_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5226FF179E4DD7F57C794A3 /* Pods_HCDebugTool_Example.framework */; };
 		3AE79C8157C20CF43834872E /* Pods_HCDebugTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD426F9C4DAEBB86B7B63AE5 /* Pods_HCDebugTool_Tests.framework */; };
@@ -44,6 +47,12 @@
 		0029A7E021BA442300C856C9 /* HCDebugToolPerformanceMudle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolPerformanceMudle.m; sourceTree = "<group>"; };
 		006F4D7021BD25E1003B0B3F /* HCNetDebugModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCNetDebugModule.h; sourceTree = "<group>"; };
 		006F4D7121BD25E1003B0B3F /* HCNetDebugModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCNetDebugModule.m; sourceTree = "<group>"; };
+		00804B7321CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCFlexBoxLayoutDemoViewController.h; sourceTree = "<group>"; };
+		00804B7421CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCFlexBoxLayoutDemoViewController.m; sourceTree = "<group>"; };
+		00804B7721CCFD4D00D05821 /* HCALTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCALTableViewCell.h; sourceTree = "<group>"; };
+		00804B7821CCFD4D00D05821 /* HCALTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCALTableViewCell.m; sourceTree = "<group>"; };
+		00804B7A21CCFD8800D05821 /* HCLeftPicRightTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCLeftPicRightTextView.h; sourceTree = "<group>"; };
+		00804B7B21CCFD8800D05821 /* HCLeftPicRightTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCLeftPicRightTextView.m; sourceTree = "<group>"; };
 		00C31A1D21CB908B006CCA3D /* HCYogaKitDebugModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCYogaKitDebugModule.h; sourceTree = "<group>"; };
 		00C31A1E21CB908B006CCA3D /* HCYogaKitDebugModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCYogaKitDebugModule.m; sourceTree = "<group>"; };
 		00C31A2021CBB517006CCA3D /* HCDebugModuleSortLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugModuleSortLevel.h; sourceTree = "<group>"; };
@@ -108,10 +117,10 @@
 		0029A75121BA311500C856C9 /* HCDebugToolModule */ = {
 			isa = PBXGroup;
 			children = (
-				00C31A1C21CB9061006CCA3D /* YoagKit */,
+				00C31A2021CBB517006CCA3D /* HCDebugModuleSortLevel.h */,
+				00C31A1C21CB9061006CCA3D /* AutoLayout */,
 				006F4D6F21BD25C6003B0B3F /* NetDebug */,
 				0029A7DE21BA43EB00C856C9 /* Performance */,
-				00C31A2021CBB517006CCA3D /* HCDebugModuleSortLevel.h */,
 			);
 			name = HCDebugToolModule;
 			sourceTree = "<group>";
@@ -134,13 +143,43 @@
 			name = NetDebug;
 			sourceTree = "<group>";
 		};
-		00C31A1C21CB9061006CCA3D /* YoagKit */ = {
+		00804B7121CCDFA900D05821 /* FlexBoxLayout */ = {
+			isa = PBXGroup;
+			children = (
+				00804B7321CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.h */,
+				00804B7421CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.m */,
+			);
+			name = FlexBoxLayout;
+			sourceTree = "<group>";
+		};
+		00804B7221CCDFBB00D05821 /* YogaKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = YogaKit;
+			sourceTree = "<group>";
+		};
+		00804B7621CCFD0300D05821 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00804B7721CCFD4D00D05821 /* HCALTableViewCell.h */,
+				00804B7821CCFD4D00D05821 /* HCALTableViewCell.m */,
+				00804B7A21CCFD8800D05821 /* HCLeftPicRightTextView.h */,
+				00804B7B21CCFD8800D05821 /* HCLeftPicRightTextView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		00C31A1C21CB9061006CCA3D /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
 				00C31A1D21CB908B006CCA3D /* HCYogaKitDebugModule.h */,
 				00C31A1E21CB908B006CCA3D /* HCYogaKitDebugModule.m */,
+				00804B7621CCFD0300D05821 /* View */,
+				00804B7221CCDFBB00D05821 /* YogaKit */,
+				00804B7121CCDFA900D05821 /* FlexBoxLayout */,
 			);
-			name = YoagKit;
+			name = AutoLayout;
 			sourceTree = "<group>";
 		};
 		0F33CFBDB99FE8E968369B41 /* Pods */ = {
@@ -386,10 +425,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FlexBoxLayout/FlexBoxLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/HCDebugTool/HCDebugTool.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexBoxLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCDebugTool.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,9 +446,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				006F4D7221BD25E1003B0B3F /* HCNetDebugModule.m in Sources */,
+				00804B7921CCFD4D00D05821 /* HCALTableViewCell.m in Sources */,
 				00C31A1F21CB908B006CCA3D /* HCYogaKitDebugModule.m in Sources */,
+				00804B7C21CCFD8800D05821 /* HCLeftPicRightTextView.m in Sources */,
 				6003F59E195388D20070C39A /* HCAppDelegate.m in Sources */,
 				0029A7E121BA442300C856C9 /* HCDebugToolPerformanceMudle.m in Sources */,
+				00804B7521CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* HCViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

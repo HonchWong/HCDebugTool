@@ -1,8 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/HCDebugTool"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FlexBoxLayout" "${PODS_CONFIGURATION_BUILD_DIR}/HCDebugTool"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/HCDebugTool/HCDebugTool.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "HCDebugTool"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/FlexBoxLayout/FlexBoxLayout.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/HCDebugTool/HCDebugTool.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "FlexBoxLayout" -framework "HCDebugTool"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -4,6 +4,8 @@ platform :ios, '8.0'
 
 target 'HCDebugTool_Example' do
   pod 'HCDebugTool', :path => '../'
+  pod 'FlexBoxLayout' # https://github.com/carlSQ/FlexBoxLayout
+#  pod 'YogaKit'
 #  pod 'HCDebugTool'
 
   target 'HCDebugTool_Tests' do
