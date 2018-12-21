@@ -10,6 +10,7 @@
 #import "HCDebugToolEntranceView.h"
 #import "HCDebugToolEntranceViewController.h"
 #import "HCDebugToolModuleProtocol.h"
+#import "HCDebugToolManager+EntraceView.h"
 
 #define AutoShowEntranceViewDisable     @"AutoShowEntranceViewDisable"
 
@@ -21,6 +22,8 @@
 @property (nonatomic, strong) HCDebugToolEntranceView *entranceView;
 
 @property (nonatomic, strong) HCDebugToolEntranceViewController *entranceVC;
+
+@property (nonatomic, strong) UINavigationController *naviVC;
 
 @end
 
@@ -37,8 +40,8 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        [self checkAutoShowEntranceView];
         [self configProperty];
+        [self checkAutoShowEntranceView];
     }
     return self;
 }
@@ -47,13 +50,9 @@
     self.entranceVC = [[HCDebugToolEntranceViewController alloc] init];
 }
 
-- (void)checkAutoShowEntranceView {
-    BOOL isAutoShowEntranceViewDisable =
-    [[NSUserDefaults standardUserDefaults] objectForKey:AutoShowEntranceViewDisable];
-    if (!isAutoShowEntranceViewDisable) {
-        [self performSelector:@selector(showEntranceView) withObject:nil afterDelay:3];
-    }
-}
-
-
 @end
+
+const struct HCDebugToolManagerKeys
+HCDebugToolManagerKeys = {
+    .autoShowEntranceViewDisable = @"autoShowEntranceViewDisable",
+};

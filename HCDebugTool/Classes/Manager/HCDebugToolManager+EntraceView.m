@@ -32,4 +32,17 @@
     [self.entranceVC hideMenuView:completion];
 }
 
+- (void)checkAutoShowEntranceView {
+    BOOL isAutoShowEntranceViewDisable =
+    [[NSUserDefaults standardUserDefaults] objectForKey:HCDebugToolManagerKeys.autoShowEntranceViewDisable];
+    if (!isAutoShowEntranceViewDisable) {
+        [self performSelector:@selector(showEntranceView) withObject:nil afterDelay:3];
+    }
+}
+
+- (void)setAutoShowEntranceViewDisable:(BOOL)isDisable {
+    [[NSUserDefaults standardUserDefaults] setBool:isDisable
+                                            forKey:HCDebugToolManagerKeys.autoShowEntranceViewDisable];
+}
+
 @end

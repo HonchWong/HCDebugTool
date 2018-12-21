@@ -13,3 +13,7 @@
 + (instancetype)sharedManager;
 
 @end
+
+extern const struct HCDebugToolManagerKeys {
+    __unsafe_unretained NSString *autoShowEntranceViewDisable;
+} HCDebugToolManagerKeys;

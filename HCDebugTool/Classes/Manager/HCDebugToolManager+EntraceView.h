@@ -17,4 +17,7 @@
 - (void)hideMenuView;
 - (void)hideMenuView:(void (^)(void))completion;
 
+- (void)checkAutoShowEntranceView;
+- (void)setAutoShowEntranceViewDisable:(BOOL)isDisable;
+
 @end
