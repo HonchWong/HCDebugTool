@@ -19,7 +19,7 @@
 @property (nonatomic, strong) NSMutableDictionary *modulesDict;
 @property (nonatomic, strong) NSMutableArray <NSObject <HCDebugToolModuleProtocol>*> *modules;
 
-@property (nonatomic, strong) HCDebugToolEntranceView *entranceView;
+//@property (nonatomic, strong) HCDebugToolEntranceView *entranceView;
 
 @property (nonatomic, strong) HCDebugToolEntranceViewController *entranceVC;
 

@@ -37,6 +37,9 @@
 - (void)showEntranceView {
     self.entranceView.hidden = NO;
     [self.entranceView startAnim:5];
+    if (!self.entranceView.superview) {
+        [[UIApplication sharedApplication].delegate.window addSubview:self.entranceView];
+    }
 }
 
 - (void)showMenuView {
@@ -50,6 +53,7 @@
 - (void)hideMenuView:(void (^)(void))completion {
     [self.menuVC dismissViewControllerAnimated:YES
                                     completion:completion];
+    self.menuVC = nil;
 }
 
 #pragma mark - HCDebugToolEntranceViewActionDelegate
@@ -85,7 +89,7 @@
 - (void)setupUI {
     self.entranceView = [[HCDebugToolEntranceView alloc] init];
     self.entranceView.hidden = YES;
-    [[UIApplication sharedApplication].delegate.window addSubview:self.entranceView];
+    self.entranceView.delegate = self;
 }
 
 #pragma mark - Observer
