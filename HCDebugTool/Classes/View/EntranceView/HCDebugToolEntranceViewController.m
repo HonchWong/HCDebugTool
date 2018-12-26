@@ -59,8 +59,6 @@
 }
 
 - (void)hideMenuView:(void (^)(void))completion {
-//    [self.menuVC dismissViewControllerAnimated:YES
-//                                    completion:completion];
     [self.naviVC dismissViewControllerAnimated:YES
                                     completion:completion];
     self.menuVC = nil;

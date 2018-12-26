@@ -7,93 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02F24332B70AEA108F66996193BA63B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		0B7CD89D3159303D1073C377DE7D2359 /* FBViewLayoutCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C854E2B522CEFEC8A957A7C49A1E48C4 /* FBViewLayoutCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E3973693548857BEC75D981808793F5 /* HCDebugToolCommonModule.h in Headers */ = {isa = PBXBuildFile; fileRef = A2A5FA2F61957C649D4F112A7A2356C8 /* HCDebugToolCommonModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		123AFDA313940B7291EF53564832CCB3 /* HCDebugTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D215C5038CB32C50D93D2C9822704F /* HCDebugTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C24695DE2EF7C93221B1DAAC3FAB238 /* YGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = ADE0140627EA457672D5C7206D1501F7 /* YGMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C4DA9B393E1BC43CBF88CC454E624F7 /* HCDebugToolCommonOptionItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2898F92753CDF4807B98326184095F82 /* HCDebugToolCommonOptionItemView.m */; };
-		1F3824BABE5F17696A858FBACEB01FC8 /* Pods-HCDebugTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D9F6A13F855C409C8343F30EAD9D36 /* Pods-HCDebugTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		211426C8611A417E4CF0A84E9B1F071D /* UIScrollView+FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ED0CB3D7EA2C8B7809EF6E1246F827 /* UIScrollView+FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2235CAF22CC5D0F455AEC6840289C4B8 /* FBLayoutProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB27B2F09916F2B159A5E569B205FD0 /* FBLayoutProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29DEFC42E0F00319C524D668C2A2C61D /* Pods-HCDebugTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E55AA8AD68331FE40AD8CB7541CE3B /* Pods-HCDebugTool_Tests-dummy.m */; };
-		2C3CF8843CE49394FC5CD6FDFCDB443E /* HCDebugToolVisionModule.h in Headers */ = {isa = PBXBuildFile; fileRef = B72A415EB5A1095B960A184862A85F51 /* HCDebugToolVisionModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		314F268913C3D745AF230F7605CAC9D0 /* HCDebugToolModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4112B700416778AA854A89A9CBB8524B /* HCDebugToolModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33DACC9EE9B7F5C853EDE7B78B37FE33 /* UIView+CellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7076AC47D494F3DCCA9A0AAF40D969 /* UIView+CellStyle.m */; };
-		34847DDD78E042A7546E52D5964490A0 /* FBLayoutDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADDC2E512D39A1B2E8614024332F493 /* FBLayoutDiv.m */; };
-		359210A8C30172D291B970B27409E258 /* HCDebugToolEntranceView.h in Headers */ = {isa = PBXBuildFile; fileRef = 40762FB8B16FD15D8510AA91D8186C96 /* HCDebugToolEntranceView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38322EBF708E45B6E6DF40678CBE61BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		3B1965BA4F145CA8D3221C44B9A7BD7F /* UIView+FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB87976DE8BBFDF7F1990A3868620D0B /* UIView+FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43E58C0704DAD558D479BCE71B8FD411 /* HCDebugToolManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 39DB45F4C7EBC7FC852FF4B3C58A97F5 /* HCDebugToolManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		476A870C4AB8866D7A753D2022D106F0 /* FBAsyLayoutTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6B6D599CF917320EBD7BFDEF1FECA4 /* FBAsyLayoutTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B6637382A39BF183396A54AD9ABE4EC /* HCDebugToolCommonModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF01F0FD35C8859C4FA4354EB6C0759 /* HCDebugToolCommonModule.m */; };
-		4C6659899EE09A478C69064D4840D58D /* HCDebugToolEntranceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 572EDCA43E993C9161A69E4240434E33 /* HCDebugToolEntranceViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CC3B0F5D9F9F8E4A99E1751F7027441 /* HCDebugToolCommonOptionItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 849936E89F56D8D21F010C10F2B47F25 /* HCDebugToolCommonOptionItemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5236997584F73D919FAED6967645E296 /* FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C22902DE1F1C8C3FACEB1DFDD3D3669 /* FBLayout.m */; };
-		56207BA93B913AF6549454677181BCC2 /* Pods-HCDebugTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0F80DD062D5AD63681C2956A10BCC0 /* Pods-HCDebugTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57C717958C52FFB531451B359B1B2A2C /* FBLayoutDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = B9268AF41C3B970A1C5FA80018E986FE /* FBLayoutDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		586BAD6DD7A1806FB0FFD96AEBB2FA71 /* UITableView+FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8FD08F6285B07A0C23425424E5838A /* UITableView+FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B10226E1A8DE4A8052E06DE8EDF4D52 /* HCDebugToolMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A63A4CE560A4017BA20F8ACE808C22 /* HCDebugToolMenuViewController.m */; };
-		5C4ECF86F018085B049081095B30EF5A /* HCDebugToolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C830659ECBA75C1533837EAAD5249AC7 /* HCDebugToolManager.m */; };
-		6FC5303CF4CCFC46334160933528682E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		7BC061A13A9EC45AB7F9AAE48A88BA62 /* UIView+FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D42E313974CE55A6E5C8B7E95D64C /* UIView+FBLayout.m */; };
-		7E027100D375680E08BA1436E44560A0 /* FlexBoxLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 05364EB7697AD1257301CDD760F0987A /* FlexBoxLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B64CEC27EFBCE6BE6A52B16F380078C /* HCDebugToolCommonOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B15581F4BC1C90B4BB14F6D91CB02A8 /* HCDebugToolCommonOptionView.m */; };
-		913CA70BAD821006A9CCAA948ABD391B /* HCDebugToolManager+Module.h in Headers */ = {isa = PBXBuildFile; fileRef = E049F19F8E9521315A40FDF16BE2BCCA /* HCDebugToolManager+Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92AB79C6371A6EFD58ABEFC9731873EF /* HCDebugToolEntranceView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE33E3AEA7DE6BDF87D1870FF186788 /* HCDebugToolEntranceView.m */; };
-		96AF68329E4BA795D09138A34EFF43CE /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3E876D554EB049A7C27B7F536A457C /* YGEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A00CD5D855ED0B768A5F7B0A3DC7D26D /* HCDebugToolMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A34CC78653FF311CBE30AC9A435D5950 /* HCDebugToolMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1A2E4B425A07379F394F74B22BD2DA0 /* UIView+CellStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 79910C65B60FFFEB3D5D110FFCEFFB72 /* UIView+CellStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6EE4F3468B3FA4C1FAB1CFF729C4490 /* HCDebugToolEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE69791A566A3FB14F757FE8F26E734E /* HCDebugToolEntranceViewController.m */; };
-		A9EC3468967900CB7EEAA28AA76CC918 /* HCDebugToolUIDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 26727659E8D1B81F175ECA19AD0AD7A7 /* HCDebugToolUIDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB1FC8B57117CB90D70DF58D4837FB06 /* YGNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = 17B9D4459D69947B61C90C0F5EA357B5 /* YGNodeList.c */; };
-		AF0FCC24AC8EA3A00332116C9423EE35 /* HCDebugToolManager+PageRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A82B2AF14C185CD82A0FE5234D9F2C5 /* HCDebugToolManager+PageRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B97597D10D66262854A1FBE864475961 /* FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B3A758EFDB57518D78DA6DF7F376591E /* FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC0C72201105F177CBAACCD255AAF0E1 /* FlexBoxLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 898B878DA19A2D897409AC63C158DC46 /* FlexBoxLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC5D3AF9E6D412043181F2C9EAB4E4F3 /* Pods-HCDebugTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B37830D422FEDFBE72423888BE16138B /* Pods-HCDebugTool_Example-dummy.m */; };
-		BCE75C3A51FBA05A8160385648E1E205 /* UITableView+FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1E34F36D050672A81778A49C12E0B0 /* UITableView+FBLayout.m */; };
-		C22850A567247DF38D165E2EA3116D0A /* UIScrollView+FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F388862F8830A132E1D89127053C3B34 /* UIScrollView+FBLayout.m */; };
-		C8476EFDEDCBE0ACF0651DDB787070CC /* FBLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 17B54DBF857DDD6328B19EA109D19C92 /* FBLayout+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC96C48FB616D19863FB49A45A5C6D82 /* Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = 16017922931A10750946CB70F3B7248D /* Yoga.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD51163DA21565790CBA91D5E9A310BC /* FlexBoxLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B191689FF8279950A96AE2FD9181221 /* FlexBoxLayout-dummy.m */; };
-		D38346ADBA8B6FD222BB2C036CCA700A /* HCDebugToolManager+Module.m in Sources */ = {isa = PBXBuildFile; fileRef = A05BB69BBC4D7BF4843C8FA3C42FA6E6 /* HCDebugToolManager+Module.m */; };
-		D3A8A1C94407D45F8707FC149A2E7545 /* HCDebugToolManager+EntraceView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0EA015B85C61A8474B704267FDDEBA /* HCDebugToolManager+EntraceView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5442E6BFA3BE5CB066B797EF4F3DD36 /* HCDebugToolCommonOptionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F04BC5577980230BCE36C270E6A835 /* HCDebugToolCommonOptionViewModel.m */; };
-		D55C9CAC902B65D9D2E8E1B3B1CF2D58 /* HCDebugToolVisionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3981D6A2512F2575E42D09870246CBF8 /* HCDebugToolVisionModule.m */; };
-		D67FF9E031402F3E8A8C4CD75F1DA5AC /* HCDebugToolManager+PageRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B873E05C497BD64EEE80B5982995D7EC /* HCDebugToolManager+PageRoute.m */; };
-		D8DD3420669C6B6CAD9A3A545EB10DC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		DB5102B9FF1D1A4B35B801F28A6DF4BE /* HCDebugToolCommonOptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = C23CF6A6D33E9FD736E46EC18B3B850A /* HCDebugToolCommonOptionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCB15FDC5B70ECADCEEDD162E89F4DB0 /* HCDebugTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F93C128A9328B00820FD65C3089C71C9 /* HCDebugTool-dummy.m */; };
-		E55FCE561A1CE41D83A39D864ED9B5F9 /* FBAsyLayoutTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 915D90AC4F35AAE5DC86831C51889E62 /* FBAsyLayoutTransaction.m */; };
-		E6AF1AED8A900CA6BECB74ECFA582569 /* Yoga.c in Sources */ = {isa = PBXBuildFile; fileRef = C9438E60E94B46F9A02FE972247CA2ED /* Yoga.c */; };
-		E95233D463DCDCD0716AF5A3471EC7A0 /* HCDebugToolCommonOptionViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F04B397844632395AB983D0FF86FEE /* HCDebugToolCommonOptionViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA38F6A196BFFF6EF5248D8039D66FF6 /* HCDebugToolManager+EntraceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A092257C5122C10668185A441C512E5 /* HCDebugToolManager+EntraceView.m */; };
-		F1C4419703623C4987E69FD2A2E1F868 /* YGNodeList.h in Headers */ = {isa = PBXBuildFile; fileRef = AEED26004925385C6AE95C6987BF61E3 /* YGNodeList.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F274247DC6799C13771F3009771FED5C /* FBViewLayoutCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C52EC94EE5AEC38A5B2900E9185ACB /* FBViewLayoutCache.m */; };
-		F9798BBE6A009F7476490D30FBF899F1 /* HCDebugTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43AE4DCB4779831E03774884717DDEF9 /* HCDebugTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07683A8FBA7CEA9971573DD16012415C /* HCDebugToolCommonModule.h in Headers */ = {isa = PBXBuildFile; fileRef = A2A5FA2F61957C649D4F112A7A2356C8 /* HCDebugToolCommonModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		176C573EE6BB0298AEE18A9BA25E691C /* UIView+FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB87976DE8BBFDF7F1990A3868620D0B /* UIView+FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19602303A3FA8D5B4DCBEA8EE5077A24 /* HCDebugTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43AE4DCB4779831E03774884717DDEF9 /* HCDebugTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D718873C9DD030A2B6D084C728FFB05 /* Pods-HCDebugTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E55AA8AD68331FE40AD8CB7541CE3B /* Pods-HCDebugTool_Tests-dummy.m */; };
+		1E463C9465902509BBDDFD2C8C2205FD /* HCDebugToolVisionModule.h in Headers */ = {isa = PBXBuildFile; fileRef = B72A415EB5A1095B960A184862A85F51 /* HCDebugToolVisionModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		234764EA119AEA84ECCA22742798D342 /* HCDebugToolUIDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 26727659E8D1B81F175ECA19AD0AD7A7 /* HCDebugToolUIDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24DF4CCB6D54D2561AE22D4ED131AFEB /* HCDebugToolEntranceView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE33E3AEA7DE6BDF87D1870FF186788 /* HCDebugToolEntranceView.m */; };
+		25EF92FC62E72FD2510E4C1BDA845D40 /* UIView+FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B88D42E313974CE55A6E5C8B7E95D64C /* UIView+FBLayout.m */; };
+		2953DEB2B814A83E95AAFF2AF17B65B4 /* HCDebugToolManager+PageRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B873E05C497BD64EEE80B5982995D7EC /* HCDebugToolManager+PageRoute.m */; };
+		2AD1CD8C661C30EB69036BDD31E78CE3 /* YGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = ADE0140627EA457672D5C7206D1501F7 /* YGMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C0EB4DDBE286E49D269DC6848F3658B /* HCDebugToolCommonOptionItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2898F92753CDF4807B98326184095F82 /* HCDebugToolCommonOptionItemView.m */; };
+		2EDED53FB5AEC8540AB166FE6B50BD27 /* HCDebugToolManager+EntraceView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0EA015B85C61A8474B704267FDDEBA /* HCDebugToolManager+EntraceView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38574E42210D289CDE2583B258B06862 /* HCDebugToolCommonOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B15581F4BC1C90B4BB14F6D91CB02A8 /* HCDebugToolCommonOptionView.m */; };
+		3AB240B5D0617FB0C579741C30BA9046 /* UITableView+FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1E34F36D050672A81778A49C12E0B0 /* UITableView+FBLayout.m */; };
+		3E11AC60F0E4CC0E8B8AA73A46A6F1A6 /* HCDebugToolEntranceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 572EDCA43E993C9161A69E4240434E33 /* HCDebugToolEntranceViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40E4686ACE4EFC52599CD12D0BF122B6 /* UIScrollView+FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F388862F8830A132E1D89127053C3B34 /* UIScrollView+FBLayout.m */; };
+		41439D91CF4AB4811A16FBCFE873C290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		416955D544C038145B4CDE2C9124D513 /* Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = 16017922931A10750946CB70F3B7248D /* Yoga.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41A9251B9517E0B268DC7BB4D8BCED54 /* HCDebugToolVisionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 3981D6A2512F2575E42D09870246CBF8 /* HCDebugToolVisionModule.m */; };
+		4AA3E15FFFFEFF3906F25C88450BE6C3 /* FBViewLayoutCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C52EC94EE5AEC38A5B2900E9185ACB /* FBViewLayoutCache.m */; };
+		55708BA23BA192ECCD96528D905A2930 /* HCDebugToolCommonOptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = C23CF6A6D33E9FD736E46EC18B3B850A /* HCDebugToolCommonOptionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56248E39C8A9056887271B73DB9933FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		5835FF1C44DC93957F34B57A6A7C557D /* HCDebugToolManager+Module.m in Sources */ = {isa = PBXBuildFile; fileRef = A05BB69BBC4D7BF4843C8FA3C42FA6E6 /* HCDebugToolManager+Module.m */; };
+		5C202914428C83F845E97F038CD14DC8 /* HCDebugToolModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4112B700416778AA854A89A9CBB8524B /* HCDebugToolModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63B77C872F83EC974B72DC4F9FAB5AE8 /* HCDebugToolMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A34CC78653FF311CBE30AC9A435D5950 /* HCDebugToolMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65EA5AA2BD837C9F79F09D3898029C2C /* YGNodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = 17B9D4459D69947B61C90C0F5EA357B5 /* YGNodeList.c */; };
+		69479E85EEDBC4E40EAAD972041059E2 /* HCDebugToolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C830659ECBA75C1533837EAAD5249AC7 /* HCDebugToolManager.m */; };
+		6DBB6E6FDBC554C16C0223F747AA37B5 /* FlexBoxLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B191689FF8279950A96AE2FD9181221 /* FlexBoxLayout-dummy.m */; };
+		77920DAB9732DA50C52C3830F9905CF1 /* HCDebugToolCommonOptionItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 849936E89F56D8D21F010C10F2B47F25 /* HCDebugToolCommonOptionItemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77DB0A6B42F54CBB2F77EFBC7415AF47 /* UIScrollView+FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ED0CB3D7EA2C8B7809EF6E1246F827 /* UIScrollView+FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78B1757359254A78725D061BB6AA53CA /* YGNodeList.h in Headers */ = {isa = PBXBuildFile; fileRef = AEED26004925385C6AE95C6987BF61E3 /* YGNodeList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7912CDE8753AFD1464739BC7C08AFB5B /* HCDebugToolManager+Module.h in Headers */ = {isa = PBXBuildFile; fileRef = E049F19F8E9521315A40FDF16BE2BCCA /* HCDebugToolManager+Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E3F3DBD271FA6BAB3E911676FCB9E09 /* UIView+CellStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 79910C65B60FFFEB3D5D110FFCEFFB72 /* UIView+CellStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85408703D9366AE690942A995E4C0658 /* FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B3A758EFDB57518D78DA6DF7F376591E /* FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88EA420C492AB7020CC829921F5C8FF3 /* HCDebugToolManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 39DB45F4C7EBC7FC852FF4B3C58A97F5 /* HCDebugToolManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89A20080988A39D41BE0C39ADD5EBD7D /* HCDebugToolEntranceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE69791A566A3FB14F757FE8F26E734E /* HCDebugToolEntranceViewController.m */; };
+		8B5922D195E1EADB1483EFA9AC278086 /* HCDebugTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F93C128A9328B00820FD65C3089C71C9 /* HCDebugTool-dummy.m */; };
+		90CAA01A778D030D674B8E3606D96314 /* UIView+CellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7076AC47D494F3DCCA9A0AAF40D969 /* UIView+CellStyle.m */; };
+		939C09B5D90F67898A516C66DA5BABFC /* Pods-HCDebugTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B37830D422FEDFBE72423888BE16138B /* Pods-HCDebugTool_Example-dummy.m */; };
+		948969B30492CC9AAF95D872C57426BC /* FBLayoutDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADDC2E512D39A1B2E8614024332F493 /* FBLayoutDiv.m */; };
+		9AB7AD1A02160AACAA49CCD953BA1D27 /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3E876D554EB049A7C27B7F536A457C /* YGEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CA6BC7C926F19AD39F077BB9200D823 /* Pods-HCDebugTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D9F6A13F855C409C8343F30EAD9D36 /* Pods-HCDebugTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CC2F899C5E7BCC4531D353B6F059D7A /* FBLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 17B54DBF857DDD6328B19EA109D19C92 /* FBLayout+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EDC57FE8480D8D42C058A9F450070BC /* HCDebugToolEntranceView.h in Headers */ = {isa = PBXBuildFile; fileRef = 40762FB8B16FD15D8510AA91D8186C96 /* HCDebugToolEntranceView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0F703A66A634D96C8B653E70B317F44 /* FBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C22902DE1F1C8C3FACEB1DFDD3D3669 /* FBLayout.m */; };
+		A2E7E9F71877ED04DE4ADBF07B034820 /* Yoga.c in Sources */ = {isa = PBXBuildFile; fileRef = C9438E60E94B46F9A02FE972247CA2ED /* Yoga.c */; };
+		A4ED90C0BED92B3EEA484B7055F726C4 /* FlexBoxLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 05364EB7697AD1257301CDD760F0987A /* FlexBoxLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACDB1971D2FF0AA53C21F9FC0E5D62A1 /* HCDebugToolManager+EntraceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A092257C5122C10668185A441C512E5 /* HCDebugToolManager+EntraceView.m */; };
+		AD1C89BF5240C36F5D2F9438B5964FD4 /* FBAsyLayoutTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 915D90AC4F35AAE5DC86831C51889E62 /* FBAsyLayoutTransaction.m */; };
+		B25A7B78C1A1BB5A65C58B8CBA524F3F /* HCDebugTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D215C5038CB32C50D93D2C9822704F /* HCDebugTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD771F47490A0847288448CAEDC64CE8 /* HCDebugToolManager+PageRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A82B2AF14C185CD82A0FE5234D9F2C5 /* HCDebugToolManager+PageRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0597EFC8B55777EFF2B51182068CF70 /* HCDebugToolMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A63A4CE560A4017BA20F8ACE808C22 /* HCDebugToolMenuViewController.m */; };
+		C0E5E107603D1D8CCBDB197A8F9A56E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		C148A5CFF0D93FA9A7FEFC1C36B116BD /* FBLayoutProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB27B2F09916F2B159A5E569B205FD0 /* FBLayoutProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C33649A7355D728E616CC4DEB1341ADD /* FlexBoxLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 898B878DA19A2D897409AC63C158DC46 /* FlexBoxLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C82468665306291306FA6C2ED83E94E6 /* HCDebugToolCommonModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF01F0FD35C8859C4FA4354EB6C0759 /* HCDebugToolCommonModule.m */; };
+		CBA8E952ED25DB78F3531E1970EC6F82 /* FBViewLayoutCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C854E2B522CEFEC8A957A7C49A1E48C4 /* FBViewLayoutCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE296DFA55D3DCB257F11BB0A85D601B /* FBLayoutDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = B9268AF41C3B970A1C5FA80018E986FE /* FBLayoutDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0EC43E496A969AE979E63612C21280A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		D446837E01B61FC5A592CFA780CD6163 /* UITableView+FBLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8FD08F6285B07A0C23425424E5838A /* UITableView+FBLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6757F737B155C63E78E70B391C3000E /* Pods-HCDebugTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B0F80DD062D5AD63681C2956A10BCC0 /* Pods-HCDebugTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB6B91B98CAB82524BB6EE348481F8A8 /* HCDebugToolCommonOptionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F04BC5577980230BCE36C270E6A835 /* HCDebugToolCommonOptionViewModel.m */; };
+		DE377F3BDD23A369A788E3FA4B7DBFEF /* FBAsyLayoutTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6B6D599CF917320EBD7BFDEF1FECA4 /* FBAsyLayoutTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E33EB3016A1A97D7073DB7C4CE324B84 /* HCDebugToolCommonOptionViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 55F04B397844632395AB983D0FF86FEE /* HCDebugToolCommonOptionViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		34F254566F11FE2632A5628D49AEC044 /* PBXContainerItemProxy */ = {
+		6C5DB9CA19C6C377A6BC2E8DD5B3B271 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8A83E18E7CF9AD577661EA080CFDECE5;
-			remoteInfo = "Pods-HCDebugTool_Example";
+			remoteGlobalIDString = 3655663387E1270F2E4129350FEA055C;
+			remoteInfo = FlexBoxLayout;
 		};
-		98F3E4D0130584A829EB1D2E58CEEC17 /* PBXContainerItemProxy */ = {
+		AE08BD1F9C607C9D846CF00704A0CB06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 46C5F323D5322981D15E7924432C5352;
+			remoteGlobalIDString = C963CECF1C6E9BEB6A9581682CDF27B8;
 			remoteInfo = HCDebugTool;
 		};
-		DE7DB5DBC317E873A7DD940D918CF1B5 /* PBXContainerItemProxy */ = {
+		FD337FA69F6814ED947256620D03A5A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 41E766C7E18FD317438ED40FF82DC6DC;
-			remoteInfo = FlexBoxLayout;
+			remoteGlobalIDString = F264933725E01A07F3DB9118FBEED09F;
+			remoteInfo = "Pods-HCDebugTool_Example";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -127,7 +127,6 @@
 		52D215C5038CB32C50D93D2C9822704F /* HCDebugTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCDebugTool.h; path = HCDebugTool/Classes/HCDebugTool.h; sourceTree = "<group>"; };
 		55F04B397844632395AB983D0FF86FEE /* HCDebugToolCommonOptionViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HCDebugToolCommonOptionViewModel.h; sourceTree = "<group>"; };
 		572EDCA43E993C9161A69E4240434E33 /* HCDebugToolEntranceViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HCDebugToolEntranceViewController.h; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B25F9EA8002D6B3BF6D0B486A4A0844 /* Pods-HCDebugTool_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCDebugTool_Example-resources.sh"; sourceTree = "<group>"; };
 		5BFCBB7E6DAC61286571185151B723D7 /* Pods_HCDebugTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HCDebugTool_Example.framework; path = "Pods-HCDebugTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8FD08F6285B07A0C23425424E5838A /* UITableView+FBLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+FBLayout.h"; path = "FlexBoxLayout/Classes/Component/UITableView+FBLayout.h"; sourceTree = "<group>"; };
@@ -178,6 +177,7 @@
 		C9438E60E94B46F9A02FE972247CA2ED /* Yoga.c */ = {isa = PBXFileReference; includeInIndex = 1; name = Yoga.c; path = FlexBoxLayout/Classes/Layout/Yoga.c; sourceTree = "<group>"; };
 		CDE33E3AEA7DE6BDF87D1870FF186788 /* HCDebugToolEntranceView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolEntranceView.m; sourceTree = "<group>"; };
 		CE2873E92BFC5E4E8B8CED412047AF54 /* Pods-HCDebugTool_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HCDebugTool_Tests-resources.sh"; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D9D1CAEDC97200B301D9D3B8721D7342 /* Pods-HCDebugTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HCDebugTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DCB27B2F09916F2B159A5E569B205FD0 /* FBLayoutProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLayoutProtocol.h; path = FlexBoxLayout/Classes/Layout/FBLayoutProtocol.h; sourceTree = "<group>"; };
 		DE69791A566A3FB14F757FE8F26E734E /* HCDebugToolEntranceViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolEntranceViewController.m; sourceTree = "<group>"; };
@@ -194,35 +194,35 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		347DDB373BB74B89075FA5A52A2B1B0D /* Frameworks */ = {
+		0CC97D6C5D95AA318B38790027967D29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8DD3420669C6B6CAD9A3A545EB10DC0 /* Foundation.framework in Frameworks */,
+				41439D91CF4AB4811A16FBCFE873C290 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51B04F0E9B2F8FE4D1C2CBFBE195CDDD /* Frameworks */ = {
+		529A7059153D0DFF657FC03836AFED45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38322EBF708E45B6E6DF40678CBE61BE /* Foundation.framework in Frameworks */,
+				D0EC43E496A969AE979E63612C21280A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F1CCBDDDF72792F5DEA65DA691C9B8F /* Frameworks */ = {
+		8D1108DF4E988C4087A5364B60562AF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02F24332B70AEA108F66996193BA63B9 /* Foundation.framework in Frameworks */,
+				C0E5E107603D1D8CCBDB197A8F9A56E6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788D9A7C892232AF62A64197BCF5AB5C /* Frameworks */ = {
+		FF5E06CFF502B7E23F103CE975F43835 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FC5303CF4CCFC46334160933528682E /* Foundation.framework in Frameworks */,
+				56248E39C8A9056887271B73DB9933FA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +304,14 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		4A1558822A86EE513B32D50292C6C34E /* Pods-HCDebugTool_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,14 +340,6 @@
 			);
 			name = Module;
 			path = HCDebugTool/Classes/Module;
-			sourceTree = "<group>";
-		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		60E1BE483A49D6EEE57292CAD64E2E69 /* Vision */ = {
@@ -426,7 +426,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				44D5347904CF754D6785B84253F2574A /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -504,96 +504,98 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		03B18405F85F32F3AA880771ACEB6703 /* Headers */ = {
+		3632EB9178AFD93BC43D918708C5441F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9798BBE6A009F7476490D30FBF899F1 /* HCDebugTool-umbrella.h in Headers */,
-				123AFDA313940B7291EF53564832CCB3 /* HCDebugTool.h in Headers */,
-				0E3973693548857BEC75D981808793F5 /* HCDebugToolCommonModule.h in Headers */,
-				4CC3B0F5D9F9F8E4A99E1751F7027441 /* HCDebugToolCommonOptionItemView.h in Headers */,
-				DB5102B9FF1D1A4B35B801F28A6DF4BE /* HCDebugToolCommonOptionView.h in Headers */,
-				E95233D463DCDCD0716AF5A3471EC7A0 /* HCDebugToolCommonOptionViewModel.h in Headers */,
-				359210A8C30172D291B970B27409E258 /* HCDebugToolEntranceView.h in Headers */,
-				4C6659899EE09A478C69064D4840D58D /* HCDebugToolEntranceViewController.h in Headers */,
-				D3A8A1C94407D45F8707FC149A2E7545 /* HCDebugToolManager+EntraceView.h in Headers */,
-				913CA70BAD821006A9CCAA948ABD391B /* HCDebugToolManager+Module.h in Headers */,
-				AF0FCC24AC8EA3A00332116C9423EE35 /* HCDebugToolManager+PageRoute.h in Headers */,
-				43E58C0704DAD558D479BCE71B8FD411 /* HCDebugToolManager.h in Headers */,
-				A00CD5D855ED0B768A5F7B0A3DC7D26D /* HCDebugToolMenuViewController.h in Headers */,
-				314F268913C3D745AF230F7605CAC9D0 /* HCDebugToolModuleProtocol.h in Headers */,
-				A9EC3468967900CB7EEAA28AA76CC918 /* HCDebugToolUIDefine.h in Headers */,
-				2C3CF8843CE49394FC5CD6FDFCDB443E /* HCDebugToolVisionModule.h in Headers */,
+				9CA6BC7C926F19AD39F077BB9200D823 /* Pods-HCDebugTool_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0B912E7D37B3D340080D04D0ACEAECB8 /* Headers */ = {
+		48C14048C035D2067B517CD10D6AF6D5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				476A870C4AB8866D7A753D2022D106F0 /* FBAsyLayoutTransaction.h in Headers */,
-				C8476EFDEDCBE0ACF0651DDB787070CC /* FBLayout+Private.h in Headers */,
-				B97597D10D66262854A1FBE864475961 /* FBLayout.h in Headers */,
-				57C717958C52FFB531451B359B1B2A2C /* FBLayoutDiv.h in Headers */,
-				2235CAF22CC5D0F455AEC6840289C4B8 /* FBLayoutProtocol.h in Headers */,
-				0B7CD89D3159303D1073C377DE7D2359 /* FBViewLayoutCache.h in Headers */,
-				BC0C72201105F177CBAACCD255AAF0E1 /* FlexBoxLayout-umbrella.h in Headers */,
-				7E027100D375680E08BA1436E44560A0 /* FlexBoxLayout.h in Headers */,
-				211426C8611A417E4CF0A84E9B1F071D /* UIScrollView+FBLayout.h in Headers */,
-				586BAD6DD7A1806FB0FFD96AEBB2FA71 /* UITableView+FBLayout.h in Headers */,
-				A1A2E4B425A07379F394F74B22BD2DA0 /* UIView+CellStyle.h in Headers */,
-				3B1965BA4F145CA8D3221C44B9A7BD7F /* UIView+FBLayout.h in Headers */,
-				96AF68329E4BA795D09138A34EFF43CE /* YGEnums.h in Headers */,
-				1C24695DE2EF7C93221B1DAAC3FAB238 /* YGMacros.h in Headers */,
-				F1C4419703623C4987E69FD2A2E1F868 /* YGNodeList.h in Headers */,
-				CC96C48FB616D19863FB49A45A5C6D82 /* Yoga.h in Headers */,
+				D6757F737B155C63E78E70B391C3000E /* Pods-HCDebugTool_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		864BB53B1FBD2BD8B5FD85CD361AC206 /* Headers */ = {
+		7786BAD8A9EC3E38FE9985A63153373F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F3824BABE5F17696A858FBACEB01FC8 /* Pods-HCDebugTool_Example-umbrella.h in Headers */,
+				19602303A3FA8D5B4DCBEA8EE5077A24 /* HCDebugTool-umbrella.h in Headers */,
+				B25A7B78C1A1BB5A65C58B8CBA524F3F /* HCDebugTool.h in Headers */,
+				07683A8FBA7CEA9971573DD16012415C /* HCDebugToolCommonModule.h in Headers */,
+				77920DAB9732DA50C52C3830F9905CF1 /* HCDebugToolCommonOptionItemView.h in Headers */,
+				55708BA23BA192ECCD96528D905A2930 /* HCDebugToolCommonOptionView.h in Headers */,
+				E33EB3016A1A97D7073DB7C4CE324B84 /* HCDebugToolCommonOptionViewModel.h in Headers */,
+				9EDC57FE8480D8D42C058A9F450070BC /* HCDebugToolEntranceView.h in Headers */,
+				3E11AC60F0E4CC0E8B8AA73A46A6F1A6 /* HCDebugToolEntranceViewController.h in Headers */,
+				2EDED53FB5AEC8540AB166FE6B50BD27 /* HCDebugToolManager+EntraceView.h in Headers */,
+				7912CDE8753AFD1464739BC7C08AFB5B /* HCDebugToolManager+Module.h in Headers */,
+				BD771F47490A0847288448CAEDC64CE8 /* HCDebugToolManager+PageRoute.h in Headers */,
+				88EA420C492AB7020CC829921F5C8FF3 /* HCDebugToolManager.h in Headers */,
+				63B77C872F83EC974B72DC4F9FAB5AE8 /* HCDebugToolMenuViewController.h in Headers */,
+				5C202914428C83F845E97F038CD14DC8 /* HCDebugToolModuleProtocol.h in Headers */,
+				234764EA119AEA84ECCA22742798D342 /* HCDebugToolUIDefine.h in Headers */,
+				1E463C9465902509BBDDFD2C8C2205FD /* HCDebugToolVisionModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D542C2126D39756CD6E6E698F58E965E /* Headers */ = {
+		A0450537AE1905C829BD40A39CB1BFD8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56207BA93B913AF6549454677181BCC2 /* Pods-HCDebugTool_Tests-umbrella.h in Headers */,
+				DE377F3BDD23A369A788E3FA4B7DBFEF /* FBAsyLayoutTransaction.h in Headers */,
+				9CC2F899C5E7BCC4531D353B6F059D7A /* FBLayout+Private.h in Headers */,
+				85408703D9366AE690942A995E4C0658 /* FBLayout.h in Headers */,
+				CE296DFA55D3DCB257F11BB0A85D601B /* FBLayoutDiv.h in Headers */,
+				C148A5CFF0D93FA9A7FEFC1C36B116BD /* FBLayoutProtocol.h in Headers */,
+				CBA8E952ED25DB78F3531E1970EC6F82 /* FBViewLayoutCache.h in Headers */,
+				C33649A7355D728E616CC4DEB1341ADD /* FlexBoxLayout-umbrella.h in Headers */,
+				A4ED90C0BED92B3EEA484B7055F726C4 /* FlexBoxLayout.h in Headers */,
+				77DB0A6B42F54CBB2F77EFBC7415AF47 /* UIScrollView+FBLayout.h in Headers */,
+				D446837E01B61FC5A592CFA780CD6163 /* UITableView+FBLayout.h in Headers */,
+				7E3F3DBD271FA6BAB3E911676FCB9E09 /* UIView+CellStyle.h in Headers */,
+				176C573EE6BB0298AEE18A9BA25E691C /* UIView+FBLayout.h in Headers */,
+				9AB7AD1A02160AACAA49CCD953BA1D27 /* YGEnums.h in Headers */,
+				2AD1CD8C661C30EB69036BDD31E78CE3 /* YGMacros.h in Headers */,
+				78B1757359254A78725D061BB6AA53CA /* YGNodeList.h in Headers */,
+				416955D544C038145B4CDE2C9124D513 /* Yoga.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		19CDAC514B6B817D7105162324FC0F41 /* Pods-HCDebugTool_Tests */ = {
+		06F08EC5CE00208DB477B91F4EDE7A19 /* Pods-HCDebugTool_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D7D0C68E994E0184C88BE06D4C241DD /* Build configuration list for PBXNativeTarget "Pods-HCDebugTool_Tests" */;
+			buildConfigurationList = D6FBA612DEE31C5B62081578DC7059F9 /* Build configuration list for PBXNativeTarget "Pods-HCDebugTool_Tests" */;
 			buildPhases = (
-				90A8C5B90D65A48B15F9870AC25A9717 /* Sources */,
-				347DDB373BB74B89075FA5A52A2B1B0D /* Frameworks */,
-				D542C2126D39756CD6E6E698F58E965E /* Headers */,
+				48C14048C035D2067B517CD10D6AF6D5 /* Headers */,
+				291B0427EAF8776F2635AB8BC020C0C7 /* Sources */,
+				0CC97D6C5D95AA318B38790027967D29 /* Frameworks */,
+				93F37C1B908C3B3D695A484A0738AFBA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C112D3081782630DA82814D42FEFC063 /* PBXTargetDependency */,
+				C3751A67139EE714FB01D2C1D6749716 /* PBXTargetDependency */,
 			);
 			name = "Pods-HCDebugTool_Tests";
 			productName = "Pods-HCDebugTool_Tests";
 			productReference = 62F56DA07FB2293FF814CCD6749BC4EC /* Pods_HCDebugTool_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		41E766C7E18FD317438ED40FF82DC6DC /* FlexBoxLayout */ = {
+		3655663387E1270F2E4129350FEA055C /* FlexBoxLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6174DFF5875A6EBB2BD2091D40B956E6 /* Build configuration list for PBXNativeTarget "FlexBoxLayout" */;
+			buildConfigurationList = 5D889B226A81B6B906B36ECAE03A4AA4 /* Build configuration list for PBXNativeTarget "FlexBoxLayout" */;
 			buildPhases = (
-				16BCE38FAADF3EEE3846B3763808E962 /* Sources */,
-				51B04F0E9B2F8FE4D1C2CBFBE195CDDD /* Frameworks */,
-				0B912E7D37B3D340080D04D0ACEAECB8 /* Headers */,
+				A0450537AE1905C829BD40A39CB1BFD8 /* Headers */,
+				5C46989F7A899BB4DC46B126174658E4 /* Sources */,
+				529A7059153D0DFF657FC03836AFED45 /* Frameworks */,
+				539ED030466F5D3B09CA7DDEF6360548 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -604,13 +606,14 @@
 			productReference = 38A58ED562D3263CE2651EBE3E758E05 /* FlexBoxLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		46C5F323D5322981D15E7924432C5352 /* HCDebugTool */ = {
+		C963CECF1C6E9BEB6A9581682CDF27B8 /* HCDebugTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5811EB86314E2B8B797521F785802421 /* Build configuration list for PBXNativeTarget "HCDebugTool" */;
+			buildConfigurationList = CA4046A7AC17223BA1E488E0E554752E /* Build configuration list for PBXNativeTarget "HCDebugTool" */;
 			buildPhases = (
-				A5F94369F51A6F2C3A5B738B2E4FDD1F /* Sources */,
-				788D9A7C892232AF62A64197BCF5AB5C /* Frameworks */,
-				03B18405F85F32F3AA880771ACEB6703 /* Headers */,
+				7786BAD8A9EC3E38FE9985A63153373F /* Headers */,
+				AD8650A6CDF0AA4E3CA7AE7C5B618CA0 /* Sources */,
+				8D1108DF4E988C4087A5364B60562AF9 /* Frameworks */,
+				FB82E5ED2817DFD333781969EA3771FE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -621,19 +624,20 @@
 			productReference = AE565A333B80293C645803E402AED92B /* HCDebugTool.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8A83E18E7CF9AD577661EA080CFDECE5 /* Pods-HCDebugTool_Example */ = {
+		F264933725E01A07F3DB9118FBEED09F /* Pods-HCDebugTool_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A48F21B3ACE93F2DD7878E6B8BB8525 /* Build configuration list for PBXNativeTarget "Pods-HCDebugTool_Example" */;
+			buildConfigurationList = 622777B37F03D85BB92EDCF679EC5FAF /* Build configuration list for PBXNativeTarget "Pods-HCDebugTool_Example" */;
 			buildPhases = (
-				765D6357F8A2C1CBB9B18C49BBA0072E /* Sources */,
-				6F1CCBDDDF72792F5DEA65DA691C9B8F /* Frameworks */,
-				864BB53B1FBD2BD8B5FD85CD361AC206 /* Headers */,
+				3632EB9178AFD93BC43D918708C5441F /* Headers */,
+				737DC264C6F25C2252EE9D558D5C1F94 /* Sources */,
+				FF5E06CFF502B7E23F103CE975F43835 /* Frameworks */,
+				68D8D439C8F776EE3E436C0ED0285763 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5A1FB7B8C06B4C94FAE06EE33BBB3636 /* PBXTargetDependency */,
-				65C49280422BAAA30296154DFFDAEA65 /* PBXTargetDependency */,
+				F9876111FF2B5C2CF40E02E9FCD7D921 /* PBXTargetDependency */,
+				97B4E37CB575C8AEB786FBB5078B9EC0 /* PBXTargetDependency */,
 			);
 			name = "Pods-HCDebugTool_Example";
 			productName = "Pods-HCDebugTool_Example";
@@ -661,94 +665,376 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41E766C7E18FD317438ED40FF82DC6DC /* FlexBoxLayout */,
-				46C5F323D5322981D15E7924432C5352 /* HCDebugTool */,
-				8A83E18E7CF9AD577661EA080CFDECE5 /* Pods-HCDebugTool_Example */,
-				19CDAC514B6B817D7105162324FC0F41 /* Pods-HCDebugTool_Tests */,
+				3655663387E1270F2E4129350FEA055C /* FlexBoxLayout */,
+				C963CECF1C6E9BEB6A9581682CDF27B8 /* HCDebugTool */,
+				F264933725E01A07F3DB9118FBEED09F /* Pods-HCDebugTool_Example */,
+				06F08EC5CE00208DB477B91F4EDE7A19 /* Pods-HCDebugTool_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		539ED030466F5D3B09CA7DDEF6360548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68D8D439C8F776EE3E436C0ED0285763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F37C1B908C3B3D695A484A0738AFBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB82E5ED2817DFD333781969EA3771FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		16BCE38FAADF3EEE3846B3763808E962 /* Sources */ = {
+		291B0427EAF8776F2635AB8BC020C0C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E55FCE561A1CE41D83A39D864ED9B5F9 /* FBAsyLayoutTransaction.m in Sources */,
-				5236997584F73D919FAED6967645E296 /* FBLayout.m in Sources */,
-				34847DDD78E042A7546E52D5964490A0 /* FBLayoutDiv.m in Sources */,
-				F274247DC6799C13771F3009771FED5C /* FBViewLayoutCache.m in Sources */,
-				CD51163DA21565790CBA91D5E9A310BC /* FlexBoxLayout-dummy.m in Sources */,
-				C22850A567247DF38D165E2EA3116D0A /* UIScrollView+FBLayout.m in Sources */,
-				BCE75C3A51FBA05A8160385648E1E205 /* UITableView+FBLayout.m in Sources */,
-				33DACC9EE9B7F5C853EDE7B78B37FE33 /* UIView+CellStyle.m in Sources */,
-				7BC061A13A9EC45AB7F9AAE48A88BA62 /* UIView+FBLayout.m in Sources */,
-				AB1FC8B57117CB90D70DF58D4837FB06 /* YGNodeList.c in Sources */,
-				E6AF1AED8A900CA6BECB74ECFA582569 /* Yoga.c in Sources */,
+				1D718873C9DD030A2B6D084C728FFB05 /* Pods-HCDebugTool_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		765D6357F8A2C1CBB9B18C49BBA0072E /* Sources */ = {
+		5C46989F7A899BB4DC46B126174658E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5D3AF9E6D412043181F2C9EAB4E4F3 /* Pods-HCDebugTool_Example-dummy.m in Sources */,
+				AD1C89BF5240C36F5D2F9438B5964FD4 /* FBAsyLayoutTransaction.m in Sources */,
+				A0F703A66A634D96C8B653E70B317F44 /* FBLayout.m in Sources */,
+				948969B30492CC9AAF95D872C57426BC /* FBLayoutDiv.m in Sources */,
+				4AA3E15FFFFEFF3906F25C88450BE6C3 /* FBViewLayoutCache.m in Sources */,
+				6DBB6E6FDBC554C16C0223F747AA37B5 /* FlexBoxLayout-dummy.m in Sources */,
+				40E4686ACE4EFC52599CD12D0BF122B6 /* UIScrollView+FBLayout.m in Sources */,
+				3AB240B5D0617FB0C579741C30BA9046 /* UITableView+FBLayout.m in Sources */,
+				90CAA01A778D030D674B8E3606D96314 /* UIView+CellStyle.m in Sources */,
+				25EF92FC62E72FD2510E4C1BDA845D40 /* UIView+FBLayout.m in Sources */,
+				65EA5AA2BD837C9F79F09D3898029C2C /* YGNodeList.c in Sources */,
+				A2E7E9F71877ED04DE4ADBF07B034820 /* Yoga.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90A8C5B90D65A48B15F9870AC25A9717 /* Sources */ = {
+		737DC264C6F25C2252EE9D558D5C1F94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29DEFC42E0F00319C524D668C2A2C61D /* Pods-HCDebugTool_Tests-dummy.m in Sources */,
+				939C09B5D90F67898A516C66DA5BABFC /* Pods-HCDebugTool_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5F94369F51A6F2C3A5B738B2E4FDD1F /* Sources */ = {
+		AD8650A6CDF0AA4E3CA7AE7C5B618CA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCB15FDC5B70ECADCEEDD162E89F4DB0 /* HCDebugTool-dummy.m in Sources */,
-				4B6637382A39BF183396A54AD9ABE4EC /* HCDebugToolCommonModule.m in Sources */,
-				1C4DA9B393E1BC43CBF88CC454E624F7 /* HCDebugToolCommonOptionItemView.m in Sources */,
-				8B64CEC27EFBCE6BE6A52B16F380078C /* HCDebugToolCommonOptionView.m in Sources */,
-				D5442E6BFA3BE5CB066B797EF4F3DD36 /* HCDebugToolCommonOptionViewModel.m in Sources */,
-				92AB79C6371A6EFD58ABEFC9731873EF /* HCDebugToolEntranceView.m in Sources */,
-				A6EE4F3468B3FA4C1FAB1CFF729C4490 /* HCDebugToolEntranceViewController.m in Sources */,
-				EA38F6A196BFFF6EF5248D8039D66FF6 /* HCDebugToolManager+EntraceView.m in Sources */,
-				D38346ADBA8B6FD222BB2C036CCA700A /* HCDebugToolManager+Module.m in Sources */,
-				D67FF9E031402F3E8A8C4CD75F1DA5AC /* HCDebugToolManager+PageRoute.m in Sources */,
-				5C4ECF86F018085B049081095B30EF5A /* HCDebugToolManager.m in Sources */,
-				5B10226E1A8DE4A8052E06DE8EDF4D52 /* HCDebugToolMenuViewController.m in Sources */,
-				D55C9CAC902B65D9D2E8E1B3B1CF2D58 /* HCDebugToolVisionModule.m in Sources */,
+				8B5922D195E1EADB1483EFA9AC278086 /* HCDebugTool-dummy.m in Sources */,
+				C82468665306291306FA6C2ED83E94E6 /* HCDebugToolCommonModule.m in Sources */,
+				2C0EB4DDBE286E49D269DC6848F3658B /* HCDebugToolCommonOptionItemView.m in Sources */,
+				38574E42210D289CDE2583B258B06862 /* HCDebugToolCommonOptionView.m in Sources */,
+				DB6B91B98CAB82524BB6EE348481F8A8 /* HCDebugToolCommonOptionViewModel.m in Sources */,
+				24DF4CCB6D54D2561AE22D4ED131AFEB /* HCDebugToolEntranceView.m in Sources */,
+				89A20080988A39D41BE0C39ADD5EBD7D /* HCDebugToolEntranceViewController.m in Sources */,
+				ACDB1971D2FF0AA53C21F9FC0E5D62A1 /* HCDebugToolManager+EntraceView.m in Sources */,
+				5835FF1C44DC93957F34B57A6A7C557D /* HCDebugToolManager+Module.m in Sources */,
+				2953DEB2B814A83E95AAFF2AF17B65B4 /* HCDebugToolManager+PageRoute.m in Sources */,
+				69479E85EEDBC4E40EAAD972041059E2 /* HCDebugToolManager.m in Sources */,
+				C0597EFC8B55777EFF2B51182068CF70 /* HCDebugToolMenuViewController.m in Sources */,
+				41A9251B9517E0B268DC7BB4D8BCED54 /* HCDebugToolVisionModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5A1FB7B8C06B4C94FAE06EE33BBB3636 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FlexBoxLayout;
-			target = 41E766C7E18FD317438ED40FF82DC6DC /* FlexBoxLayout */;
-			targetProxy = DE7DB5DBC317E873A7DD940D918CF1B5 /* PBXContainerItemProxy */;
-		};
-		65C49280422BAAA30296154DFFDAEA65 /* PBXTargetDependency */ = {
+		97B4E37CB575C8AEB786FBB5078B9EC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HCDebugTool;
-			target = 46C5F323D5322981D15E7924432C5352 /* HCDebugTool */;
-			targetProxy = 98F3E4D0130584A829EB1D2E58CEEC17 /* PBXContainerItemProxy */;
+			target = C963CECF1C6E9BEB6A9581682CDF27B8 /* HCDebugTool */;
+			targetProxy = AE08BD1F9C607C9D846CF00704A0CB06 /* PBXContainerItemProxy */;
 		};
-		C112D3081782630DA82814D42FEFC063 /* PBXTargetDependency */ = {
+		C3751A67139EE714FB01D2C1D6749716 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-HCDebugTool_Example";
-			target = 8A83E18E7CF9AD577661EA080CFDECE5 /* Pods-HCDebugTool_Example */;
-			targetProxy = 34F254566F11FE2632A5628D49AEC044 /* PBXContainerItemProxy */;
+			target = F264933725E01A07F3DB9118FBEED09F /* Pods-HCDebugTool_Example */;
+			targetProxy = FD337FA69F6814ED947256620D03A5A4 /* PBXContainerItemProxy */;
+		};
+		F9876111FF2B5C2CF40E02E9FCD7D921 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlexBoxLayout;
+			target = 3655663387E1270F2E4129350FEA055C /* FlexBoxLayout */;
+			targetProxy = 6C5DB9CA19C6C377A6BC2E8DD5B3B271 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+		5ACEDDE16290D6BD6D9DCAEB8F6171D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF927C37908C98F05E1A93E33069F92 /* HCDebugTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HCDebugTool/HCDebugTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HCDebugTool/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HCDebugTool/HCDebugTool.modulemap";
+				PRODUCT_MODULE_NAME = HCDebugTool;
+				PRODUCT_NAME = HCDebugTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		613D268B07EA9ACB8530BCB24430B383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F671A688A30A18B00579C302325F65 /* FlexBoxLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexBoxLayout/FlexBoxLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexBoxLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexBoxLayout/FlexBoxLayout.modulemap";
+				PRODUCT_MODULE_NAME = FlexBoxLayout;
+				PRODUCT_NAME = FlexBoxLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AA464A6F72156CBE109165E027EDF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4B00F14C942ACBCA8E7CD86C84E4709 /* Pods-HCDebugTool_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HCDebugTool_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		85B95B1234E227C814CCC2C7902D0916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		88CED0147807A65F881E67A1EDB15EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF927C37908C98F05E1A93E33069F92 /* HCDebugTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HCDebugTool/HCDebugTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HCDebugTool/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HCDebugTool/HCDebugTool.modulemap";
+				PRODUCT_MODULE_NAME = HCDebugTool;
+				PRODUCT_NAME = HCDebugTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E4683A86C8C8FA1C5498010C2EE7D0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FE19127786B960AE99F3081760BE07A /* Pods-HCDebugTool_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HCDebugTool_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HCDebugTool_Tests/Pods-HCDebugTool_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2B5B228B2F4267F60783907D16401BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F671A688A30A18B00579C302325F65 /* FlexBoxLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlexBoxLayout/FlexBoxLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlexBoxLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlexBoxLayout/FlexBoxLayout.modulemap";
+				PRODUCT_MODULE_NAME = FlexBoxLayout;
+				PRODUCT_NAME = FlexBoxLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A73625DEBD810B78234FA1958C191C8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -802,111 +1088,19 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		22FC2421ED4E1FD8C59168EA232D99F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89F671A688A30A18B00579C302325F65 /* FlexBoxLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FlexBoxLayout/FlexBoxLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlexBoxLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FlexBoxLayout/FlexBoxLayout.modulemap";
-				PRODUCT_MODULE_NAME = FlexBoxLayout;
-				PRODUCT_NAME = FlexBoxLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		58464B9701031AD62613AE3E66E164F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FE19127786B960AE99F3081760BE07A /* Pods-HCDebugTool_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HCDebugTool_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HCDebugTool_Tests/Pods-HCDebugTool_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7319C45FA9A1688406957ADB66A9B128 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89F671A688A30A18B00579C302325F65 /* FlexBoxLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FlexBoxLayout/FlexBoxLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FlexBoxLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FlexBoxLayout/FlexBoxLayout.modulemap";
-				PRODUCT_MODULE_NAME = FlexBoxLayout;
-				PRODUCT_NAME = FlexBoxLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7638478587CB585F2084F6DA536ECFAB /* Debug */ = {
+		C774F6024185943595D1A1C2ECBAC5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 10FA027B91BEED00CD55782F05F32C48 /* Pods-HCDebugTool_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -939,159 +1133,7 @@
 			};
 			name = Debug;
 		};
-		D4BE500F3219946EE86EBB6BCEABDDAC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4B00F14C942ACBCA8E7CD86C84E4709 /* Pods-HCDebugTool_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HCDebugTool_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E2A983EA9C58D0DCA6E9AE29550E95C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DF927C37908C98F05E1A93E33069F92 /* HCDebugTool.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HCDebugTool/HCDebugTool-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HCDebugTool/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HCDebugTool/HCDebugTool.modulemap";
-				PRODUCT_MODULE_NAME = HCDebugTool;
-				PRODUCT_NAME = HCDebugTool;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F1BC07C8FBC73BF86D80D473C5A72ECC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DF927C37908C98F05E1A93E33069F92 /* HCDebugTool.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HCDebugTool/HCDebugTool-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HCDebugTool/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HCDebugTool/HCDebugTool.modulemap";
-				PRODUCT_MODULE_NAME = HCDebugTool;
-				PRODUCT_NAME = HCDebugTool;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		F9BE911B3C7CD50CA48969E2F0D346C6 /* Release */ = {
+		FAB3BBFB051F6595A2EB608BEB56F662 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76A8D997C55E12D8D0072916EE6B6014 /* Pods-HCDebugTool_Example.release.xcconfig */;
 			buildSettings = {
@@ -1131,44 +1173,44 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
-				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+				A73625DEBD810B78234FA1958C191C8C /* Debug */,
+				85B95B1234E227C814CCC2C7902D0916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D7D0C68E994E0184C88BE06D4C241DD /* Build configuration list for PBXNativeTarget "Pods-HCDebugTool_Tests" */ = {
+		5D889B226A81B6B906B36ECAE03A4AA4 /* Build configuration list for PBXNativeTarget "FlexBoxLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7638478587CB585F2084F6DA536ECFAB /* Debug */,
-				58464B9701031AD62613AE3E66E164F3 /* Release */,
+				A2B5B228B2F4267F60783907D16401BB /* Debug */,
+				613D268B07EA9ACB8530BCB24430B383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5811EB86314E2B8B797521F785802421 /* Build configuration list for PBXNativeTarget "HCDebugTool" */ = {
+		622777B37F03D85BB92EDCF679EC5FAF /* Build configuration list for PBXNativeTarget "Pods-HCDebugTool_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1BC07C8FBC73BF86D80D473C5A72ECC /* Debug */,
-				E2A983EA9C58D0DCA6E9AE29550E95C8 /* Release */,
+				6AA464A6F72156CBE109165E027EDF3A /* Debug */,
+				FAB3BBFB051F6595A2EB608BEB56F662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6174DFF5875A6EBB2BD2091D40B956E6 /* Build configuration list for PBXNativeTarget "FlexBoxLayout" */ = {
+		CA4046A7AC17223BA1E488E0E554752E /* Build configuration list for PBXNativeTarget "HCDebugTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22FC2421ED4E1FD8C59168EA232D99F9 /* Debug */,
-				7319C45FA9A1688406957ADB66A9B128 /* Release */,
+				88CED0147807A65F881E67A1EDB15EF9 /* Debug */,
+				5ACEDDE16290D6BD6D9DCAEB8F6171D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A48F21B3ACE93F2DD7878E6B8BB8525 /* Build configuration list for PBXNativeTarget "Pods-HCDebugTool_Example" */ = {
+		D6FBA612DEE31C5B62081578DC7059F9 /* Build configuration list for PBXNativeTarget "Pods-HCDebugTool_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4BE500F3219946EE86EBB6BCEABDDAC /* Debug */,
-				F9BE911B3C7CD50CA48969E2F0D346C6 /* Release */,
+				C774F6024185943595D1A1C2ECBAC5E0 /* Debug */,
+				8E4683A86C8C8FA1C5498010C2EE7D0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,8 +7,15 @@
 //
 
 #import "HCFlexBoxLayoutDemoViewController.h"
+#import "UITableView+FBLayout.h"
+#import "HCUIDefine.h"
+#import "HCLeftPicRightTextViewModel.h"
+#import "HCLeftPicRightTextView.h"
 
-@interface HCFlexBoxLayoutDemoViewController ()
+@interface HCFlexBoxLayoutDemoViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray <HCLeftPicRightTextViewModel *>*viewModels;
 
 @end
 
@@ -16,17 +23,79 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setupUI];
+    
+    [self loadData];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupUI {
+    self.title = @"FlexBoxLayout";
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:self.tableView];
 }
-*/
+
+#pragma mark - Data
+
+- (void)loadData {
+    NSString *dataFilePath = [[NSBundle mainBundle] pathForResource:@"bookList" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:dataFilePath];
+    NSDictionary *rootDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    NSArray *bookListDicts = rootDict[@"bookList"];
+    
+    [bookListDicts enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [self.viewModels addObject:[[HCLeftPicRightTextViewModel alloc] initWithDictionary:obj]];
+    }];
+
+    __weak typeof(self)weakSelf = self;
+    [self.tableView fb_setCellContnetViewBlockForIndexPath:^UIView *(NSIndexPath *indexPath) {
+        HCLeftPicRightTextView *view = [[HCLeftPicRightTextView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 160)];
+        view.backgroundColor = [UIColor yellowColor];
+        [view setViewModel:[weakSelf.viewModels objectAtIndex:indexPath.row]];
+        return view;
+    }];
+    
+    [self.tableView reloadData];
+}
+
+#pragma mark - UITableViewDataSource & UITableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.viewModels.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [self.tableView fb_heightForIndexPath:indexPath];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [self.tableView fb_cellForIndexPath:indexPath];
+}
+
+#pragma mark - getter
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        CGRect frame = CGRectMake(0, kNavBarHeight,
+                                  self.view.bounds.size.width,
+                                  self.view.bounds.size.height);
+        _tableView =
+        [[UITableView alloc] initWithFrame:frame
+                                     style:UITableViewStylePlain];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+        _tableView.backgroundColor = [UIColor whiteColor];
+    }
+    return _tableView;
+}
+
+- (NSArray<HCLeftPicRightTextViewModel *> *)viewModels {
+    if (!_viewModels) {
+        _viewModels = @[].mutableCopy;
+    }
+    return _viewModels;
+}
 
 @end
