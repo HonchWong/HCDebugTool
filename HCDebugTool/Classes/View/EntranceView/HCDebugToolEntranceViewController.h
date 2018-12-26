@@ -10,6 +10,8 @@
 
 @interface HCDebugToolEntranceViewController : UIViewController
 
+- (instancetype)initWithNaviVC:(UINavigationController *)naviVC;
+
 - (void)showEntranceView;
 
 - (void)showMenuView;

@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) HCDebugToolEntranceView *entranceView;
 @property (nonatomic, strong) HCDebugToolMenuViewController *menuVC;
+@property (nonatomic, weak) UINavigationController *naviVC;
 
 @end
 
@@ -34,6 +35,13 @@
 
 #pragma mark - Public Function
 
+- (instancetype)initWithNaviVC:(UINavigationController *)naviVC {
+    if (self = [self init]) {
+        _naviVC = naviVC;
+    }
+    return self;
+}
+
 - (void)showEntranceView {
     self.entranceView.hidden = NO;
     [self.entranceView startAnim:5];
@@ -51,7 +59,9 @@
 }
 
 - (void)hideMenuView:(void (^)(void))completion {
-    [self.menuVC dismissViewControllerAnimated:YES
+//    [self.menuVC dismissViewControllerAnimated:YES
+//                                    completion:completion];
+    [self.naviVC dismissViewControllerAnimated:YES
                                     completion:completion];
     self.menuVC = nil;
 }
@@ -59,7 +69,7 @@
 #pragma mark - HCDebugToolEntranceViewActionDelegate
 
 - (void)doEntraceAction {
-    if (self.menuVC) {
+    if (self.menuVC || !self.naviVC) {
         return;
     }
     
@@ -69,14 +79,13 @@
     [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                   target:self
                                                   action:@selector(hideMenuView)];
-    menuVC.title = @"DebugTool Menu";
+    menuVC.title = @"Menu";
     self.menuVC = menuVC;
-    UINavigationController *wrapperNavigationController =
-    [[UINavigationController alloc] initWithRootViewController:menuVC];
+    [self.naviVC setViewControllers:@[menuVC]];
     
     UIViewController *hostVC =
     [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-    [hostVC presentViewController:wrapperNavigationController
+    [hostVC presentViewController:self.naviVC
                          animated:YES
                        completion:nil];
 }

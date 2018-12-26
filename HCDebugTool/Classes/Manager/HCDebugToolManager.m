@@ -19,8 +19,6 @@
 @property (nonatomic, strong) NSMutableDictionary *modulesDict;
 @property (nonatomic, strong) NSMutableArray <NSObject <HCDebugToolModuleProtocol>*> *modules;
 
-//@property (nonatomic, strong) HCDebugToolEntranceView *entranceView;
-
 @property (nonatomic, strong) HCDebugToolEntranceViewController *entranceVC;
 
 @property (nonatomic, strong) UINavigationController *naviVC;
@@ -47,7 +45,8 @@
 }
 
 - (void)configProperty {
-    self.entranceVC = [[HCDebugToolEntranceViewController alloc] init];
+    self.naviVC = [[UINavigationController alloc] init];
+    self.entranceVC = [[HCDebugToolEntranceViewController alloc] initWithNaviVC:self.naviVC];
 }
 
 @end
