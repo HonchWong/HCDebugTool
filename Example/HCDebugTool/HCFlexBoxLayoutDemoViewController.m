@@ -11,6 +11,7 @@
 #import "HCUIDefine.h"
 #import "HCLeftPicRightTextViewModel.h"
 #import "HCLeftPicRightTextView.h"
+#import "UIView+FBLayout.h"
 
 @interface HCFlexBoxLayoutDemoViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -51,16 +52,24 @@
 
     __weak typeof(self)weakSelf = self;
     [self.tableView fb_setCellContnetViewBlockForIndexPath:^UIView *(NSIndexPath *indexPath) {
-        HCLeftPicRightTextView *view = [[HCLeftPicRightTextView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 160)];
+        HCLeftPicRightTextView *view = [[HCLeftPicRightTextView alloc] init];
         view.backgroundColor = [UIColor yellowColor];
         [view setViewModel:[weakSelf.viewModels objectAtIndex:indexPath.row]];
+        [view fb_makeLayout:^(FBLayout *layout) {
+            layout.height.equalTo(@(160));
+            layout.width.equalTo(@(CGRectGetWidth(weakSelf.view.bounds)));
+        }];
         return view;
     }];
-    
+
     [self.tableView reloadData];
 }
 
 #pragma mark - UITableViewDataSource & UITableViewDelegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.viewModels.count;
@@ -80,7 +89,7 @@
     if (!_tableView) {
         CGRect frame = CGRectMake(0, kNavBarHeight,
                                   self.view.bounds.size.width,
-                                  self.view.bounds.size.height);
+                                  self.view.bounds.size.height - kNavBarHeight);
         _tableView =
         [[UITableView alloc] initWithFrame:frame
                                      style:UITableViewStylePlain];
