@@ -23,7 +23,8 @@ typedef NS_OPTIONS(NSInteger, HCYogaKitOptionViewTag) {
 #pragma mark - Private
 
 + (void)load {
-    [[HCDebugToolManager sharedManager] registerModule:[[self alloc] init]];
+    [[HCDebugToolManager sharedManager] registerModule:[[self alloc] init]
+                                             sortLevel:QRDebugModuleSortLevel_YogaKit];
 }
 
 #pragma mark - HCDebugToolCommonOptionViewDelegate

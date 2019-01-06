@@ -18,6 +18,7 @@ static NSString *kCellIdentifier = @"fb_kCellIdentifier";
 #define CACHE_LAYOUT objc_getAssociatedObject(self, @"fb_cacheLayout")
 
 static NSInteger contentViewTag = 6868;
+BOOL didRegisterCell = NO;
 
 @implementation UITableView (FBLayout)
 
@@ -117,11 +118,16 @@ static NSInteger contentViewTag = 6868;
 }
 
 - (void)fb_setCellContnetViewBlockForIndexPath:(FBCellBlock)cellBlock {
-  static dispatch_once_t token;
-  dispatch_once(&token, ^{
-    [self registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
-  });
-  objc_setAssociatedObject(self, _cmd, cellBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+//  static dispatch_once_t token;
+//  dispatch_once(&token, ^{
+//    [self registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
+    //  });
+//    if (!didRegisterCell) {
+//        didRegisterCell = YES;
+        [self registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
+        
+//    }
+    objc_setAssociatedObject(self, _cmd, cellBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 

@@ -11,6 +11,7 @@
 
 typedef NS_OPTIONS(NSInteger, QRDebugModuleSortLevel) {
     QRDebugModuleSortLevel_YogaKit = 2000,         // YogaKit调试
+    QRDebugModuleSortLevel_Vision = 300,           // 视觉工具调试
 };
 
 #endif /* HCDebugModuleSortLevel_h */

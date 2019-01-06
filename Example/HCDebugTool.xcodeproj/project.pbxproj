@@ -15,6 +15,17 @@
 		0085DC1A21D3CC860096631D /* HCLeftPicRightTextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085DC1921D3CC860096631D /* HCLeftPicRightTextViewModel.m */; };
 		0085DC3321D3D54C0096631D /* bookList.json in Resources */ = {isa = PBXBuildFile; fileRef = 0085DC3221D3D54C0096631D /* bookList.json */; };
 		00C31A1F21CB908B006CCA3D /* HCYogaKitDebugModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C31A1E21CB908B006CCA3D /* HCYogaKitDebugModule.m */; };
+		00EA801A21E1F03F00E5BC3D /* HCVisionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA801921E1F03F00E5BC3D /* HCVisionModule.m */; };
+		00EA802921E1F1DB00E5BC3D /* DoraemonColorPickInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA801F21E1F1DB00E5BC3D /* DoraemonColorPickInfoWindow.m */; };
+		00EA802A21E1F1DB00E5BC3D /* DoraemonColorPickWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA802421E1F1DB00E5BC3D /* DoraemonColorPickWindow.m */; };
+		00EA802B21E1F1DB00E5BC3D /* DoraemonColorPickInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA802521E1F1DB00E5BC3D /* DoraemonColorPickInfoView.m */; };
+		00EA802C21E1F1DB00E5BC3D /* DoraemonColorPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA802621E1F1DB00E5BC3D /* DoraemonColorPickView.m */; };
+		00EA803821E1F21B00E5BC3D /* UIColor+Doraemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA803221E1F21B00E5BC3D /* UIColor+Doraemon.m */; };
+		00EA803921E1F21B00E5BC3D /* NSObject+Doraemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA803321E1F21B00E5BC3D /* NSObject+Doraemon.m */; };
+		00EA803A21E1F21B00E5BC3D /* UIImage+Doraemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA803421E1F21B00E5BC3D /* UIImage+Doraemon.m */; };
+		00EA803B21E1F21B00E5BC3D /* UIView+Doraemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA803621E1F21B00E5BC3D /* UIView+Doraemon.m */; };
+		00EA804421E1F56700E5BC3D /* DoraemonVisualInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA804121E1F56700E5BC3D /* DoraemonVisualInfoWindow.m */; };
+		00EA804521E1F56700E5BC3D /* DoraemonVisualMagnifierWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA804221E1F56700E5BC3D /* DoraemonVisualMagnifierWindow.m */; };
 		0CC291DA78BEACFF91342B54 /* Pods_HCDebugTool_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5226FF179E4DD7F57C794A3 /* Pods_HCDebugTool_Example.framework */; };
 		3AE79C8157C20CF43834872E /* Pods_HCDebugTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD426F9C4DAEBB86B7B63AE5 /* Pods_HCDebugTool_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -63,6 +74,28 @@
 		00C31A1D21CB908B006CCA3D /* HCYogaKitDebugModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCYogaKitDebugModule.h; sourceTree = "<group>"; };
 		00C31A1E21CB908B006CCA3D /* HCYogaKitDebugModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCYogaKitDebugModule.m; sourceTree = "<group>"; };
 		00C31A2021CBB517006CCA3D /* HCDebugModuleSortLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugModuleSortLevel.h; sourceTree = "<group>"; };
+		00EA801821E1F03F00E5BC3D /* HCVisionModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCVisionModule.h; sourceTree = "<group>"; };
+		00EA801921E1F03F00E5BC3D /* HCVisionModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCVisionModule.m; sourceTree = "<group>"; };
+		00EA801F21E1F1DB00E5BC3D /* DoraemonColorPickInfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonColorPickInfoWindow.m; sourceTree = "<group>"; };
+		00EA802021E1F1DB00E5BC3D /* DoraemonColorPickInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonColorPickInfoView.h; sourceTree = "<group>"; };
+		00EA802121E1F1DB00E5BC3D /* DoraemonColorPickWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonColorPickWindow.h; sourceTree = "<group>"; };
+		00EA802221E1F1DB00E5BC3D /* DoraemonColorPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonColorPickView.h; sourceTree = "<group>"; };
+		00EA802321E1F1DB00E5BC3D /* DoraemonColorPickInfoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonColorPickInfoWindow.h; sourceTree = "<group>"; };
+		00EA802421E1F1DB00E5BC3D /* DoraemonColorPickWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonColorPickWindow.m; sourceTree = "<group>"; };
+		00EA802521E1F1DB00E5BC3D /* DoraemonColorPickInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonColorPickInfoView.m; sourceTree = "<group>"; };
+		00EA802621E1F1DB00E5BC3D /* DoraemonColorPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonColorPickView.m; sourceTree = "<group>"; };
+		00EA803021E1F21B00E5BC3D /* UIImage+Doraemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Doraemon.h"; sourceTree = "<group>"; };
+		00EA803121E1F21B00E5BC3D /* UIView+Doraemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Doraemon.h"; sourceTree = "<group>"; };
+		00EA803221E1F21B00E5BC3D /* UIColor+Doraemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Doraemon.m"; sourceTree = "<group>"; };
+		00EA803321E1F21B00E5BC3D /* NSObject+Doraemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Doraemon.m"; sourceTree = "<group>"; };
+		00EA803421E1F21B00E5BC3D /* UIImage+Doraemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Doraemon.m"; sourceTree = "<group>"; };
+		00EA803521E1F21B00E5BC3D /* NSObject+Doraemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Doraemon.h"; sourceTree = "<group>"; };
+		00EA803621E1F21B00E5BC3D /* UIView+Doraemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Doraemon.m"; sourceTree = "<group>"; };
+		00EA803721E1F21B00E5BC3D /* UIColor+Doraemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Doraemon.h"; sourceTree = "<group>"; };
+		00EA804021E1F56700E5BC3D /* DoraemonVisualMagnifierWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonVisualMagnifierWindow.h; sourceTree = "<group>"; };
+		00EA804121E1F56700E5BC3D /* DoraemonVisualInfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonVisualInfoWindow.m; sourceTree = "<group>"; };
+		00EA804221E1F56700E5BC3D /* DoraemonVisualMagnifierWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonVisualMagnifierWindow.m; sourceTree = "<group>"; };
+		00EA804321E1F56700E5BC3D /* DoraemonVisualInfoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonVisualInfoWindow.h; sourceTree = "<group>"; };
 		13A72804B88504215179987B /* Pods-HCDebugTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCDebugTool_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		30C473A1C4B3928021090C16 /* Pods-HCDebugTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCDebugTool_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HCDebugTool_Tests/Pods-HCDebugTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3402F6569C4C5B6F9448471D /* Pods-HCDebugTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HCDebugTool_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				00C31A2021CBB517006CCA3D /* HCDebugModuleSortLevel.h */,
-				0085DC3121D3D2950096631D /* HCUIDefine.h */,
+				00EA801721E1EF8800E5BC3D /* Vision */,
 				00C31A1C21CB9061006CCA3D /* AutoLayout */,
 				006F4D6F21BD25C6003B0B3F /* NetDebug */,
 				0029A7DE21BA43EB00C856C9 /* Performance */,
@@ -202,6 +235,82 @@
 			name = AutoLayout;
 			sourceTree = "<group>";
 		};
+		00EA801721E1EF8800E5BC3D /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				00EA801821E1F03F00E5BC3D /* HCVisionModule.h */,
+				00EA801921E1F03F00E5BC3D /* HCVisionModule.m */,
+				00EA801D21E1F1DB00E5BC3D /* ColorPick */,
+			);
+			name = Vision;
+			sourceTree = "<group>";
+		};
+		00EA801D21E1F1DB00E5BC3D /* ColorPick */ = {
+			isa = PBXGroup;
+			children = (
+				00EA801E21E1F1DB00E5BC3D /* Function */,
+			);
+			path = ColorPick;
+			sourceTree = "<group>";
+		};
+		00EA801E21E1F1DB00E5BC3D /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				00EA801F21E1F1DB00E5BC3D /* DoraemonColorPickInfoWindow.m */,
+				00EA802021E1F1DB00E5BC3D /* DoraemonColorPickInfoView.h */,
+				00EA802121E1F1DB00E5BC3D /* DoraemonColorPickWindow.h */,
+				00EA802221E1F1DB00E5BC3D /* DoraemonColorPickView.h */,
+				00EA802321E1F1DB00E5BC3D /* DoraemonColorPickInfoWindow.h */,
+				00EA802421E1F1DB00E5BC3D /* DoraemonColorPickWindow.m */,
+				00EA802521E1F1DB00E5BC3D /* DoraemonColorPickInfoView.m */,
+				00EA802621E1F1DB00E5BC3D /* DoraemonColorPickView.m */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		00EA802E21E1F20600E5BC3D /* Doraemon */ = {
+			isa = PBXGroup;
+			children = (
+				00EA803E21E1F55D00E5BC3D /* CommonUI */,
+				00EA802F21E1F21B00E5BC3D /* Category */,
+			);
+			name = Doraemon;
+			sourceTree = "<group>";
+		};
+		00EA802F21E1F21B00E5BC3D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				00EA803021E1F21B00E5BC3D /* UIImage+Doraemon.h */,
+				00EA803121E1F21B00E5BC3D /* UIView+Doraemon.h */,
+				00EA803221E1F21B00E5BC3D /* UIColor+Doraemon.m */,
+				00EA803321E1F21B00E5BC3D /* NSObject+Doraemon.m */,
+				00EA803421E1F21B00E5BC3D /* UIImage+Doraemon.m */,
+				00EA803521E1F21B00E5BC3D /* NSObject+Doraemon.h */,
+				00EA803621E1F21B00E5BC3D /* UIView+Doraemon.m */,
+				00EA803721E1F21B00E5BC3D /* UIColor+Doraemon.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		00EA803E21E1F55D00E5BC3D /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				00EA803F21E1F56700E5BC3D /* Visual */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		00EA803F21E1F56700E5BC3D /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				00EA804021E1F56700E5BC3D /* DoraemonVisualMagnifierWindow.h */,
+				00EA804121E1F56700E5BC3D /* DoraemonVisualInfoWindow.m */,
+				00EA804221E1F56700E5BC3D /* DoraemonVisualMagnifierWindow.m */,
+				00EA804321E1F56700E5BC3D /* DoraemonVisualInfoWindow.h */,
+			);
+			path = Visual;
+			sourceTree = "<group>";
+		};
 		0F33CFBDB99FE8E968369B41 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +359,8 @@
 		6003F593195388D20070C39A /* Example for HCDebugTool */ = {
 			isa = PBXGroup;
 			children = (
+				0085DC3121D3D2950096631D /* HCUIDefine.h */,
+				00EA802E21E1F20600E5BC3D /* Doraemon */,
 				0029A75121BA311500C856C9 /* HCDebugToolModule */,
 				6003F59C195388D20070C39A /* HCAppDelegate.h */,
 				6003F59D195388D20070C39A /* HCAppDelegate.m */,
@@ -469,12 +580,23 @@
 				006F4D7221BD25E1003B0B3F /* HCNetDebugModule.m in Sources */,
 				00804B7921CCFD4D00D05821 /* HCALTableViewCell.m in Sources */,
 				00C31A1F21CB908B006CCA3D /* HCYogaKitDebugModule.m in Sources */,
+				00EA804521E1F56700E5BC3D /* DoraemonVisualMagnifierWindow.m in Sources */,
+				00EA802921E1F1DB00E5BC3D /* DoraemonColorPickInfoWindow.m in Sources */,
+				00EA804421E1F56700E5BC3D /* DoraemonVisualInfoWindow.m in Sources */,
 				00804B7C21CCFD8800D05821 /* HCLeftPicRightTextView.m in Sources */,
+				00EA803B21E1F21B00E5BC3D /* UIView+Doraemon.m in Sources */,
 				6003F59E195388D20070C39A /* HCAppDelegate.m in Sources */,
 				0029A7E121BA442300C856C9 /* HCDebugToolPerformanceMudle.m in Sources */,
 				00804B7521CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.m in Sources */,
+				00EA803921E1F21B00E5BC3D /* NSObject+Doraemon.m in Sources */,
+				00EA803A21E1F21B00E5BC3D /* UIImage+Doraemon.m in Sources */,
+				00EA802B21E1F1DB00E5BC3D /* DoraemonColorPickInfoView.m in Sources */,
+				00EA801A21E1F03F00E5BC3D /* HCVisionModule.m in Sources */,
 				0085DC1A21D3CC860096631D /* HCLeftPicRightTextViewModel.m in Sources */,
 				6003F5A7195388D20070C39A /* HCViewController.m in Sources */,
+				00EA803821E1F21B00E5BC3D /* UIColor+Doraemon.m in Sources */,
+				00EA802C21E1F1DB00E5BC3D /* DoraemonColorPickView.m in Sources */,
+				00EA802A21E1F1DB00E5BC3D /* DoraemonColorPickWindow.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

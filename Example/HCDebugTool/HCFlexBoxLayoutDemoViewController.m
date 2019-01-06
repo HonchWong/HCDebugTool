@@ -11,7 +11,6 @@
 #import "HCUIDefine.h"
 #import "HCLeftPicRightTextViewModel.h"
 #import "HCLeftPicRightTextView.h"
-#import "UIView+FBLayout.h"
 
 @interface HCFlexBoxLayoutDemoViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -38,6 +37,10 @@
     [self.view addSubview:self.tableView];
 }
 
+- (void)dealloc {
+    NSLog(@"dealloc");
+}
+
 #pragma mark - Data
 
 - (void)loadData {
@@ -52,16 +55,12 @@
 
     __weak typeof(self)weakSelf = self;
     [self.tableView fb_setCellContnetViewBlockForIndexPath:^UIView *(NSIndexPath *indexPath) {
-        HCLeftPicRightTextView *view = [[HCLeftPicRightTextView alloc] init];
+        HCLeftPicRightTextView *view = [[HCLeftPicRightTextView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(weakSelf.view.bounds), 160)];
         view.backgroundColor = [UIColor yellowColor];
         [view setViewModel:[weakSelf.viewModels objectAtIndex:indexPath.row]];
-        [view fb_makeLayout:^(FBLayout *layout) {
-            layout.height.equalTo(@(160));
-            layout.width.equalTo(@(CGRectGetWidth(weakSelf.view.bounds)));
-        }];
         return view;
     }];
-
+//
     [self.tableView reloadData];
 }
 
@@ -76,10 +75,12 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return 0;
     return [self.tableView fb_heightForIndexPath:indexPath];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return [[UITableViewCell alloc] init];
     return [self.tableView fb_cellForIndexPath:indexPath];
 }
 
@@ -89,7 +90,7 @@
     if (!_tableView) {
         CGRect frame = CGRectMake(0, kNavBarHeight,
                                   self.view.bounds.size.width,
-                                  self.view.bounds.size.height - kNavBarHeight);
+                                  self.view.bounds.size.height);
         _tableView =
         [[UITableView alloc] initWithFrame:frame
                                      style:UITableViewStylePlain];

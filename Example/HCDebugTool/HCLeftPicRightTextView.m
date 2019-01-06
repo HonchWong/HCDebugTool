@@ -8,6 +8,7 @@
 
 #import "HCLeftPicRightTextView.h"
 #import "HCLeftPicRightTextViewModelProtocol.h"
+#import "UIView+FBLayout.h"
 
 #define  CoverImgViewWidth     68
 #define  CoverImgViewHeight    91
@@ -26,6 +27,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         [self setupUI];
+        [self layoutView];
     }
     return self;
 }
@@ -35,6 +37,13 @@
     [self addSubview:self.titleLabel];
     [self addSubview:self.introLabel];
     [self addSubview:self.authorLabel];
+}
+
+- (void)layoutView {
+//    [self fb_makeLayout:^(FBLayout *layout) {
+//        layout.height.equalTo(@(160));
+//        layout.width.equalTo());
+//    }];
 }
 
 - (void)setViewModel:(id<HCLeftPicRightTextViewModelProtocol>)viewModel {
