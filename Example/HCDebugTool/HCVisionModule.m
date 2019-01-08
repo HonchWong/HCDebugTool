@@ -10,6 +10,7 @@
 #import "HCDebugModuleSortLevel.h"
 #import "DoraemonColorPickInfoWindow.h"
 #import "DoraemonColorPickWindow.h"
+#import "DoraemonViewAlignManager.h"
 
 typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
     HCVisionModule_ColorPick = 1,
@@ -38,9 +39,10 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
         case HCVisionModule_CheckView:
             break;
         case HCVisionModule_Align:
+            [[DoraemonViewAlignManager shareInstance] show];
             break;
     }
-    [[HCDebugToolManager sharedManager] hideMenuView];
+    [self hideMenuView];
 }
 
 #pragma mark - HCDebugToolModuleProtocol
