@@ -13,8 +13,12 @@
 @interface HCDebugToolCommonModule : NSObject <HCDebugToolModuleProtocol, HCDebugToolCommonOptionViewDelegate>
 
 - (NSArray <NSDictionary *>*)optionDicts;
-- (void)dismissMenu:(void (^)(void))completion;
-- (void)dismissMenu;
+
+- (void)hideMenuView;
+- (void)hideMenuView:(void (^)(void))completion;
+
+- (void)pushViewController:(UIViewController *)viewController;
+- (void)presentViewController:(UIViewController *)viewController;
 
 @end
 

@@ -8,6 +8,7 @@
 
 #import "HCDebugToolCommonModule.h"
 #import "HCDebugToolManager.h"
+#import "HCDebugToolManager+EntraceView.h"
 
 @interface HCDebugToolCommonModule ()
 
@@ -30,12 +31,20 @@
     [NSString stringWithFormat:@"tableViewCellIdentifier_%x", arc4random()];
 }
 
-- (void)dismissMenu {
-    [self dismissMenu];
+- (void)hideMenuView {
+    [[HCDebugToolManager sharedManager] hideMenuView];
 }
 
-- (void)dismissMenu:(void (^)())completion {
-//    [[HCDebugToolManager sharedManager] 
+- (void)hideMenuView:(void (^)(void))completion {
+    [[HCDebugToolManager sharedManager] hideMenuView:completion];
+}
+
+- (void)pushViewController:(UIViewController *)viewController {
+    [[HCDebugToolManager sharedManager] pushViewController:viewController];
+}
+
+- (void)presentViewController:(UIViewController *)viewController {
+    [[HCDebugToolManager sharedManager] presentViewController:viewController];
 }
 
 #pragma mark - HCDebugToolModuleProtocol
