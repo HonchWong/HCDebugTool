@@ -15,6 +15,7 @@
 @property (nonatomic, strong) HCDebugToolEntranceView *entranceView;
 @property (nonatomic, strong) HCDebugToolMenuViewController *menuVC;
 @property (nonatomic, weak) UINavigationController *naviVC;
+@property (nonatomic, assign) BOOL didAddRootVCObserver;
 
 @end
 
@@ -24,7 +25,6 @@
     if (self = [super init]) {
         [self configProperty];
         [self setupUI];
-        [self setupObserver];
     }
     return self;
 }
@@ -48,6 +48,8 @@
     if (!self.entranceView.superview) {
         [[UIApplication sharedApplication].delegate.window addSubview:self.entranceView];
     }
+    
+    [self setupObserver];
 }
 
 - (void)showMenuView {
@@ -102,13 +104,29 @@
 #pragma mark - Observer
 
 - (void)setupObserver {
-    [[UIApplication sharedApplication].delegate.window addObserver:self
-                                                        forKeyPath:@"rootViewController"
-                                                           options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew
-                                                           context:nil];
+    if (!self.didAddRootVCObserver) {
+        self.didAddRootVCObserver = YES;
+        
+        id<UIApplicationDelegate> delegate = [UIApplication sharedApplication].delegate;
+        if ([delegate isKindOfClass:[NSObject class]]) {
+            [(NSObject *)delegate addObserver:self
+                                   forKeyPath:@"window"
+                                      options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew
+                                      context:nil];
+        }
+        
+        UIWindow *keyWindow = [UIApplication sharedApplication].delegate.window;
+        [keyWindow addObserver:self
+                    forKeyPath:@"rootViewController"
+                       options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew
+                       context:nil];
+    }
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary<NSString *,id> *)change
+                       context:(void *)context {
     [self.entranceView removeFromSuperview];
     [[UIApplication sharedApplication].delegate.window addSubview:self.entranceView];
 }
