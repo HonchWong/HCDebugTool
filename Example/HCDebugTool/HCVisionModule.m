@@ -11,6 +11,9 @@
 #import "DoraemonColorPickInfoWindow.h"
 #import "DoraemonColorPickWindow.h"
 #import "DoraemonViewAlignManager.h"
+#import "DoraemonViewCheckManager.h"
+#import "HCUIDefine.h"
+#import "HCBugCommitViewController.h"
 
 typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
     HCVisionModule_ColorPick = 1,
@@ -18,13 +21,42 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
     HCVisionModule_Align = 3,
 };
 
+@interface HCVisionModule ()
+
+@property (nonatomic, strong) HCBugCommitViewController *bugCommitVC;
+
+@end
+
 @implementation HCVisionModule
 
 #pragma mark - Private
 
 + (void)load {
-    [[HCDebugToolManager sharedManager] registerModule:[[self alloc] init]
+    HCVisionModule *module = [[self alloc] init];
+    [[HCDebugToolManager sharedManager] registerModule:module
                                              sortLevel:QRDebugModuleSortLevel_Vision];
+    [module setupBugCommitObserver];
+}
+
+- (void)setupBugCommitObserver {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(commitBug)
+                                                 name:BugCommitNotification
+                                               object:nil];
+}
+
+- (void)commitBug {
+    if (_bugCommitVC.navigationController) {
+        return;
+    }
+    
+    if (!_bugCommitVC) {
+        _bugCommitVC = [[HCBugCommitViewController alloc] init];
+    }
+    
+    UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:_bugCommitVC];
+    
+    [self presentViewController:naviVC];
 }
 
 #pragma mark - HCDebugToolCommonOptionViewDelegate
@@ -37,6 +69,7 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
             [[DoraemonColorPickInfoWindow shareInstance] show];
             break;
         case HCVisionModule_CheckView:
+            [[DoraemonViewCheckManager shareInstance] show];
             break;
         case HCVisionModule_Align:
             [[DoraemonViewAlignManager shareInstance] show];

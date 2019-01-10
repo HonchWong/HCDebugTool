@@ -20,9 +20,40 @@
 }
 
 - (void)presentViewController:(UIViewController *)viewController {
-    [self.naviVC presentViewController:viewController
-                              animated:YES
-                            completion:nil];
+    if (self.naviVC.isViewLoaded && self.naviVC.view.window) {
+        [self.naviVC presentViewController:viewController
+                                  animated:YES
+                                completion:nil];
+    } else {
+        UIViewController *currentVC = [self getCurrentVC];
+        [currentVC presentViewController:viewController
+                                animated:YES
+                              completion:nil];
+    }
+}
+
+- (UIViewController *)getCurrentVC {
+    UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    UIViewController *currentVC = [self getCurrentVCFrom:rootViewController];
+    return currentVC;
+}
+
+- (UIViewController *)getCurrentVCFrom:(UIViewController *)rootVC {
+    UIViewController *currentVC;
+    
+    if ([rootVC presentedViewController]) {
+        rootVC = [rootVC presentedViewController];
+    }
+    
+    if ([rootVC isKindOfClass:[UITabBarController class]]) {
+        currentVC = [self getCurrentVCFrom:[(UITabBarController *)rootVC selectedViewController]];
+    } else if ([rootVC isKindOfClass:[UINavigationController class]]){
+        currentVC = [self getCurrentVCFrom:[(UINavigationController *)rootVC visibleViewController]];
+    } else {
+        currentVC = rootVC;
+    }
+    
+    return currentVC;
 }
 
 @end

@@ -27,4 +27,6 @@
 #define DoraemonClosePluginNotification @"DoraemonClosePluginNotification"
 #define DoraemonQuickOpenLogVCNotification @"DoraemonQuickOpenLogVCNotification"
 
+#define BugCommitNotification @"BugCommitNotification"
+
 #endif /* HCUIDefine_h */
