@@ -69,7 +69,10 @@
 #pragma mark - HCDebugToolEntranceViewActionDelegate
 
 - (void)doEntraceAction {
-    if (self.menuVC || !self.naviVC) {
+    UIViewController *hostVC =
+    [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    
+    if (self.menuVC.view.window || hostVC.presentedViewController) {
         return;
     }
     
@@ -81,10 +84,8 @@
                                                   action:@selector(hideMenuView)];
     menuVC.title = @"Menu";
     self.menuVC = menuVC;
-    [self.naviVC setViewControllers:@[menuVC]];
-    
-    UIViewController *hostVC =
-    [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    [self.naviVC setViewControllers:@[menuVC]];    
+
     [hostVC presentViewController:self.naviVC
                          animated:YES
                        completion:nil];
