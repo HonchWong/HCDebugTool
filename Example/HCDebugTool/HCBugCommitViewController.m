@@ -7,19 +7,27 @@
 //
 
 #import "HCBugCommitViewController.h"
+#import "HCBugBillModel.h"
+#import "HCUIDefine.h"
+#import "HCBugItemEditCell.h"
 
-@interface HCBugCommitViewController ()
+@interface HCBugCommitViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) HCBugBillModel *bugBill;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
 @implementation HCBugCommitViewController
 
-- (instancetype)init {
+- (instancetype)initWithBugBill:(HCBugBillModel *)bugBill {
     if (self = [super init]) {
         [self setupBackBtn];
+        _bugBill = bugBill;
     }
     return self;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -40,6 +48,34 @@
 
 - (void)closePage {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - UITableViewDelegate & UITableViewDataSource
+
+- (NSInteger)   tableView:(UITableView *)tableView
+    numberOfRowsInSection:(NSInteger)section {
+    return self.bugBill.bugItems.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell =
+    [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(HCBugItemEditCell.class)];
+    return [[UITableViewCell alloc] init];
+}
+
+#pragma mark - getter
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        CGRect frame = CGRectMake(0, kNavBarHeight, HCScreenWidth, HCScreenHeight - kNavBarHeight);
+        _tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [_tableView registerClass:[HCBugItemEditCell class]
+           forCellReuseIdentifier:NSStringFromClass(HCBugItemEditCell.class)];
+    }
+    return _tableView;
 }
 
 @end
