@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @protocol HCBugItemEditViewDelegate;
+@class HCBugItemModel;
 
 @interface HCBugItemEditCell : UITableViewCell
 
 @property (nonatomic, weak) id<HCBugItemEditViewDelegate> delegate;
+@property (nonatomic, strong) HCBugItemModel *model;
+
++ (CGFloat)cellHeight;
 
 @end
 

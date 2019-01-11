@@ -10,8 +10,9 @@
 #import "HCBugBillModel.h"
 #import "HCUIDefine.h"
 #import "HCBugItemEditCell.h"
+#import "HCBugItemEditView.h"
 
-@interface HCBugCommitViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface HCBugCommitViewController () <UITableViewDelegate, UITableViewDataSource, HCBugItemEditViewDelegate>
 
 @property (nonatomic, strong) HCBugBillModel *bugBill;
 @property (nonatomic, strong) UITableView *tableView;
@@ -36,6 +37,8 @@
 
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:self.tableView];
 }
 
 - (void)setupBackBtn {
@@ -59,9 +62,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell =
+    HCBugItemEditCell *cell =
     [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(HCBugItemEditCell.class)];
-    return [[UITableViewCell alloc] init];
+    cell.delegate = self;
+    cell.tag = indexPath.row;
+    cell.model = [self.bugBill.bugItems objectAtIndex:indexPath.row];
+    return cell;
+}
+
+- (CGFloat)     tableView:(UITableView *)tableView
+  heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [HCBugItemEditCell.class cellHeight];
 }
 
 #pragma mark - getter
@@ -76,6 +87,14 @@
            forCellReuseIdentifier:NSStringFromClass(HCBugItemEditCell.class)];
     }
     return _tableView;
+}
+
+#pragma mark - HCBugItemEditViewDelegate
+
+- (void)editView:(HCBugItemEditView *)view
+      didEndEdit:(NSString *)content {
+    HCBugItemModel *item = [self.bugBill.bugItems objectAtIndex:view.tag];
+    item.bugDesc = content;
 }
 
 @end

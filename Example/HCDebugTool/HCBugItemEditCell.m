@@ -41,4 +41,13 @@
     [self.cardView setDelegate:delegate];
 }
 
+- (void)setModel:(HCBugItemModel *)model {
+    _model = model;
+    [self.cardView setModel:model];
+}
+
++ (CGFloat)cellHeight {
+    return [HCBugItemEditView.class viewHeight];
+}
+
 @end

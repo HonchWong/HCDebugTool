@@ -14,6 +14,8 @@
 #import "DoraemonViewCheckManager.h"
 #import "HCUIDefine.h"
 #import "HCBugCommitViewController.h"
+#import "HCBugBillModel.h"
+#import "HCBugItemModel.h"
 
 typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
     HCVisionModule_ColorPick = 1,
@@ -50,9 +52,20 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
         return;
     }
     
-    if (!_bugCommitVC) {
-        _bugCommitVC = [[HCBugCommitViewController alloc] init];
-    }
+//    if (!_bugCommitVC) {
+        HCBugBillModel *model = [[HCBugBillModel alloc] init];
+        NSMutableArray *items = [NSMutableArray arrayWithCapacity:3];
+        for (NSNumber *bugNumber in @[@(1),@(2),@(3)]) {
+            HCBugItemModel *item = [[HCBugItemModel alloc] init];
+            item.bugNumber = bugNumber.integerValue;
+            [items addObject:item];
+//            item.bug
+//            bugNumber.integerValue
+        }
+        model.bugItems = items.copy;
+        
+        _bugCommitVC = [[HCBugCommitViewController alloc] initWithBugBill:model];
+//    }
     
     UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:_bugCommitVC];
     

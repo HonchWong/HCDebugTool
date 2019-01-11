@@ -8,6 +8,7 @@
 
 #import "HCBugItemEditView.h"
 #import "HCUIDefine.h"
+#import "HCBugItemModel.h"
 
 #define Margin  16
 
@@ -43,6 +44,12 @@
     if ([self.delegate respondsToSelector:@selector(editView:didEndEdit:)]) {
         [self.delegate editView:self didEndEdit:textField.text];
     }
+}
+
+- (void)setModel:(HCBugItemModel *)model {
+    _model = model;
+    self.textField.placeholder = [NSString stringWithFormat:@"第 %lu 个bug", model.bugNumber];
+    self.textField.text = model.bugDesc;
 }
 
 - (NSString *)content {
