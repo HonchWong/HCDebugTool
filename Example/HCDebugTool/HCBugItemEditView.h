@@ -14,13 +14,12 @@
 @protocol HCBugItemEditViewDelegate <NSObject>
 
 - (void)editView:(HCBugItemEditView *)view didEndEdit:(NSString *)content;
+- (void)editView:(HCBugItemEditView *)view willBeginEdit:(NSString *)content;
 
 @end
 
 @interface HCBugItemEditView : UIView
 
-//- (NSString *)content;
-//- (void)setPlaceholder:(NSString *)placeholder;
 + (CGFloat)viewHeight;
 
 @property (nonatomic, weak) id<HCBugItemEditViewDelegate> delegate;

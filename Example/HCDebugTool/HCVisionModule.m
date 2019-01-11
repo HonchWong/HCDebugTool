@@ -52,20 +52,18 @@ typedef NS_OPTIONS(NSInteger, HCDebugToolVisionOptionViewTag) {
         return;
     }
     
-//    if (!_bugCommitVC) {
-        HCBugBillModel *model = [[HCBugBillModel alloc] init];
-        NSMutableArray *items = [NSMutableArray arrayWithCapacity:3];
-        for (NSNumber *bugNumber in @[@(1),@(2),@(3)]) {
-            HCBugItemModel *item = [[HCBugItemModel alloc] init];
-            item.bugNumber = bugNumber.integerValue;
-            [items addObject:item];
-//            item.bug
-//            bugNumber.integerValue
-        }
-        model.bugItems = items.copy;
-        
-        _bugCommitVC = [[HCBugCommitViewController alloc] initWithBugBill:model];
-//    }
+    HCBugBillModel *model = [[HCBugBillModel alloc] init];
+    NSMutableArray *items = [NSMutableArray arrayWithCapacity:3];
+    for (NSNumber *bugNumber in @[@(1),@(2),@(3),@(4),@(5),@(6),@(7),@(8),@(9)]) {
+        HCBugItemModel *item = [[HCBugItemModel alloc] init];
+        item.bugNumber = bugNumber.integerValue;
+        [items addObject:item];
+    }
+    model.bugItems = items.copy;
+    
+    model.bugPicture = [UIImage imageNamed:@"test"];
+    
+    _bugCommitVC = [[HCBugCommitViewController alloc] initWithBugBill:model];
     
     UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:_bugCommitVC];
     
