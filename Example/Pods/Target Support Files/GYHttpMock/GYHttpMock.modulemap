@@ -1,0 +1,6 @@
+framework module GYHttpMock {
+  umbrella header "GYHttpMock-umbrella.h"
+
+  export *
+  module * { export * }
+}
