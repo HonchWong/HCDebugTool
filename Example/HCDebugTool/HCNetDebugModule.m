@@ -7,41 +7,40 @@
 //
 
 #import "HCNetDebugModule.h"
-#include <stdlib.h>
-#include <spawn.h>
+#import "HCDebugModuleSortLevel.h"
+#import "HCNetDebugMockViewController.h"
 
-extern char **environ;
-
-void run_cmd(char *cmd)
-{
-    pid_t pid;
-    char *argv[] = {"sh", "-c", cmd, NULL};
-    int status;
-    
-    status = posix_spawn(&pid, "/bin/sh", NULL, NULL, argv, environ);
-    if (status == 0) {
-        if (waitpid(pid, &status, 0) == -1) {
-            perror("waitpid");
-        }
-    }
-}
+typedef NS_OPTIONS(NSInteger, HCNetDebugOptionViewTag) {
+    HCNetDebugOptionViewTag_Mock = 1,
+};
 
 @implementation HCNetDebugModule
 
 #pragma mark - Private
 
 + (void)load {
-    [[HCDebugToolManager sharedManager] registerModule:[[self alloc] init]];
+    [[HCDebugToolManager sharedManager] registerModule:[[self alloc] init]
+                                             sortLevel:QRDebugModuleSortLevel_Net];
 }
 
 #pragma mark - HCDebugToolCommonOptionViewDelegate
 
 - (void)optionDidSelected:(HCDebugToolCommonOptionItemViewModel *)option
                   atIndex:(NSInteger)index {
-    // 执行shell命令,只需要将shell命令写成类似下面的字符串,即可一条一条执行
-//    run_cmd("echo \"看到此消息说明shell命令执行成功！请按任意键退出...\"");
-    run_cmd("ls");
-//    run_cmd("exit");
+    switch (option.viewTag) {
+        case HCNetDebugOptionViewTag_Mock:
+        {
+            HCNetDebugMockViewController *vc =
+            [[HCNetDebugMockViewController alloc] init];
+            UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:vc];
+            [self hideMenuView:^{
+                [self presentViewController:naviVC];
+            }];
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 #pragma mark - HCDebugToolModuleProtocol
@@ -54,9 +53,7 @@ void run_cmd(char *cmd)
 
 - (NSArray <NSDictionary *>*)optionDicts {
     return @[@{HCDebugCommonModuleOptionKeys.title: @"Mock网络数据",
-               HCDebugCommonModuleOptionKeys.viewTag: @(1),
-               HCDebugCommonModuleOptionKeys.hasSwich: @(YES),
-               HCDebugCommonModuleOptionKeys.isSwichOn: @(YES),
+               HCDebugCommonModuleOptionKeys.viewTag: @(HCNetDebugOptionViewTag_Mock),
                }];
 }
 

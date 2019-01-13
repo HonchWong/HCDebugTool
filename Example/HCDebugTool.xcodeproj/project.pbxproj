@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0029A7E121BA442300C856C9 /* HCDebugToolPerformanceMudle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0029A7E021BA442300C856C9 /* HCDebugToolPerformanceMudle.m */; };
+		0035E58821EB7C0300D8026D /* HCNetDebugMockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0035E58721EB7C0300D8026D /* HCNetDebugMockViewController.m */; };
 		006F4D7221BD25E1003B0B3F /* HCNetDebugModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 006F4D7121BD25E1003B0B3F /* HCNetDebugModule.m */; };
 		00804B7521CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00804B7421CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.m */; };
 		00804B7921CCFD4D00D05821 /* HCALTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00804B7821CCFD4D00D05821 /* HCALTableViewCell.m */; };
@@ -68,6 +69,8 @@
 /* Begin PBXFileReference section */
 		0029A7DF21BA442300C856C9 /* HCDebugToolPerformanceMudle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugToolPerformanceMudle.h; sourceTree = "<group>"; };
 		0029A7E021BA442300C856C9 /* HCDebugToolPerformanceMudle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCDebugToolPerformanceMudle.m; sourceTree = "<group>"; };
+		0035E58621EB7C0300D8026D /* HCNetDebugMockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCNetDebugMockViewController.h; sourceTree = "<group>"; };
+		0035E58721EB7C0300D8026D /* HCNetDebugMockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCNetDebugMockViewController.m; sourceTree = "<group>"; };
 		006F4D7021BD25E1003B0B3F /* HCNetDebugModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCNetDebugModule.h; sourceTree = "<group>"; };
 		006F4D7121BD25E1003B0B3F /* HCNetDebugModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCNetDebugModule.m; sourceTree = "<group>"; };
 		00804B7321CCF97300D05821 /* HCFlexBoxLayoutDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCFlexBoxLayoutDemoViewController.h; sourceTree = "<group>"; };
@@ -205,11 +208,21 @@
 			name = Performance;
 			sourceTree = "<group>";
 		};
+		0035E58521EB7BE500D8026D /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				0035E58621EB7C0300D8026D /* HCNetDebugMockViewController.h */,
+				0035E58721EB7C0300D8026D /* HCNetDebugMockViewController.m */,
+			);
+			name = Mock;
+			sourceTree = "<group>";
+		};
 		006F4D6F21BD25C6003B0B3F /* NetDebug */ = {
 			isa = PBXGroup;
 			children = (
 				006F4D7021BD25E1003B0B3F /* HCNetDebugModule.h */,
 				006F4D7121BD25E1003B0B3F /* HCNetDebugModule.m */,
+				0035E58521EB7BE500D8026D /* Mock */,
 			);
 			name = NetDebug;
 			sourceTree = "<group>";
@@ -655,11 +668,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FlexBoxLayout/FlexBoxLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/GYHttpMock/GYHttpMock.framework",
 				"${BUILT_PRODUCTS_DIR}/HCDebugTool/HCDebugTool.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexBoxLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GYHttpMock.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCDebugTool.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -696,6 +711,7 @@
 				0085DC1A21D3CC860096631D /* HCLeftPicRightTextViewModel.m in Sources */,
 				6003F5A7195388D20070C39A /* HCViewController.m in Sources */,
 				00F8321121E727EE00AA80B6 /* HCBugItemEditView.m in Sources */,
+				0035E58821EB7C0300D8026D /* HCNetDebugMockViewController.m in Sources */,
 				00F831EE21E7136300AA80B6 /* HCBugCommitViewController.m in Sources */,
 				00EA803821E1F21B00E5BC3D /* UIColor+Doraemon.m in Sources */,
 				00F8312D21E4C84000AA80B6 /* DoraemonViewAlignView.m in Sources */,

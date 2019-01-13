@@ -10,6 +10,7 @@
 #define HCDebugModuleSortLevel_h
 
 typedef NS_OPTIONS(NSInteger, QRDebugModuleSortLevel) {
+    QRDebugModuleSortLevel_Net = 3000,             // 网络调试工具
     QRDebugModuleSortLevel_YogaKit = 2000,         // YogaKit调试
     QRDebugModuleSortLevel_Vision = 300,           // 视觉工具调试
 };
