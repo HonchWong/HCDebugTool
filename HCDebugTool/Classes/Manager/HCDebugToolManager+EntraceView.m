@@ -34,7 +34,7 @@
 
 - (void)checkAutoShowEntranceView {
     BOOL isAutoShowEntranceViewDisable =
-    [[NSUserDefaults standardUserDefaults] objectForKey:HCDebugToolManagerKeys.autoShowEntranceViewDisable];
+    [[NSUserDefaults standardUserDefaults] boolForKey:HCDebugToolManagerKeys.autoShowEntranceViewDisable];
     if (!isAutoShowEntranceViewDisable) {
         [self performSelector:@selector(showEntranceView) withObject:nil afterDelay:3];
     }
