@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HCLeftPicRightTextViewModelProtocol.h"
 
-NS_ASSUME_NONNULL_BEGIN
+typedef void (^HCAutoLayoutNetAPIManagerCompletionHandler)(BOOL success,  NSArray <id<HCLeftPicRightTextViewModelProtocol>>*bookList);
+
+typedef HCAutoLayoutNetAPIManagerCompletionHandler HCAutoLayoutNetHandler;
 
 @interface HCAutoLayoutNetAPIManager : NSObject
 
++ (void)requestBookListWithCompletionHandler:(HCAutoLayoutNetHandler)handler;
+
 @end
 
-NS_ASSUME_NONNULL_END

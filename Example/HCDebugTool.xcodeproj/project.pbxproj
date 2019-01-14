@@ -17,6 +17,7 @@
 		0085DC3321D3D54C0096631D /* bookList.json in Resources */ = {isa = PBXBuildFile; fileRef = 0085DC3221D3D54C0096631D /* bookList.json */; };
 		0090467921E730EF0062826E /* HCBugItemEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0090467821E730EF0062826E /* HCBugItemEditCell.m */; };
 		0090467B21E8418C0062826E /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 0090467A21E8418C0062826E /* test.png */; };
+		009046D621EC3B480062826E /* HCAutoLayoutNetAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009046D521EC3B480062826E /* HCAutoLayoutNetAPIManager.m */; };
 		00C31A1F21CB908B006CCA3D /* HCYogaKitDebugModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C31A1E21CB908B006CCA3D /* HCYogaKitDebugModule.m */; };
 		00EA801A21E1F03F00E5BC3D /* HCVisionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA801921E1F03F00E5BC3D /* HCVisionModule.m */; };
 		00EA802921E1F1DB00E5BC3D /* DoraemonColorPickInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EA801F21E1F1DB00E5BC3D /* DoraemonColorPickInfoWindow.m */; };
@@ -87,6 +88,8 @@
 		0090467721E730EF0062826E /* HCBugItemEditCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCBugItemEditCell.h; sourceTree = "<group>"; };
 		0090467821E730EF0062826E /* HCBugItemEditCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCBugItemEditCell.m; sourceTree = "<group>"; };
 		0090467A21E8418C0062826E /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		009046D421EC3B480062826E /* HCAutoLayoutNetAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCAutoLayoutNetAPIManager.h; sourceTree = "<group>"; };
+		009046D521EC3B480062826E /* HCAutoLayoutNetAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCAutoLayoutNetAPIManager.m; sourceTree = "<group>"; };
 		00C31A1D21CB908B006CCA3D /* HCYogaKitDebugModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCYogaKitDebugModule.h; sourceTree = "<group>"; };
 		00C31A1E21CB908B006CCA3D /* HCYogaKitDebugModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCYogaKitDebugModule.m; sourceTree = "<group>"; };
 		00C31A2021CBB517006CCA3D /* HCDebugModuleSortLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCDebugModuleSortLevel.h; sourceTree = "<group>"; };
@@ -264,12 +267,22 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		009046D321EC39350062826E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0085DC3221D3D54C0096631D /* bookList.json */,
+				009046D421EC3B480062826E /* HCAutoLayoutNetAPIManager.h */,
+				009046D521EC3B480062826E /* HCAutoLayoutNetAPIManager.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		00C31A1C21CB9061006CCA3D /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
 				00C31A1D21CB908B006CCA3D /* HCYogaKitDebugModule.h */,
 				00C31A1E21CB908B006CCA3D /* HCYogaKitDebugModule.m */,
-				0085DC3221D3D54C0096631D /* bookList.json */,
+				009046D321EC39350062826E /* API */,
 				0085DC1721D3C9BF0096631D /* Model */,
 				00804B7621CCFD0300D05821 /* View */,
 				00804B7221CCDFBB00D05821 /* YogaKit */,
@@ -711,6 +724,7 @@
 				00EA802B21E1F1DB00E5BC3D /* DoraemonColorPickInfoView.m in Sources */,
 				00EA801A21E1F03F00E5BC3D /* HCVisionModule.m in Sources */,
 				0085DC1A21D3CC860096631D /* HCLeftPicRightTextViewModel.m in Sources */,
+				009046D621EC3B480062826E /* HCAutoLayoutNetAPIManager.m in Sources */,
 				6003F5A7195388D20070C39A /* HCViewController.m in Sources */,
 				00F8321121E727EE00AA80B6 /* HCBugItemEditView.m in Sources */,
 				0035E58821EB7C0300D8026D /* HCNetDebugMockViewController.m in Sources */,
