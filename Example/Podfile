@@ -6,6 +6,7 @@ target 'HCDebugTool_Example' do
   pod 'HCDebugTool', :path => '../'
   pod 'FlexBoxLayout' # https://github.com/carlSQ/FlexBoxLayout
   pod 'GYHttpMock'
+  pod 'AFNetworking'
 #  pod 'YogaKit'
 #  pod 'HCDebugTool'
 
