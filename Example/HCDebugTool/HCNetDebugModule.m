@@ -39,7 +39,7 @@ typedef NS_OPTIONS(NSInteger, HCNetDebugOptionViewTag) {
             [self hideMenuView:^{
                 [self presentViewController:naviVC];
             }];
-            mockRequest(@"GET", @"https://www.easy-mock.com");
+            mockRequest(@"GET", @"https://www.easy-mock.com/mock/5b877ba37eb5e51ccf7d4db1/example/testBookList");
         }
             break;
         case HCNetDebugOptionViewTag_Proxy:

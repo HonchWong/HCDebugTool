@@ -15,6 +15,8 @@
 		00804B7C21CCFD8800D05821 /* HCLeftPicRightTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00804B7B21CCFD8800D05821 /* HCLeftPicRightTextView.m */; };
 		0085DC1A21D3CC860096631D /* HCLeftPicRightTextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085DC1921D3CC860096631D /* HCLeftPicRightTextViewModel.m */; };
 		0085DC3321D3D54C0096631D /* bookList.json in Resources */ = {isa = PBXBuildFile; fileRef = 0085DC3221D3D54C0096631D /* bookList.json */; };
+		008857D021EE11F0009E0A7A /* HCNetMockintroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 008857CF21EE11F0009E0A7A /* HCNetMockintroCell.m */; };
+		008857D421EE126B009E0A7A /* HCNetMockIntroViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 008857D321EE126B009E0A7A /* HCNetMockIntroViewModel.m */; };
 		0090467921E730EF0062826E /* HCBugItemEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0090467821E730EF0062826E /* HCBugItemEditCell.m */; };
 		0090467B21E8418C0062826E /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 0090467A21E8418C0062826E /* test.png */; };
 		009046D621EC3B480062826E /* HCAutoLayoutNetAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009046D521EC3B480062826E /* HCAutoLayoutNetAPIManager.m */; };
@@ -85,6 +87,10 @@
 		0085DC1B21D3CCA10096631D /* HCLeftPicRightTextViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCLeftPicRightTextViewModelProtocol.h; sourceTree = "<group>"; };
 		0085DC3121D3D2950096631D /* HCUIDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCUIDefine.h; sourceTree = "<group>"; };
 		0085DC3221D3D54C0096631D /* bookList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bookList.json; sourceTree = "<group>"; };
+		008857CE21EE11F0009E0A7A /* HCNetMockintroCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCNetMockintroCell.h; sourceTree = "<group>"; };
+		008857CF21EE11F0009E0A7A /* HCNetMockintroCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCNetMockintroCell.m; sourceTree = "<group>"; };
+		008857D221EE126B009E0A7A /* HCNetMockIntroViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCNetMockIntroViewModel.h; sourceTree = "<group>"; };
+		008857D321EE126B009E0A7A /* HCNetMockIntroViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCNetMockIntroViewModel.m; sourceTree = "<group>"; };
 		0090467721E730EF0062826E /* HCBugItemEditCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCBugItemEditCell.h; sourceTree = "<group>"; };
 		0090467821E730EF0062826E /* HCBugItemEditCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCBugItemEditCell.m; sourceTree = "<group>"; };
 		0090467A21E8418C0062826E /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
@@ -216,6 +222,8 @@
 			children = (
 				0035E58621EB7C0300D8026D /* HCNetDebugMockViewController.h */,
 				0035E58721EB7C0300D8026D /* HCNetDebugMockViewController.m */,
+				008857D121EE1214009E0A7A /* Model */,
+				008857CD21EE1168009E0A7A /* View */,
 			);
 			name = Mock;
 			sourceTree = "<group>";
@@ -263,6 +271,24 @@
 				0085DC1821D3CC860096631D /* HCLeftPicRightTextViewModel.h */,
 				0085DC1921D3CC860096631D /* HCLeftPicRightTextViewModel.m */,
 				0085DC1B21D3CCA10096631D /* HCLeftPicRightTextViewModelProtocol.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		008857CD21EE1168009E0A7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				008857CE21EE11F0009E0A7A /* HCNetMockintroCell.h */,
+				008857CF21EE11F0009E0A7A /* HCNetMockintroCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		008857D121EE1214009E0A7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				008857D221EE126B009E0A7A /* HCNetMockIntroViewModel.h */,
+				008857D321EE126B009E0A7A /* HCNetMockIntroViewModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -712,6 +738,7 @@
 				00EA804521E1F56700E5BC3D /* DoraemonVisualMagnifierWindow.m in Sources */,
 				00EA802921E1F1DB00E5BC3D /* DoraemonColorPickInfoWindow.m in Sources */,
 				00EA804421E1F56700E5BC3D /* DoraemonVisualInfoWindow.m in Sources */,
+				008857D421EE126B009E0A7A /* HCNetMockIntroViewModel.m in Sources */,
 				0090467921E730EF0062826E /* HCBugItemEditCell.m in Sources */,
 				00804B7C21CCFD8800D05821 /* HCLeftPicRightTextView.m in Sources */,
 				00F8312C21E4C84000AA80B6 /* DoraemonViewAlignManager.m in Sources */,
@@ -728,6 +755,7 @@
 				0085DC1A21D3CC860096631D /* HCLeftPicRightTextViewModel.m in Sources */,
 				009046D621EC3B480062826E /* HCAutoLayoutNetAPIManager.m in Sources */,
 				6003F5A7195388D20070C39A /* HCViewController.m in Sources */,
+				008857D021EE11F0009E0A7A /* HCNetMockintroCell.m in Sources */,
 				00F8321121E727EE00AA80B6 /* HCBugItemEditView.m in Sources */,
 				0035E58821EB7C0300D8026D /* HCNetDebugMockViewController.m in Sources */,
 				00F831EE21E7136300AA80B6 /* HCBugCommitViewController.m in Sources */,
