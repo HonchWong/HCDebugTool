@@ -79,7 +79,7 @@
         layout.height.equalTo(@(CoverImgViewHeight + CoverImgViewMargin * 2));
         layout.flexDirection.equalTo(@(FBFlexDirectionRow));
         layout.alignItems.equalTo(@(FBAlignFlexStart));
-        layout.justifyContent.equalTo(@(FBJustifyFlexStart));
+        layout.justifyContent.equalTo(@(FBJustifySpaceBetween));
     }];
     self.fb_children = @[self.coverImgView, div];
 }

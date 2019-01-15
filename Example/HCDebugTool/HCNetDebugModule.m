@@ -9,6 +9,7 @@
 #import "HCNetDebugModule.h"
 #import "HCDebugModuleSortLevel.h"
 #import "HCNetDebugMockViewController.h"
+#import "GYHttpMock.h"
 
 typedef NS_OPTIONS(NSInteger, HCNetDebugOptionViewTag) {
     HCNetDebugOptionViewTag_Mock = 1,
@@ -36,6 +37,7 @@ typedef NS_OPTIONS(NSInteger, HCNetDebugOptionViewTag) {
             [self hideMenuView:^{
                 [self presentViewController:naviVC];
             }];
+            mockRequest(@"GET", @"https://www.easy-mock.com");
         }
             break;
         default:

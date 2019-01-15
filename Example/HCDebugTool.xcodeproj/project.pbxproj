@@ -681,6 +681,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HCDebugTool_Example/Pods-HCDebugTool_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
 				"${BUILT_PRODUCTS_DIR}/FlexBoxLayout/FlexBoxLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/GYHttpMock/GYHttpMock.framework",
 				"${BUILT_PRODUCTS_DIR}/HCDebugTool/HCDebugTool.framework",
@@ -688,6 +689,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexBoxLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GYHttpMock.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCDebugTool.framework",

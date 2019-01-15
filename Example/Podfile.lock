@@ -14,32 +14,37 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - FlexBoxLayout (1.0.0)
+  - FLEX (2.4.0)
+  - FlexBoxLayout (0.8.0)
   - GYHttpMock (1.0.1)
-  - HCDebugTool (0.1.7)
+  - HCDebugTool (0.1.8.1)
 
 DEPENDENCIES:
   - AFNetworking
-  - FlexBoxLayout
+  - FLEX
+  - FlexBoxLayout (from `dependencyRepos/FlexBoxLayout`)
   - GYHttpMock
   - HCDebugTool (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
-    - FlexBoxLayout
+    - FLEX
     - GYHttpMock
 
 EXTERNAL SOURCES:
+  FlexBoxLayout:
+    :path: dependencyRepos/FlexBoxLayout
   HCDebugTool:
     :path: "../"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  FlexBoxLayout: 83d4acd144ebd360b31e9bead8667151e22fad83
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  FlexBoxLayout: 5e6647c2f678d598be58a5e1b1abc6f7a618e92e
   GYHttpMock: ad08e55ce8bde4e7f7b4d0cbc79ff23c1311658b
-  HCDebugTool: 6d10bdca251fffc8792a7d4191603d94cdb94d33
+  HCDebugTool: dfb1ccc5361f223d571867191609aeef72a9ce58
 
-PODFILE CHECKSUM: 3b8c273d11e6b6bb9ee8e70d0164901e0421294c
+PODFILE CHECKSUM: 1701c136cf0a1dff20811d3481d97d43ac2f2870
 
 COCOAPODS: 1.5.3
