@@ -10,9 +10,11 @@
 #import "HCDebugModuleSortLevel.h"
 #import "HCNetDebugMockViewController.h"
 #import "GYHttpMock.h"
+#import "FLEX.h"
 
 typedef NS_OPTIONS(NSInteger, HCNetDebugOptionViewTag) {
     HCNetDebugOptionViewTag_Mock = 1,
+    HCNetDebugOptionViewTag_Proxy,
 };
 
 @implementation HCNetDebugModule
@@ -40,6 +42,13 @@ typedef NS_OPTIONS(NSInteger, HCNetDebugOptionViewTag) {
             mockRequest(@"GET", @"https://www.easy-mock.com");
         }
             break;
+        case HCNetDebugOptionViewTag_Proxy:
+        {
+            [self hideMenuView:^{
+                [[FLEXManager sharedManager] showExplorer];
+            }];
+        }
+            break;
         default:
             break;
     }
@@ -56,6 +65,9 @@ typedef NS_OPTIONS(NSInteger, HCNetDebugOptionViewTag) {
 - (NSArray <NSDictionary *>*)optionDicts {
     return @[@{HCDebugCommonModuleOptionKeys.title: @"Mock网络数据",
                HCDebugCommonModuleOptionKeys.viewTag: @(HCNetDebugOptionViewTag_Mock),
+               },
+             @{HCDebugCommonModuleOptionKeys.title: @"FLEX",
+               HCDebugCommonModuleOptionKeys.viewTag: @(HCNetDebugOptionViewTag_Proxy),
                }];
 }
 
