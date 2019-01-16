@@ -11,7 +11,7 @@
 
 @interface HCNetDebugMockRuleViewController : UIViewController
 
-
+- (instancetype)initWithRuleIdentity:(NSString *)identity;
 
 @end
 

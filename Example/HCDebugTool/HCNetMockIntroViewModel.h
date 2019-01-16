@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSString *urlDetail;
 @property (nonatomic, strong) NSString *urlDesc;
+@property (nonatomic, strong) NSString *identity;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 

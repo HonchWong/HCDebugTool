@@ -14,6 +14,7 @@
     if (self = [super init]) {
         self.urlDetail = [dict objectForKey:@"urlDetail"];
         self.urlDesc = [dict objectForKey:@"urlDesc"];
+        self.identity = [dict objectForKey:@"identity"];
     }
     return self;
 }
