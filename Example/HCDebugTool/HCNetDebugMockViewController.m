@@ -9,12 +9,17 @@
 #import "HCNetDebugMockViewController.h"
 #import "HCNetMockintroCell.h"
 #import "HCUIDefine.h"
-#import "HCNetMockDataManager.h"
+#import "HCNetMockManager.h"
+#import "HCNetDebugMockRuleViewController.h"
 
-@interface HCNetDebugMockViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface HCNetDebugMockViewController () <
+UITableViewDelegate,
+UITableViewDataSource,
+HCNetMockintroCellActionDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray <HCNetMockIntroViewModel *>*viewModels;
+@property (nonatomic, strong) HCNetMockManager *manager;
 
 @end
 
@@ -59,7 +64,7 @@
 #pragma mark - Data
 
 - (void)loadData {
-    [HCNetMockDataManager requestIntroViewModelWithCompletionHandler:^(BOOL success, NSArray<HCNetMockIntroViewModel *> *viewModels) {
+    [self.manager requestIntroViewModelWithCompletionHandler:^(BOOL success, NSArray<HCNetMockIntroViewModel *> *viewModels) {
         [self.viewModels addObjectsFromArray:viewModels];
         [self.tableView reloadData];
     }];
@@ -82,8 +87,21 @@
                                          reuseIdentifier:NSStringFromClass([HCNetMockintroCell class])];
     }
     [cell setViewModel:[self.viewModels objectAtIndex:indexPath.row]];
+    cell.delegate = self;
     
     return cell;
+}
+
+#pragma mark - HCNetMockintroCellActionDelegate
+
+- (void)cell:(HCNetMockintroCell *)cell switchViewDidTap:(BOOL)isOn {
+    
+}
+
+- (void)cellEditRuleBtnDidClick:(HCNetMockintroCell *)cell {
+    HCNetDebugMockRuleViewController *vc =
+    [[HCNetDebugMockRuleViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - getter
@@ -108,6 +126,13 @@
         _viewModels = @[].mutableCopy;
     }
     return _viewModels;
+}
+
+- (HCNetMockManager *)manager {
+    if (!_manager) {
+        _manager = [[HCNetMockManager alloc] init];
+    }
+    return _manager;
 }
 
 @end

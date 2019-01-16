@@ -64,11 +64,15 @@
 #pragma mark - action
 
 - (void)switchViewDidTap:(UISwitch *)sender {
-
+    if ([self.delegate respondsToSelector:@selector(cell:switchViewDidTap:)]) {
+        [self.delegate cell:self switchViewDidTap:sender.isOn];
+    }
 }
 
 - (void)editRule {
-    
+    if ([self.delegate respondsToSelector:@selector(cellEditRuleBtnDidClick:)]) {
+        [self.delegate cellEditRuleBtnDidClick:self];
+    }
 }
 
 #pragma mark - getter
@@ -116,6 +120,7 @@
         _editButton.layer.borderWidth = 1;
         [_editButton setBackgroundColor:[UIColor whiteColor]];
         [_editButton addTarget:self action:@selector(editRule) forControlEvents:UIControlEventTouchUpInside];
+        _editButton.titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _editButton;
 }

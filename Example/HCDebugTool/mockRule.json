@@ -1,0 +1,37 @@
+{
+    "mockRule" : {
+        "1" : {
+            "requestType": 1,
+            "rules": [
+                "rule": {
+                    "type": 1,
+                    "enable": 1,
+                    "errorData": {
+                        "error": 1,
+                    },
+                },
+                "rule": {
+                    "type": 2,
+                    "enable": 1,
+                },
+                "rule": {
+                    "type": 3,
+                    "enable": 1,
+                    "field": {
+                        "name": "abc",
+                    }
+                },
+                "rule": {
+                    "type": 4,
+                    "enable": 1,
+                    "path": "",
+                },
+                "rule": {
+                    "type": 5,
+                    "enable": 1,
+                    "path": "",
+                },
+            ],
+        }
+    }
+}
