@@ -10,8 +10,10 @@
 
 @interface HCNetMockIntroViewModel : NSObject
 
-@property (nonatomic, strong) NSString *url;
+@property (nonatomic, strong) NSString *urlDetail;
 @property (nonatomic, strong) NSString *urlDesc;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
 
 @end
 

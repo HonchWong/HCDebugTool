@@ -10,4 +10,12 @@
 
 @implementation HCNetMockIntroViewModel
 
+- (instancetype)initWithDictionary:(NSDictionary *)dict {
+    if (self = [super init]) {
+        self.urlDetail = [dict objectForKey:@"urlDetail"];
+        self.urlDesc = [dict objectForKey:@"urlDesc"];
+    }
+    return self;
+}
+
 @end

@@ -9,6 +9,7 @@
 #import "HCNetDebugMockViewController.h"
 #import "HCNetMockintroCell.h"
 #import "HCUIDefine.h"
+#import "HCNetMockDataManager.h"
 
 @interface HCNetDebugMockViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -58,10 +59,10 @@
 #pragma mark - Data
 
 - (void)loadData {
-    HCNetMockIntroViewModel *viewModel = [[HCNetMockIntroViewModel alloc] init];
-    viewModel.url = @"testurl";
-    viewModel.urlDesc = @"testurlDesc testurlDesc testurlDesc testurlDesc testurlDesc testurlDesc testurlDesc testurlDesc testurlDesc";
-    [self.viewModels addObject:viewModel];
+    [HCNetMockDataManager requestIntroViewModelWithCompletionHandler:^(BOOL success, NSArray<HCNetMockIntroViewModel *> *viewModels) {
+        [self.viewModels addObjectsFromArray:viewModels];
+        [self.tableView reloadData];
+    }];
 }
 
 #pragma mark - UITableViewDataSource & UITableViewDelegate

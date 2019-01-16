@@ -17,6 +17,7 @@
 		0085DC3321D3D54C0096631D /* bookList.json in Resources */ = {isa = PBXBuildFile; fileRef = 0085DC3221D3D54C0096631D /* bookList.json */; };
 		008857D021EE11F0009E0A7A /* HCNetMockintroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 008857CF21EE11F0009E0A7A /* HCNetMockintroCell.m */; };
 		008857D421EE126B009E0A7A /* HCNetMockIntroViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 008857D321EE126B009E0A7A /* HCNetMockIntroViewModel.m */; };
+		008857F121EEE066009E0A7A /* HCNetMockDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 008857F021EEE066009E0A7A /* HCNetMockDataManager.m */; };
 		0090467921E730EF0062826E /* HCBugItemEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0090467821E730EF0062826E /* HCBugItemEditCell.m */; };
 		0090467B21E8418C0062826E /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 0090467A21E8418C0062826E /* test.png */; };
 		009046D621EC3B480062826E /* HCAutoLayoutNetAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 009046D521EC3B480062826E /* HCAutoLayoutNetAPIManager.m */; };
@@ -91,6 +92,9 @@
 		008857CF21EE11F0009E0A7A /* HCNetMockintroCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCNetMockintroCell.m; sourceTree = "<group>"; };
 		008857D221EE126B009E0A7A /* HCNetMockIntroViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCNetMockIntroViewModel.h; sourceTree = "<group>"; };
 		008857D321EE126B009E0A7A /* HCNetMockIntroViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCNetMockIntroViewModel.m; sourceTree = "<group>"; };
+		008857EB21EEDC3F009E0A7A /* mockAPI.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockAPI.json; sourceTree = "<group>"; };
+		008857EF21EEE066009E0A7A /* HCNetMockDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCNetMockDataManager.h; sourceTree = "<group>"; };
+		008857F021EEE066009E0A7A /* HCNetMockDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCNetMockDataManager.m; sourceTree = "<group>"; };
 		0090467721E730EF0062826E /* HCBugItemEditCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCBugItemEditCell.h; sourceTree = "<group>"; };
 		0090467821E730EF0062826E /* HCBugItemEditCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCBugItemEditCell.m; sourceTree = "<group>"; };
 		0090467A21E8418C0062826E /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 			children = (
 				0035E58621EB7C0300D8026D /* HCNetDebugMockViewController.h */,
 				0035E58721EB7C0300D8026D /* HCNetDebugMockViewController.m */,
+				008857EA21EEDC31009E0A7A /* Data */,
 				008857D121EE1214009E0A7A /* Model */,
 				008857CD21EE1168009E0A7A /* View */,
 			);
@@ -291,6 +296,16 @@
 				008857D321EE126B009E0A7A /* HCNetMockIntroViewModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		008857EA21EEDC31009E0A7A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				008857EB21EEDC3F009E0A7A /* mockAPI.json */,
+				008857EF21EEE066009E0A7A /* HCNetMockDataManager.h */,
+				008857F021EEE066009E0A7A /* HCNetMockDataManager.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		009046D321EC39350062826E /* API */ = {
@@ -757,6 +772,7 @@
 				6003F5A7195388D20070C39A /* HCViewController.m in Sources */,
 				008857D021EE11F0009E0A7A /* HCNetMockintroCell.m in Sources */,
 				00F8321121E727EE00AA80B6 /* HCBugItemEditView.m in Sources */,
+				008857F121EEE066009E0A7A /* HCNetMockDataManager.m in Sources */,
 				0035E58821EB7C0300D8026D /* HCNetDebugMockViewController.m in Sources */,
 				00F831EE21E7136300AA80B6 /* HCBugCommitViewController.m in Sources */,
 				00EA803821E1F21B00E5BC3D /* UIColor+Doraemon.m in Sources */,

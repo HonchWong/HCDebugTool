@@ -11,9 +11,10 @@
 
 @interface HCNetMockintroCell ()
 
-@property (nonatomic, strong) UILabel *urlLabel;
-@property (nonatomic, strong) UITextView *urlDescTextView;
+@property (nonatomic, strong) UILabel *urlDescLabel;
+@property (nonatomic, strong) UITextView *urlDetailTextView;
 @property (nonatomic, strong) UISwitch *switchView;
+@property (nonatomic, strong) UIButton *editButton;
 
 @end
 
@@ -30,22 +31,30 @@
 - (void)setViewModel:(HCNetMockIntroViewModel *)viewModel {
     _viewModel = viewModel;
     
-    self.urlLabel.text = viewModel.url;
-    self.urlDescTextView.text = viewModel.urlDesc;
+    self.urlDescLabel.text = viewModel.urlDesc;
+    self.urlDetailTextView.text = viewModel.urlDetail;
 }
 
 - (void)setupUI {
-    self.urlLabel.frame = CGRectMake(12, 12, HCScreenWidth - 12 - 63 - 12, self.urlLabel.font.pointSize);
-    [self.contentView addSubview:self.urlLabel];
+    self.urlDescLabel.frame = CGRectMake(12, 12, HCScreenWidth - 12 - 70 - 12, self.urlDescLabel.font.pointSize);
+    [self.contentView addSubview:self.urlDescLabel];
     
-    self.urlDescTextView.frame = CGRectMake(12, CGRectGetMaxY(self.urlLabel.frame) + 6,
-                                            CGRectGetWidth(self.urlLabel.frame),
+    self.urlDetailTextView.frame = CGRectMake(12, CGRectGetMaxY(self.urlDescLabel.frame) + 6,
+                                            CGRectGetWidth(self.urlDescLabel.frame),
                                             12 * 3);
-    [self.contentView addSubview:self.urlDescTextView];
+    [self.contentView addSubview:self.urlDetailTextView];
     
-    self.switchView.frame = CGRectMake(CGRectGetMaxX(self.urlDescTextView.frame) + 12,
+    self.switchView.frame = CGRectMake(CGRectGetMaxX(self.urlDetailTextView.frame) + 12,
                                        12, 0, 0);
     [self.contentView addSubview:self.switchView];
+    
+    self.editButton.frame = CGRectMake(CGRectGetMinX(self.switchView.frame),
+                                       CGRectGetMaxY(self.switchView.frame) + 8,
+                                       CGRectGetWidth(self.switchView.frame),
+                                       18);
+    self.editButton.layer.cornerRadius = 3;
+    
+    [self.contentView addSubview:self.editButton];
 }
 
 + (CGFloat)cellHeight {
@@ -55,34 +64,36 @@
 #pragma mark - action
 
 - (void)switchViewDidTap:(UISwitch *)sender {
-//    if ([self.delegate respondsToSelector:@selector(optionItem:didChangeSwitch:)]) {
-//        [self.delegate optionItem:self.viewModel didChangeSwitch:sender.isOn];
-//    }
+
+}
+
+- (void)editRule {
+    
 }
 
 #pragma mark - getter
 
-- (UILabel *)urlLabel {
-    if (!_urlLabel) {
+- (UILabel *)urlDescLabel {
+    if (!_urlDescLabel) {
         UILabel *label = [[UILabel alloc] init];
         label.textColor = [UIColor blackColor];
         label.font = [UIFont systemFontOfSize:14];
         label.numberOfLines = 1;
-        _urlLabel = label;
+        _urlDescLabel = label;
     }
-    return _urlLabel;
+    return _urlDescLabel;
 }
 
-- (UITextView *)urlDescTextView {
-    if (!_urlDescTextView) {
-        _urlDescTextView = [[UITextView alloc] init];
-        _urlDescTextView.textColor = [UIColor colorWithWhite:0.7 alpha:1.0];
-        _urlDescTextView.font = [UIFont systemFontOfSize:12];
-        _urlDescTextView.editable = NO;
-        _urlDescTextView.layer.borderWidth = 1;
-        _urlDescTextView.layer.borderColor = [UIColor colorWithWhite:0.7 alpha:1.0].CGColor;
+- (UITextView *)urlDetailTextView {
+    if (!_urlDetailTextView) {
+        _urlDetailTextView = [[UITextView alloc] init];
+        _urlDetailTextView.textColor = [UIColor colorWithWhite:0.7 alpha:1.0];
+        _urlDetailTextView.font = [UIFont systemFontOfSize:12];
+        _urlDetailTextView.editable = NO;
+        _urlDetailTextView.layer.borderWidth = 1;
+        _urlDetailTextView.layer.borderColor = [UIColor colorWithWhite:0.7 alpha:1.0].CGColor;
     }
-    return _urlDescTextView;
+    return _urlDetailTextView;
 }
 
 - (UISwitch *)switchView {
@@ -95,5 +106,18 @@
     return _switchView;
 }
 
+- (UIButton *)editButton {
+    if (!_editButton) {
+        _editButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_editButton setTitle:@"编辑规则" forState:UIControlStateNormal];
+        [_editButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_editButton.titleLabel setFont:[UIFont systemFontOfSize:8]];
+        _editButton.layer.borderColor = [UIColor blueColor].CGColor;
+        _editButton.layer.borderWidth = 1;
+        [_editButton setBackgroundColor:[UIColor whiteColor]];
+        [_editButton addTarget:self action:@selector(editRule) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _editButton;
+}
 
 @end
