@@ -18,14 +18,12 @@ typedef NS_OPTIONS(NSInteger, HCNetMockRuleType) {
 
 @interface HCNetMockRuleItemModel : NSObject
 
-@property (nonatomic, assign) HCNetMockRuleType type;
+@property (nonatomic, assign) HCNetMockRuleType ruleType;
+@property (nonatomic, strong) NSString *ruleName;
 @property (nonatomic, assign) BOOL enable;
-@property (nonatomic, strong) NSString *nativeJsonPath;
-@property (nonatomic, strong) NSString *netJsonPath;
+@property (nonatomic, strong) NSString *jsonPath;
 @property (nonatomic, strong) NSDictionary *modifyField;
 @property (nonatomic, strong) NSDictionary *errorData;
-
-- (instancetype)initWithDict:(NSDictionary *)dict;
 
 @end
 

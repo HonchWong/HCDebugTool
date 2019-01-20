@@ -17,10 +17,7 @@ typedef NS_OPTIONS(NSInteger, HCNetMockRequestType) {
 @interface HCNetMockRuleInfoModel : NSObject
 
 @property (nonatomic, assign) HCNetMockRequestType requestType;
-@property (nonatomic, strong) NSArray <HCNetMockRuleItemModel *>* rules;
-
-- (instancetype)initWithDict:(NSDictionary *)dict;
-
+@property (nonatomic, strong) HCNetMockRuleItemModel *rule;
 
 @end
 

@@ -3,33 +3,89 @@
         "1" : {
             "requestType": 1,
             "rules": [
-                "rule": {
+                {
                     "type": 1,
-                    "enable": 1,
-                    "errorData": {
-                        "error": 1,
-                    },
+                    "data": [
+                        {
+                            "ruleName": "默认错误返回",
+                            "enable": 1,
+                            "errorData": {
+                                "error": 1,
+                            },
+                        },
+                        {
+                            "ruleName": "默认错误返回2",
+                            "enable": 1,
+                            "errorData": {
+                                "error": 1,
+                            },
+                        },
+                        {
+                            "ruleName": "默认错误返回3",
+                            "enable": 1,
+                            "errorData": {
+                                "error": 1,
+                            },
+                        },
+                    ]
                 },
-                "rule": {
+                {
                     "type": 2,
-                    "enable": 1,
+                    "data": [
+                        {
+                            "ruleName": "默认空返回",
+                            "enable": 1,
+                        }
+                    ]
                 },
-                "rule": {
+                {
                     "type": 3,
-                    "enable": 1,
-                    "field": {
-                        "name": "abc",
-                    }
+                    "data": [
+                        {
+                            "enable": 1,
+                            "ruleName": "修改name字段",
+                            "field": {
+                                "name": "abc",
+                            }
+                        },
+                        {
+                            "enable": 1,
+                            "ruleName": "模拟包月信息",
+                            "field": {
+                                "name": "abc",
+                            }
+                        },
+                    ]
                 },
-                "rule": {
+                {
                     "type": 4,
-                    "enable": 1,
-                    "path": "",
+                    "data": [
+                        {
+                            "enable": 1,
+                            "ruleName": "模拟包月信息",
+                            "path": "",
+                        },
+                        {
+                            "enable": 1,
+                            "ruleName": "模拟包月信息",
+                            "path": "",
+                        },
+                    ]
                 },
-                "rule": {
+                {
                     "type": 5,
-                    "enable": 1,
-                    "path": "",
+                    "data": [
+                        {
+                            "enable": 1,
+                            "ruleName": "模拟包月信息",
+                            "path": "",
+                        },
+                        {
+                            "enable": 1,
+                            "ruleName": "模拟包月信息",
+                            "path": "",
+                        },
+                    ]
                 },
             ],
         }

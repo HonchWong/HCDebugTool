@@ -99,8 +99,10 @@ HCNetMockintroCellActionDelegate>
 }
 
 - (void)cellEditRuleBtnDidClick:(HCNetMockintroCell *)cell {
+    NSInteger index = [self.tableView indexPathForCell:cell].row;
+    HCNetMockIntroViewModel *viewModel = [self.viewModels objectAtIndex:index];
     HCNetDebugMockRuleViewController *vc =
-    [[HCNetDebugMockRuleViewController alloc] init];
+    [[HCNetDebugMockRuleViewController alloc] initWithRuleIdentity:viewModel.identity];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

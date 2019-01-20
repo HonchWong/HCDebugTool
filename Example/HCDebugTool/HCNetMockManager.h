@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "HCNetMockIntroViewModel.h"
 #import "HCNetMockRuleInfoModel.h"
+#import "HCNetMockRuleSectionModel.h"
 
 typedef void (^HCNetMockManagerDataCompletionHandler)(BOOL success,  NSArray <HCNetMockIntroViewModel *>*viewModels);
 
@@ -18,12 +19,19 @@ typedef HCNetMockManagerDataCompletionHandler HCNetMockIntroHandler;
 
 - (void)requestIntroViewModelWithCompletionHandler:(HCNetMockIntroHandler)handler;
 
-- (HCNetMockRuleInfoModel *)ruleInfoWithMockIdentity:(NSString *)identity;
+
+//- (NSArray <HCNetMockRuleSectionModule *>*)ruleModulesWithMockIdentity:(NSString *)identity;
+
+- (NSArray <HCNetMockRuleSectionModel *>*)sectionModelWithMockIdentity:(NSString *)identity;
 
 - (void)startMockWithIdentity:(NSString *)identity;
 - (void)stopMockWithIdentity:(NSString *)identity;
 
 - (void)startAllMock;
 - (void)stopAllMock;
+
+- (void)    saveRule:(HCNetMockRuleInfoModel *)ruleInfo
+    withMockIdentity:(NSString *)identity;
+- (HCNetMockRuleInfoModel *)ruleInfoWithMockIdentity:(NSString *)identity;
 
 @end
