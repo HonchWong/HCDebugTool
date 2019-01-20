@@ -19,6 +19,7 @@ UITableViewDataSource>
 @property (nonatomic, strong) HCNetMockManager *manager;
 @property (nonatomic, strong) HCNetMockRuleInfoModel *ruleInfo;
 @property (nonatomic, strong) NSArray <HCNetMockRuleSectionModel *>*sectionModels;
+@property (nonatomic, strong) NSIndexPath *selectedIndexPath;
 
 @end
 
@@ -88,12 +89,11 @@ UITableViewDataSource>
      forControlEvents:UIControlEventTouchUpInside];
     cell.accessoryView = button;
     
-//    if (item.enable &&
-//        ![self.selectedRuleIndexs containsObject:@(indexPath.row)]) {
-//        [self.selectedRuleIndexs addObject:@(indexPath.row)];
-//    }
-    
     cell.accessoryType = UITableViewCellAccessoryDetailButton;
+    
+    if (item.enable) {
+        self.selectedIndexPath = indexPath;
+    }
     
     return cell;
 }
@@ -118,14 +118,15 @@ UITableViewDataSource>
     HCNetMockRuleInfoModel *ruleInfo = [[HCNetMockRuleInfoModel alloc] init];
     ruleInfo.rule = item;
     [self.manager saveRule:ruleInfo withMockIdentity:self.ruleIdentity];
-//    if (item.enable &&
-//        ![self.selectedRuleIndexs containsObject:@(indexPath.row)]) {
-//        [self.selectedRuleIndexs addObject:@(indexPath.row)];
-//    }
-//    if (!item.enable &&
-//        [self.selectedRuleIndexs containsObject:@(indexPath.row)]) {
-//        [self.selectedRuleIndexs removeObject:@(indexPath.row)];
-//    }
+        
+    if (item.enable && ![self.selectedIndexPath isEqual:indexPath]) {
+        cell = [tableView cellForRowAtIndexPath:self.selectedIndexPath];
+        cell.detailTextLabel.text = @"未选中";
+        item = [[self.sectionModels objectAtIndex:self.selectedIndexPath.section].items objectAtIndex:self.selectedIndexPath.row];
+        item.enable = NO;
+        
+        self.selectedIndexPath = indexPath;
+    }
 }
 
 #pragma mark - action

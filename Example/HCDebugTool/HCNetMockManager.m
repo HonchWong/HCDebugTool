@@ -88,33 +88,56 @@
     if (!_sectionModelDict) {
         NSMutableDictionary *tempDict = [NSMutableDictionary dictionary];
         [self.mockRuleIdentityDict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+            NSInteger requestType = [[obj objectForKey:@"requestType"] integerValue];
             NSArray *rules = [obj objectForKey:@"rules"];
-            NSMutableArray <HCNetMockRuleSectionModel *>*temp = [NSMutableArray array];
+            NSMutableArray <HCNetMockRuleSectionModel *>*sectionModels = [NSMutableArray array];
             for (NSDictionary *dict in rules) {
+                NSArray *data = [dict objectForKey:@"data"];
                 NSInteger type = [[dict objectForKey:@"type"] integerValue];
-                HCNetMockRuleSectionModel *model =
+
+                NSMutableArray *temp = [NSMutableArray array];
+                for (NSDictionary *dict in data) {
+                    BOOL forceRuleDisable = [self.ruleInfoDict objectForKey:key] ? YES : NO;
+                    HCNetMockRuleItemModel *item = [[HCNetMockRuleItemModel alloc] init];
+                    item.enable = forceRuleDisable ? NO : [dict objectForKey:@"enable"];
+                    item.errorData = [dict objectForKey:@"errorData"];
+                    item.ruleName = [dict objectForKey:@"ruleName"];
+                    item.modifyField = [dict objectForKey:@"field"];
+                    item.jsonPath = [dict objectForKey:@"path"];
+                    item.ruleType = type;
+                    [temp addObject:item];
+                    
+                    if (item.enable) {
+                        HCNetMockRuleInfoModel *ruleInfo = [[HCNetMockRuleInfoModel alloc] init];
+                        ruleInfo.rule = item;
+                        ruleInfo.requestType = requestType;
+                        [self.ruleInfoDict setValue:ruleInfo forKey:key];
+                    }
+                }
+                HCNetMockRuleSectionModel *sectionModel =
                 [[HCNetMockRuleSectionModel alloc] init];
-                [model parseDict:dict];
+                sectionModel.items = temp;
+                
                 switch (type) {
                     case HCNetMockRuleType_Error:
-                        model.title = @"错误返回";
+                        sectionModel.title = @"错误返回";
                         break;
                     case HCNetMockRuleType_Empty:
-                        model.title = @"空返回";
+                        sectionModel.title = @"空返回";
                         break;
                     case HCNetMockRuleType_ModifyField:
-                        model.title = @"修改字段";
+                        sectionModel.title = @"修改字段";
                         break;
                     case HCNetMockRuleType_ModifyNativeJson:
-                        model.title = @"使用本地Json";
+                        sectionModel.title = @"使用本地Json";
                         break;
                     case HCNetMockRuleType_ModifyNetJson:
-                        model.title = @"使用网络Json";
+                        sectionModel.title = @"使用网络Json";
                         break;
                 }
-                [temp addObject:model];
+                [sectionModels addObject:sectionModel];
             }
-            [tempDict setValue:temp forKey:key];
+            [tempDict setValue:sectionModels forKey:key];
         }];
         _sectionModelDict = tempDict;
     }
