@@ -8,6 +8,7 @@
 ## Example
 
 clone 仓库，在 /HCDebugTool/Example文件夹下执行 `pod install` ，运行App 后点击电池栏位置3下弹出调试菜单，类似下面截图的效果
+
 ![demo](http://m.qpic.cn/psb?/V10JaO4w40EHz4/LsexZv6Mw.iXuq*JbQYLfwpO*z8s5be8fNsMCXLfoNU!/b/dFIBAAAAAAAA&bo=dwHZAgAAAAADB48!&rf=viewer_4)
 
 ## 工具特点
