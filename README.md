@@ -105,10 +105,6 @@ it, simply add the following line to your Podfile:
 pod 'HCDebugTool'
 ```
 
-### 已知问题
-
-- 在iOS11.3真机无法响应弹出调试菜单。响应点击弹出调试菜单的view，是利用layer.zPosition = 1的方法，使视图层级最高，但在iOS11.3 上该view无法响应点击事件，暂时没能定位到原因
-
 ## Author
 
 honchwong404@gmail.com, honchwong404@gmail.com
